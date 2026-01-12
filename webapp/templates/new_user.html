@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cropmarker Web - New user</title>
+  <link rel="stylesheet" href="/static/app.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cropmarker Web</h1>
+    <p><strong>New user detected.</strong> Which option best describes you?</p>
+
+    {% if error %}
+      <div class="error">{{ error }}</div>
+    {% endif %}
+
+    <form method="post" action="/new-user" class="card">
+      <input type="hidden" name="username" value="{{ username }}" />
+
+      <label>
+        <input type="radio" name="expertise_score" value="0" required>
+        No archaeology experience
+      </label>
+      <label>
+        <input type="radio" name="expertise_score" value="1" required>
+        Archaeology experience but no Remote Sensing experience
+      </label>
+      <label>
+        <input type="radio" name="expertise_score" value="3" required>
+        Some archaeology and Remote Sensing experience
+      </label>
+      <label>
+        <input type="radio" name="expertise_score" value="5" required>
+        Remote Sensing specialist
+      </label>
+      <label>
+        <input type="radio" name="expertise_score" value="5" required>
+        Prehistoric enclosures specialist
+      </label>
+
+      <button type="submit">Confirm</button>
+    </form>
+
+    <div class="hint">
+      <p>Username: <strong>{{ username }}</strong></p>
+    </div>
+  </div>
+</body>
+</html>

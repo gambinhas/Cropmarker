@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cropmarker Web - Sign in</title>
+  <link rel="stylesheet" href="/static/app.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cropmarker Web</h1>
+    <p>Sign in</p>
+
+    {% if error %}
+      <div class="error">{{ error }}</div>
+    {% endif %}
+
+    <form method="post" action="/login" class="card">
+      <label>
+        Username
+        <input type="text" name="username" required autofocus />
+      </label>
+      <button type="submit">Continue</button>
+    </form>
+
+    <div class="hint">
+      <p>Remember your username. It will be used to come back to your annotation session.</p>
+    </div>
+  </div>
+</body>
+</html>

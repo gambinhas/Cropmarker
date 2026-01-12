@@ -1,0 +1,90 @@
+Cropmarker WebApp — Como grava e como exportar (admin)
+Data: 2026-01-12
+
+1) Como a webapp grava (passo a passo)
+
+1.1 Login (username apenas)
+- O anotador entra com um nome de utilizador (username).
+- A sessão fica guardada no browser via cookie de sessão.
+- Não existem passwords.
+
+1.2 Lista de tarefas por utilizador (420 itens)
+- Na primeira utilização de um username, o backend garante a lista de trabalho desse utilizador.
+- É criada uma lista por utilizador (UserTask), com:
+  - 381 tarefas originais
+  - 39 duplicados QC
+  - Total: 420
+- A ordem é aleatória por utilizador (inclui originais e duplicados misturados).
+- Duplicados QC são instâncias separadas (UserTask diferentes), podendo referenciar a mesma tarefa base.
+
+1.3 Carregar uma tarefa para anotar (hidratação)
+- Ao abrir uma tarefa, o backend carrega:
+  - a instância do utilizador (UserTask)
+  - a tarefa base (Task: site, filename, unique_id, rel_path)
+  - e, se existir, a anotação já guardada (Annotation)
+- Se já existir Annotation, o frontend pré-carrega:
+  - classificação (cropmark)
+  - desenho (drawing_json)
+  - ajustes (brightness/contrast), se guardados
+
+1.4 Guardar (Save & Next)
+- Ao clicar “Save & Next”, o frontend envia para o backend:
+  - cropmark (0/1/2)
+  - drawing_json (desenho serializado; normalmente relevante apenas para 1/2)
+  - brightness e contrast (opcional, se aplicável)
+- O backend cria/atualiza uma linha na tabela Annotation para:
+  - user_id
+  - user_task_id
+- As anotações ficam isoladas por utilizador.
+
+1.5 Revisitar
+- Ao voltar atrás/à frente, o backend volta a carregar a Annotation existente e o frontend mostra o estado guardado.
+
+
+2) Como exportar (admin) para o formato desejado (XLSX)
+
+Importante
+- O export é feito via CLI (offline/admin). Não há botão de export na UI.
+- Isto evita que anotadores façam export/download.
+
+2.1 Onde está a base de dados
+- Por defeito: webapp_data/webapp.sqlite3
+- O CLI aceita: --db <caminho>
+
+2.2 Ativar o ambiente certo
+- Usa o ambiente/venv da webapp (não o do Label Studio).
+- Alternativa prática: usa o script run_webapp.cmd para preparar o ambiente da webapp.
+
+2.3 Exportar XLSX (um ficheiro por utilizador)
+- A partir da pasta Cropmarker/webapp, executar:
+  python manage.py export-xlsx --out-dir export_xlsx
+
+2.4 Exportar XLSX apenas para 1 utilizador
+- Exemplo:
+  python manage.py export-xlsx --username NOMEEXATO --out-dir export_xlsx
+
+2.5 Exportar apontando explicitamente para a DB
+- Exemplo:
+  python manage.py --db webapp_data/webapp.sqlite3 export-xlsx --out-dir export_xlsx
+
+2.6 Formato final do XLSX
+- Nome do ficheiro:
+  cropmarks_<username>_<expertise_score>.xlsx
+- Colunas (ordem):
+  Site, Date, Cropmark, Image, Saved, Drawing, QC_Reference, UniqueID, Order
+- Regras:
+  - Saved = “S” se existir anotação para o item; caso contrário vazio
+  - Drawing = drawing_json (tipicamente só com Cropmark 1/2)
+  - QC_Reference = preenchido apenas para duplicados QC
+  - Order = display_order (ordem aleatória do utilizador)
+  - Date = extraído do filename (ex: “aug2021” -> “08/2021”); se não for detetável fica vazio
+
+2.7 Se faltar a dependência openpyxl
+- O comando export-xlsx pode falhar se o openpyxl não estiver instalado no ambiente.
+- Instalar com:
+  pip install -r webapp/requirements.txt
+
+
+Notas rápidas
+- Export CSV “bruto” (já existe):
+  python manage.py export-csv --out export.csv

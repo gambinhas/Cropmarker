@@ -1,0 +1,4202 @@
+[
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_apr2018_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_apr2018_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_apr2018_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 1
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_apr2019_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_apr2019_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_apr2019_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 2
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_dec2020_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_dec2020_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_dec2020_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 3
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_feb2018_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_feb2018_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_feb2018_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 4
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_feb2018_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_feb2018_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_feb2018_Abaixo do Estacio.jpg_qc",
+      "qc_reference": "Abaixo do Estacio/GE_feb2018_Abaixo do Estacio.jpg",
+      "order": 5
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_feb2019_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_feb2019_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_feb2019_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 6
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_feb2020_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_feb2020_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_feb2020_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 7
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_feb2022_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_feb2022_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_feb2022_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 8
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_jan2020_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_jan2020_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_jan2020_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 9
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_jun2019_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_jun2019_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_jun2019_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 10
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_mar2021_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_mar2021_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_mar2021_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 11
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_mar2022_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_mar2022_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_mar2022_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 12
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_may2019_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_may2019_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_may2019_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 13
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_may2022_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_may2022_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_may2022_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 14
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/GE_may2022_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "GE_may2022_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/GE_may2022_Abaixo do Estacio.jpg_qc",
+      "qc_reference": "Abaixo do Estacio/GE_may2022_Abaixo do Estacio.jpg",
+      "order": 15
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/Wayback_jan2023_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "Wayback_jan2023_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/Wayback_jan2023_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 16
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/Wayback_jan2023_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "Wayback_jan2023_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/Wayback_jan2023_Abaixo do Estacio.jpg_qc",
+      "qc_reference": "Abaixo do Estacio/Wayback_jan2023_Abaixo do Estacio.jpg",
+      "order": 17
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/Wayback_may2021_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "Wayback_may2021_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/Wayback_may2021_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 18
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/Wayback_may2022_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "Wayback_may2022_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/Wayback_may2022_Abaixo do Estacio.jpg",
+      "qc_reference": null,
+      "order": 19
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Abaixo%20do%20Estacio/Wayback_may2022_Abaixo%20do%20Estacio.jpg",
+      "site": "Abaixo do Estacio",
+      "filename": "Wayback_may2022_Abaixo do Estacio.jpg",
+      "unique_id": "Abaixo do Estacio/Wayback_may2022_Abaixo do Estacio.jpg_qc",
+      "qc_reference": "Abaixo do Estacio/Wayback_may2022_Abaixo do Estacio.jpg",
+      "order": 20
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bailique/GE_jun2020_Bailique.jpg",
+      "site": "Bailique",
+      "filename": "GE_jun2020_Bailique.jpg",
+      "unique_id": "Bailique/GE_jun2020_Bailique.jpg",
+      "qc_reference": null,
+      "order": 21
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bailique/GE_jun2020_Bailique.jpg",
+      "site": "Bailique",
+      "filename": "GE_jun2020_Bailique.jpg",
+      "unique_id": "Bailique/GE_jun2020_Bailique.jpg_qc",
+      "qc_reference": "Bailique/GE_jun2020_Bailique.jpg",
+      "order": 22
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bailique/GE_may2019_Bailique.jpg",
+      "site": "Bailique",
+      "filename": "GE_may2019_Bailique.jpg",
+      "unique_id": "Bailique/GE_may2019_Bailique.jpg",
+      "qc_reference": null,
+      "order": 23
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bailique/GE_may2022_Bailique.jpg",
+      "site": "Bailique",
+      "filename": "GE_may2022_Bailique.jpg",
+      "unique_id": "Bailique/GE_may2022_Bailique.jpg",
+      "qc_reference": null,
+      "order": 24
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bailique/Wayback_jun2020_Bailique.jpg",
+      "site": "Bailique",
+      "filename": "Wayback_jun2020_Bailique.jpg",
+      "unique_id": "Bailique/Wayback_jun2020_Bailique.jpg",
+      "qc_reference": null,
+      "order": 25
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bailique/Wayback_mar2022_Bailique.jpg",
+      "site": "Bailique",
+      "filename": "Wayback_mar2022_Bailique.jpg",
+      "unique_id": "Bailique/Wayback_mar2022_Bailique.jpg",
+      "qc_reference": null,
+      "order": 26
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bairro%20da%20Guarda%20Fiscal/GE_apr2020_Bairro%20da%20Guarda%20Fiscal.jpg",
+      "site": "Bairro da Guarda Fiscal",
+      "filename": "GE_apr2020_Bairro da Guarda Fiscal.jpg",
+      "unique_id": "Bairro da Guarda Fiscal/GE_apr2020_Bairro da Guarda Fiscal.jpg",
+      "qc_reference": null,
+      "order": 27
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bairro%20da%20Guarda%20Fiscal/GE_dec2024_Bairro%20da%20Guarda%20Fiscal.jpg",
+      "site": "Bairro da Guarda Fiscal",
+      "filename": "GE_dec2024_Bairro da Guarda Fiscal.jpg",
+      "unique_id": "Bairro da Guarda Fiscal/GE_dec2024_Bairro da Guarda Fiscal.jpg",
+      "qc_reference": null,
+      "order": 28
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bairro%20da%20Guarda%20Fiscal/GE_feb2022_Bairro%20da%20Guarda%20Fiscal.jpg",
+      "site": "Bairro da Guarda Fiscal",
+      "filename": "GE_feb2022_Bairro da Guarda Fiscal.jpg",
+      "unique_id": "Bairro da Guarda Fiscal/GE_feb2022_Bairro da Guarda Fiscal.jpg",
+      "qc_reference": null,
+      "order": 29
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bairro%20da%20Guarda%20Fiscal/GE_jul2019_Bairro%20da%20Guarda%20Fiscal.jpg",
+      "site": "Bairro da Guarda Fiscal",
+      "filename": "GE_jul2019_Bairro da Guarda Fiscal.jpg",
+      "unique_id": "Bairro da Guarda Fiscal/GE_jul2019_Bairro da Guarda Fiscal.jpg",
+      "qc_reference": null,
+      "order": 30
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bairro%20da%20Guarda%20Fiscal/GE_jul2020_Bairro%20da%20Guarda%20Fiscal.jpg",
+      "site": "Bairro da Guarda Fiscal",
+      "filename": "GE_jul2020_Bairro da Guarda Fiscal.jpg",
+      "unique_id": "Bairro da Guarda Fiscal/GE_jul2020_Bairro da Guarda Fiscal.jpg",
+      "qc_reference": null,
+      "order": 31
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bairro%20da%20Guarda%20Fiscal/GE_jun2020_Bairro%20da%20Guarda%20Fiscal.jpg",
+      "site": "Bairro da Guarda Fiscal",
+      "filename": "GE_jun2020_Bairro da Guarda Fiscal.jpg",
+      "unique_id": "Bairro da Guarda Fiscal/GE_jun2020_Bairro da Guarda Fiscal.jpg",
+      "qc_reference": null,
+      "order": 32
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bairro%20da%20Guarda%20Fiscal/GE_mar2021_Bairro%20da%20Guarda%20Fiscal.jpg",
+      "site": "Bairro da Guarda Fiscal",
+      "filename": "GE_mar2021_Bairro da Guarda Fiscal.jpg",
+      "unique_id": "Bairro da Guarda Fiscal/GE_mar2021_Bairro da Guarda Fiscal.jpg",
+      "qc_reference": null,
+      "order": 33
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bairro%20da%20Guarda%20Fiscal/Wayback_jul2019_Bairro%20da%20Guarda%20Fiscal.jpg",
+      "site": "Bairro da Guarda Fiscal",
+      "filename": "Wayback_jul2019_Bairro da Guarda Fiscal.jpg",
+      "unique_id": "Bairro da Guarda Fiscal/Wayback_jul2019_Bairro da Guarda Fiscal.jpg",
+      "qc_reference": null,
+      "order": 34
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Bairro%20da%20Guarda%20Fiscal/Wayback_jun2022_Bairro%20da%20Guarda%20Fiscal.jpg",
+      "site": "Bairro da Guarda Fiscal",
+      "filename": "Wayback_jun2022_Bairro da Guarda Fiscal.jpg",
+      "unique_id": "Bairro da Guarda Fiscal/Wayback_jun2022_Bairro da Guarda Fiscal.jpg",
+      "qc_reference": null,
+      "order": 35
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barranco%20do%20Rio%20Seco%204/GE_feb2020_Barranco%20do%20Rio%20Seco%204.jpg",
+      "site": "Barranco do Rio Seco 4",
+      "filename": "GE_feb2020_Barranco do Rio Seco 4.jpg",
+      "unique_id": "Barranco do Rio Seco 4/GE_feb2020_Barranco do Rio Seco 4.jpg",
+      "qc_reference": null,
+      "order": 36
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barranco%20do%20Rio%20Seco%204/GE_jul2018_Barranco%20do%20Rio%20Seco%204.jpg",
+      "site": "Barranco do Rio Seco 4",
+      "filename": "GE_jul2018_Barranco do Rio Seco 4.jpg",
+      "unique_id": "Barranco do Rio Seco 4/GE_jul2018_Barranco do Rio Seco 4.jpg",
+      "qc_reference": null,
+      "order": 37
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barranco%20do%20Rio%20Seco%204/GE_mar2020_Barranco%20do%20Rio%20Seco%204.jpg",
+      "site": "Barranco do Rio Seco 4",
+      "filename": "GE_mar2020_Barranco do Rio Seco 4.jpg",
+      "unique_id": "Barranco do Rio Seco 4/GE_mar2020_Barranco do Rio Seco 4.jpg",
+      "qc_reference": null,
+      "order": 38
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barranco%20do%20Rio%20Seco%204/GE_may2019_Barranco%20do%20Rio%20Seco%204.jpg",
+      "site": "Barranco do Rio Seco 4",
+      "filename": "GE_may2019_Barranco do Rio Seco 4.jpg",
+      "unique_id": "Barranco do Rio Seco 4/GE_may2019_Barranco do Rio Seco 4.jpg",
+      "qc_reference": null,
+      "order": 39
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barreiros/GE_aug2020_Barreiros.jpg",
+      "site": "Barreiros",
+      "filename": "GE_aug2020_Barreiros.jpg",
+      "unique_id": "Barreiros/GE_aug2020_Barreiros.jpg",
+      "qc_reference": null,
+      "order": 40
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barreiros/GE_jul2019_Barreiros.jpg",
+      "site": "Barreiros",
+      "filename": "GE_jul2019_Barreiros.jpg",
+      "unique_id": "Barreiros/GE_jul2019_Barreiros.jpg",
+      "qc_reference": null,
+      "order": 41
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barreiros/GE_jun2019_Barreiros.jpg",
+      "site": "Barreiros",
+      "filename": "GE_jun2019_Barreiros.jpg",
+      "unique_id": "Barreiros/GE_jun2019_Barreiros.jpg",
+      "qc_reference": null,
+      "order": 42
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barreiros/GE_jun2020_Barreiros.jpg",
+      "site": "Barreiros",
+      "filename": "GE_jun2020_Barreiros.jpg",
+      "unique_id": "Barreiros/GE_jun2020_Barreiros.jpg",
+      "qc_reference": null,
+      "order": 43
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barreiros/GE_mar2020_Barreiros.jpg",
+      "site": "Barreiros",
+      "filename": "GE_mar2020_Barreiros.jpg",
+      "unique_id": "Barreiros/GE_mar2020_Barreiros.jpg",
+      "qc_reference": null,
+      "order": 44
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barreiros/GE_mar2021_Barreiros.jpg",
+      "site": "Barreiros",
+      "filename": "GE_mar2021_Barreiros.jpg",
+      "unique_id": "Barreiros/GE_mar2021_Barreiros.jpg",
+      "qc_reference": null,
+      "order": 45
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barreiros/GE_may2022_Barreiros.jpg",
+      "site": "Barreiros",
+      "filename": "GE_may2022_Barreiros.jpg",
+      "unique_id": "Barreiros/GE_may2022_Barreiros.jpg",
+      "qc_reference": null,
+      "order": 46
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barreiros/Wayback_aug2020_Barreiros.jpg",
+      "site": "Barreiros",
+      "filename": "Wayback_aug2020_Barreiros.jpg",
+      "unique_id": "Barreiros/Wayback_aug2020_Barreiros.jpg",
+      "qc_reference": null,
+      "order": 47
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Barreiros/Wayback_may2022_Barreiros.jpg",
+      "site": "Barreiros",
+      "filename": "Wayback_may2022_Barreiros.jpg",
+      "unique_id": "Barreiros/Wayback_may2022_Barreiros.jpg",
+      "qc_reference": null,
+      "order": 48
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Borralhos/GE_jun2020_Borralhos.jpg",
+      "site": "Borralhos",
+      "filename": "GE_jun2020_Borralhos.jpg",
+      "unique_id": "Borralhos/GE_jun2020_Borralhos.jpg",
+      "qc_reference": null,
+      "order": 49
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Borralhos/GE_mar2021_Borralhos.jpg",
+      "site": "Borralhos",
+      "filename": "GE_mar2021_Borralhos.jpg",
+      "unique_id": "Borralhos/GE_mar2021_Borralhos.jpg",
+      "qc_reference": null,
+      "order": 50
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Borralhos/GE_mar2021_Borralhos.jpg",
+      "site": "Borralhos",
+      "filename": "GE_mar2021_Borralhos.jpg",
+      "unique_id": "Borralhos/GE_mar2021_Borralhos.jpg_qc",
+      "qc_reference": "Borralhos/GE_mar2021_Borralhos.jpg",
+      "order": 51
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Borralhos/GE_may2019_Borralhos.jpg",
+      "site": "Borralhos",
+      "filename": "GE_may2019_Borralhos.jpg",
+      "unique_id": "Borralhos/GE_may2019_Borralhos.jpg",
+      "qc_reference": null,
+      "order": 52
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Borralhos/GE_may2022_Borralhos.jpg",
+      "site": "Borralhos",
+      "filename": "GE_may2022_Borralhos.jpg",
+      "unique_id": "Borralhos/GE_may2022_Borralhos.jpg",
+      "qc_reference": null,
+      "order": 53
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Borralhos/Wayback_apr2024_Borralhos.jpg",
+      "site": "Borralhos",
+      "filename": "Wayback_apr2024_Borralhos.jpg",
+      "unique_id": "Borralhos/Wayback_apr2024_Borralhos.jpg",
+      "qc_reference": null,
+      "order": 54
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Borralhos/Wayback_apr2024_Borralhos.jpg",
+      "site": "Borralhos",
+      "filename": "Wayback_apr2024_Borralhos.jpg",
+      "unique_id": "Borralhos/Wayback_apr2024_Borralhos.jpg_qc",
+      "qc_reference": "Borralhos/Wayback_apr2024_Borralhos.jpg",
+      "order": 55
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Borralhos/Wayback_jul2020_Borralhos.jpg",
+      "site": "Borralhos",
+      "filename": "Wayback_jul2020_Borralhos.jpg",
+      "unique_id": "Borralhos/Wayback_jul2020_Borralhos.jpg",
+      "qc_reference": null,
+      "order": 56
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Borralhos/Wayback_jun2022_Borralhos.jpg",
+      "site": "Borralhos",
+      "filename": "Wayback_jun2022_Borralhos.jpg",
+      "unique_id": "Borralhos/Wayback_jun2022_Borralhos.jpg",
+      "qc_reference": null,
+      "order": 57
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Brinches%20Norte/GE_mar2021_Brinches%20Norte.jpg",
+      "site": "Brinches Norte",
+      "filename": "GE_mar2021_Brinches Norte.jpg",
+      "unique_id": "Brinches Norte/GE_mar2021_Brinches Norte.jpg",
+      "qc_reference": null,
+      "order": 58
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Brinches%20Norte/GE_may2019_Brinches%20Norte.jpg",
+      "site": "Brinches Norte",
+      "filename": "GE_may2019_Brinches Norte.jpg",
+      "unique_id": "Brinches Norte/GE_may2019_Brinches Norte.jpg",
+      "qc_reference": null,
+      "order": 59
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Brinches%20Norte/GE_may2022_Brinches%20Norte.jpg",
+      "site": "Brinches Norte",
+      "filename": "GE_may2022_Brinches Norte.jpg",
+      "unique_id": "Brinches Norte/GE_may2022_Brinches Norte.jpg",
+      "qc_reference": null,
+      "order": 60
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Brinches%20Norte/GE_may2022_Brinches%20Norte.jpg",
+      "site": "Brinches Norte",
+      "filename": "GE_may2022_Brinches Norte.jpg",
+      "unique_id": "Brinches Norte/GE_may2022_Brinches Norte.jpg_qc",
+      "qc_reference": "Brinches Norte/GE_may2022_Brinches Norte.jpg",
+      "order": 61
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Brinches%20Norte/Wayback_jun2020_Brinches%20Norte.jpg",
+      "site": "Brinches Norte",
+      "filename": "Wayback_jun2020_Brinches Norte.jpg",
+      "unique_id": "Brinches Norte/Wayback_jun2020_Brinches Norte.jpg",
+      "qc_reference": null,
+      "order": 62
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Brinches%20Norte/Wayback_nov2023_Brinches%20Norte.jpg",
+      "site": "Brinches Norte",
+      "filename": "Wayback_nov2023_Brinches Norte.jpg",
+      "unique_id": "Brinches Norte/Wayback_nov2023_Brinches Norte.jpg",
+      "qc_reference": null,
+      "order": 63
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Casas%20del%20Moro%201/GE_feb2020_Casas%20del%20Moro%201.jpg",
+      "site": "Casas del Moro 1",
+      "filename": "GE_feb2020_Casas del Moro 1.jpg",
+      "unique_id": "Casas del Moro 1/GE_feb2020_Casas del Moro 1.jpg",
+      "qc_reference": null,
+      "order": 64
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Casas%20del%20Moro%201/GE_may2024_Casas%20del%20Moro%201.jpg",
+      "site": "Casas del Moro 1",
+      "filename": "GE_may2024_Casas del Moro 1.jpg",
+      "unique_id": "Casas del Moro 1/GE_may2024_Casas del Moro 1.jpg",
+      "qc_reference": null,
+      "order": 65
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Casas%20del%20Moro%201/Wayback_aug2019_Casas%20del%20Moro%201.jpg",
+      "site": "Casas del Moro 1",
+      "filename": "Wayback_aug2019_Casas del Moro 1.jpg",
+      "unique_id": "Casas del Moro 1/Wayback_aug2019_Casas del Moro 1.jpg",
+      "qc_reference": null,
+      "order": 66
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Casas%20del%20Moro%201/Wayback_aug2019_Casas%20del%20Moro%201.jpg",
+      "site": "Casas del Moro 1",
+      "filename": "Wayback_aug2019_Casas del Moro 1.jpg",
+      "unique_id": "Casas del Moro 1/Wayback_aug2019_Casas del Moro 1.jpg_qc",
+      "qc_reference": "Casas del Moro 1/Wayback_aug2019_Casas del Moro 1.jpg",
+      "order": 67
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Charneca/GE_apr2024_Charneca.jpg",
+      "site": "Charneca",
+      "filename": "GE_apr2024_Charneca.jpg",
+      "unique_id": "Charneca/GE_apr2024_Charneca.jpg",
+      "qc_reference": null,
+      "order": 68
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Charneca/GE_feb2020_Charneca.jpg",
+      "site": "Charneca",
+      "filename": "GE_feb2020_Charneca.jpg",
+      "unique_id": "Charneca/GE_feb2020_Charneca.jpg",
+      "qc_reference": null,
+      "order": 69
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Charneca/GE_may2019_Charneca.jpg",
+      "site": "Charneca",
+      "filename": "GE_may2019_Charneca.jpg",
+      "unique_id": "Charneca/GE_may2019_Charneca.jpg",
+      "qc_reference": null,
+      "order": 70
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Charneca/GE_may2022_Charneca.jpg",
+      "site": "Charneca",
+      "filename": "GE_may2022_Charneca.jpg",
+      "unique_id": "Charneca/GE_may2022_Charneca.jpg",
+      "qc_reference": null,
+      "order": 71
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Charneca/Wayback_jun2022_Charneca.jpg",
+      "site": "Charneca",
+      "filename": "Wayback_jun2022_Charneca.jpg",
+      "unique_id": "Charneca/Wayback_jun2022_Charneca.jpg",
+      "qc_reference": null,
+      "order": 72
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Coelheira%203/GE_feb2022_Coelheira%203.jpg",
+      "site": "Coelheira 3",
+      "filename": "GE_feb2022_Coelheira 3.jpg",
+      "unique_id": "Coelheira 3/GE_feb2022_Coelheira 3.jpg",
+      "qc_reference": null,
+      "order": 73
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Coelheira%203/GE_mar2019_Coelheira%203.jpg",
+      "site": "Coelheira 3",
+      "filename": "GE_mar2019_Coelheira 3.jpg",
+      "unique_id": "Coelheira 3/GE_mar2019_Coelheira 3.jpg",
+      "qc_reference": null,
+      "order": 74
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Coelheira%203/GE_mar2021_Coelheira%203.jpg",
+      "site": "Coelheira 3",
+      "filename": "GE_mar2021_Coelheira 3.jpg",
+      "unique_id": "Coelheira 3/GE_mar2021_Coelheira 3.jpg",
+      "qc_reference": null,
+      "order": 75
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Coelheira%203/GE_mar2022_Coelheira%203.jpg",
+      "site": "Coelheira 3",
+      "filename": "GE_mar2022_Coelheira 3.jpg",
+      "unique_id": "Coelheira 3/GE_mar2022_Coelheira 3.jpg",
+      "qc_reference": null,
+      "order": 76
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Coelheira%203/GE_may2019_Coelheira%203.jpg",
+      "site": "Coelheira 3",
+      "filename": "GE_may2019_Coelheira 3.jpg",
+      "unique_id": "Coelheira 3/GE_may2019_Coelheira 3.jpg",
+      "qc_reference": null,
+      "order": 77
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Coelheira%203/GE_may2020_Coelheira%203.jpg",
+      "site": "Coelheira 3",
+      "filename": "GE_may2020_Coelheira 3.jpg",
+      "unique_id": "Coelheira 3/GE_may2020_Coelheira 3.jpg",
+      "qc_reference": null,
+      "order": 78
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Coelheira%203/GE_may2022_Coelheira%203.jpg",
+      "site": "Coelheira 3",
+      "filename": "GE_may2022_Coelheira 3.jpg",
+      "unique_id": "Coelheira 3/GE_may2022_Coelheira 3.jpg",
+      "qc_reference": null,
+      "order": 79
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Coelheira%203/Wayback_mar2022_Coelheira%203.jpg",
+      "site": "Coelheira 3",
+      "filename": "Wayback_mar2022_Coelheira 3.jpg",
+      "unique_id": "Coelheira 3/Wayback_mar2022_Coelheira 3.jpg",
+      "qc_reference": null,
+      "order": 80
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Cortijo%20de%20la%20Encomienda%202/GE_aug2018_Cortijo%20de%20la%20Encomienda%202.jpg",
+      "site": "Cortijo de la Encomienda 2",
+      "filename": "GE_aug2018_Cortijo de la Encomienda 2.jpg",
+      "unique_id": "Cortijo de la Encomienda 2/GE_aug2018_Cortijo de la Encomienda 2.jpg",
+      "qc_reference": null,
+      "order": 81
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Cortijo%20de%20la%20Encomienda%202/GE_aug2018_Cortijo%20de%20la%20Encomienda%202.jpg",
+      "site": "Cortijo de la Encomienda 2",
+      "filename": "GE_aug2018_Cortijo de la Encomienda 2.jpg",
+      "unique_id": "Cortijo de la Encomienda 2/GE_aug2018_Cortijo de la Encomienda 2.jpg_qc",
+      "qc_reference": "Cortijo de la Encomienda 2/GE_aug2018_Cortijo de la Encomienda 2.jpg",
+      "order": 82
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Cortijo%20del%20Marques%20de%20la%20Encomienda%201/GE_jun2019_Cortijo%20del%20Marques%20de%20la%20Encomienda%201.jpg",
+      "site": "Cortijo del Marques de la Encomienda 1",
+      "filename": "GE_jun2019_Cortijo del Marques de la Encomienda 1.jpg",
+      "unique_id": "Cortijo del Marques de la Encomienda 1/GE_jun2019_Cortijo del Marques de la Encomienda 1.jpg",
+      "qc_reference": null,
+      "order": 83
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Cortijo%20del%20Marques%20de%20la%20Encomienda%205/GE_jul2018_Cortijo%20del%20Marques%20de%20la%20Encomienda%205.jpg",
+      "site": "Cortijo del Marques de la Encomienda 5",
+      "filename": "GE_jul2018_Cortijo del Marques de la Encomienda 5.jpg",
+      "unique_id": "Cortijo del Marques de la Encomienda 5/GE_jul2018_Cortijo del Marques de la Encomienda 5.jpg",
+      "qc_reference": null,
+      "order": 84
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Cortijo%20del%20Marques%20de%20la%20Encomienda%205/GE_jun2019_Cortijo%20del%20Marques%20de%20la%20Encomienda%205.jpg",
+      "site": "Cortijo del Marques de la Encomienda 5",
+      "filename": "GE_jun2019_Cortijo del Marques de la Encomienda 5.jpg",
+      "unique_id": "Cortijo del Marques de la Encomienda 5/GE_jun2019_Cortijo del Marques de la Encomienda 5.jpg",
+      "qc_reference": null,
+      "order": 85
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Cortijo%20del%20Marques%20de%20la%20Encomienda%206/GE_may2024_Cortijo%20del%20Marques%20de%20la%20Encomienda%206.jpg",
+      "site": "Cortijo del Marques de la Encomienda 6",
+      "filename": "GE_may2024_Cortijo del Marques de la Encomienda 6.jpg",
+      "unique_id": "Cortijo del Marques de la Encomienda 6/GE_may2024_Cortijo del Marques de la Encomienda 6.jpg",
+      "qc_reference": null,
+      "order": 86
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Cortijo%20del%20Marques%20de%20la%20Encomienda%207/GE_may2024_Cortijo%20del%20Marques%20de%20la%20Encomienda%207.jpg",
+      "site": "Cortijo del Marques de la Encomienda 7",
+      "filename": "GE_may2024_Cortijo del Marques de la Encomienda 7.jpg",
+      "unique_id": "Cortijo del Marques de la Encomienda 7/GE_may2024_Cortijo del Marques de la Encomienda 7.jpg",
+      "qc_reference": null,
+      "order": 87
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Cortijo%20del%20Marques%20de%20la%20Encomienda%207/Wayback_jun2021_Cortijo%20del%20Marques%20de%20la%20Encomienda%207.jpg",
+      "site": "Cortijo del Marques de la Encomienda 7",
+      "filename": "Wayback_jun2021_Cortijo del Marques de la Encomienda 7.jpg",
+      "unique_id": "Cortijo del Marques de la Encomienda 7/Wayback_jun2021_Cortijo del Marques de la Encomienda 7.jpg",
+      "qc_reference": null,
+      "order": 88
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Cortijo%20del%20Marques%20de%20la%20Encomienda%208/GE_feb2020_Cortijo%20del%20Marques%20de%20la%20Encomienda%208.jpg",
+      "site": "Cortijo del Marques de la Encomienda 8",
+      "filename": "GE_feb2020_Cortijo del Marques de la Encomienda 8.jpg",
+      "unique_id": "Cortijo del Marques de la Encomienda 8/GE_feb2020_Cortijo del Marques de la Encomienda 8.jpg",
+      "qc_reference": null,
+      "order": 89
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Cortijo%20del%20Marques%20de%20la%20Encomienda%208/GE_jun2020_Cortijo%20del%20Marques%20de%20la%20Encomienda%208.jpg",
+      "site": "Cortijo del Marques de la Encomienda 8",
+      "filename": "GE_jun2020_Cortijo del Marques de la Encomienda 8.jpg",
+      "unique_id": "Cortijo del Marques de la Encomienda 8/GE_jun2020_Cortijo del Marques de la Encomienda 8.jpg",
+      "qc_reference": null,
+      "order": 90
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Cortijo%20del%20Marques%20de%20la%20Encomienda%208/GE_jun2020_Cortijo%20del%20Marques%20de%20la%20Encomienda%208.jpg",
+      "site": "Cortijo del Marques de la Encomienda 8",
+      "filename": "GE_jun2020_Cortijo del Marques de la Encomienda 8.jpg",
+      "unique_id": "Cortijo del Marques de la Encomienda 8/GE_jun2020_Cortijo del Marques de la Encomienda 8.jpg_qc",
+      "qc_reference": "Cortijo del Marques de la Encomienda 8/GE_jun2020_Cortijo del Marques de la Encomienda 8.jpg",
+      "order": 91
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Dehesa%20de%20Abajo/GE_feb2020_Dehesa%20de%20Abajo.jpg",
+      "site": "Dehesa de Abajo",
+      "filename": "GE_feb2020_Dehesa de Abajo.jpg",
+      "unique_id": "Dehesa de Abajo/GE_feb2020_Dehesa de Abajo.jpg",
+      "qc_reference": null,
+      "order": 92
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Dehesa%20de%20Abajo/GE_jul2020_Dehesa%20de%20Abajo.jpg",
+      "site": "Dehesa de Abajo",
+      "filename": "GE_jul2020_Dehesa de Abajo.jpg",
+      "unique_id": "Dehesa de Abajo/GE_jul2020_Dehesa de Abajo.jpg",
+      "qc_reference": null,
+      "order": 93
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Dehesa%20de%20Abajo/GE_jul2020_Dehesa%20de%20Abajo.jpg",
+      "site": "Dehesa de Abajo",
+      "filename": "GE_jul2020_Dehesa de Abajo.jpg",
+      "unique_id": "Dehesa de Abajo/GE_jul2020_Dehesa de Abajo.jpg_qc",
+      "qc_reference": "Dehesa de Abajo/GE_jul2020_Dehesa de Abajo.jpg",
+      "order": 94
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Dehesa%20de%20Abajo/GE_jun2020_Dehesa%20de%20Abajo.jpg",
+      "site": "Dehesa de Abajo",
+      "filename": "GE_jun2020_Dehesa de Abajo.jpg",
+      "unique_id": "Dehesa de Abajo/GE_jun2020_Dehesa de Abajo.jpg",
+      "qc_reference": null,
+      "order": 95
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Dehesa%20de%20Abajo/Wayback_jun2021_Dehesa%20de%20Abajo.jpg",
+      "site": "Dehesa de Abajo",
+      "filename": "Wayback_jun2021_Dehesa de Abajo.jpg",
+      "unique_id": "Dehesa de Abajo/Wayback_jun2021_Dehesa de Abajo.jpg",
+      "qc_reference": null,
+      "order": 96
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Dehesa%20de%20Las%20Laderas/GE_feb2020_Dehesa%20de%20Las%20Laderas.jpg",
+      "site": "Dehesa de Las Laderas",
+      "filename": "GE_feb2020_Dehesa de Las Laderas.jpg",
+      "unique_id": "Dehesa de Las Laderas/GE_feb2020_Dehesa de Las Laderas.jpg",
+      "qc_reference": null,
+      "order": 97
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Dehesa%20de%20Las%20Laderas/GE_jun2020_Dehesa%20de%20Las%20Laderas.jpg",
+      "site": "Dehesa de Las Laderas",
+      "filename": "GE_jun2020_Dehesa de Las Laderas.jpg",
+      "unique_id": "Dehesa de Las Laderas/GE_jun2020_Dehesa de Las Laderas.jpg",
+      "qc_reference": null,
+      "order": 98
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Dehesa%20de%20Las%20Laderas/GE_may2024_Dehesa%20de%20Las%20Laderas.jpg",
+      "site": "Dehesa de Las Laderas",
+      "filename": "GE_may2024_Dehesa de Las Laderas.jpg",
+      "unique_id": "Dehesa de Las Laderas/GE_may2024_Dehesa de Las Laderas.jpg",
+      "qc_reference": null,
+      "order": 99
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Fareleira3/GE_jul2018_Fareleira3.jpg",
+      "site": "Fareleira3",
+      "filename": "GE_jul2018_Fareleira3.jpg",
+      "unique_id": "Fareleira3/GE_jul2018_Fareleira3.jpg",
+      "qc_reference": null,
+      "order": 100
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Fareleira3/GE_jul2019_Fareleira3.jpg",
+      "site": "Fareleira3",
+      "filename": "GE_jul2019_Fareleira3.jpg",
+      "unique_id": "Fareleira3/GE_jul2019_Fareleira3.jpg",
+      "qc_reference": null,
+      "order": 101
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Fareleira3/GE_jun2020_Fareleira3.jpg",
+      "site": "Fareleira3",
+      "filename": "GE_jun2020_Fareleira3.jpg",
+      "unique_id": "Fareleira3/GE_jun2020_Fareleira3.jpg",
+      "qc_reference": null,
+      "order": 102
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Fareleira3/GE_mar2021_Fareleira3.jpg",
+      "site": "Fareleira3",
+      "filename": "GE_mar2021_Fareleira3.jpg",
+      "unique_id": "Fareleira3/GE_mar2021_Fareleira3.jpg",
+      "qc_reference": null,
+      "order": 103
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Fareleira3/GE_may2019_Fareleira3.jpg",
+      "site": "Fareleira3",
+      "filename": "GE_may2019_Fareleira3.jpg",
+      "unique_id": "Fareleira3/GE_may2019_Fareleira3.jpg",
+      "qc_reference": null,
+      "order": 104
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Fareleira3/Wayback_jun2020_Fareleira3.jpg",
+      "site": "Fareleira3",
+      "filename": "Wayback_jun2020_Fareleira3.jpg",
+      "unique_id": "Fareleira3/Wayback_jun2020_Fareleira3.jpg",
+      "qc_reference": null,
+      "order": 105
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/DGT_set2018_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "DGT_set2018_Figueira.jpg",
+      "unique_id": "Figueira/DGT_set2018_Figueira.jpg",
+      "qc_reference": null,
+      "order": 106
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/GE_apr2018_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "GE_apr2018_Figueira.jpg",
+      "unique_id": "Figueira/GE_apr2018_Figueira.jpg",
+      "qc_reference": null,
+      "order": 107
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/GE_aug2018_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "GE_aug2018_Figueira.jpg",
+      "unique_id": "Figueira/GE_aug2018_Figueira.jpg",
+      "qc_reference": null,
+      "order": 108
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/GE_aug2019_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "GE_aug2019_Figueira.jpg",
+      "unique_id": "Figueira/GE_aug2019_Figueira.jpg",
+      "qc_reference": null,
+      "order": 109
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/GE_aug2020_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "GE_aug2020_Figueira.jpg",
+      "unique_id": "Figueira/GE_aug2020_Figueira.jpg",
+      "qc_reference": null,
+      "order": 110
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/GE_aug2022_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "GE_aug2022_Figueira.jpg",
+      "unique_id": "Figueira/GE_aug2022_Figueira.jpg",
+      "qc_reference": null,
+      "order": 111
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/GE_feb2018_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "GE_feb2018_Figueira.jpg",
+      "unique_id": "Figueira/GE_feb2018_Figueira.jpg",
+      "qc_reference": null,
+      "order": 112
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/GE_feb2020_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "GE_feb2020_Figueira.jpg",
+      "unique_id": "Figueira/GE_feb2020_Figueira.jpg",
+      "qc_reference": null,
+      "order": 113
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/GE_jul2020_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "GE_jul2020_Figueira.jpg",
+      "unique_id": "Figueira/GE_jul2020_Figueira.jpg",
+      "qc_reference": null,
+      "order": 114
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/GE_jul2020_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "GE_jul2020_Figueira.jpg",
+      "unique_id": "Figueira/GE_jul2020_Figueira.jpg_qc",
+      "qc_reference": "Figueira/GE_jul2020_Figueira.jpg",
+      "order": 115
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/GE_jun2019_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "GE_jun2019_Figueira.jpg",
+      "unique_id": "Figueira/GE_jun2019_Figueira.jpg",
+      "qc_reference": null,
+      "order": 116
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/GE_jun2020_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "GE_jun2020_Figueira.jpg",
+      "unique_id": "Figueira/GE_jun2020_Figueira.jpg",
+      "qc_reference": null,
+      "order": 117
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/GE_sep2019_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "GE_sep2019_Figueira.jpg",
+      "unique_id": "Figueira/GE_sep2019_Figueira.jpg",
+      "qc_reference": null,
+      "order": 118
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/Wayback_aug2021_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "Wayback_aug2021_Figueira.jpg",
+      "unique_id": "Figueira/Wayback_aug2021_Figueira.jpg",
+      "qc_reference": null,
+      "order": 119
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Figueira/Wayback_jul2024_Figueira.jpg",
+      "site": "Figueira",
+      "filename": "Wayback_jul2024_Figueira.jpg",
+      "unique_id": "Figueira/Wayback_jul2024_Figueira.jpg",
+      "qc_reference": null,
+      "order": 120
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Folha%20de%20Ouro/GE_jun2020_Folha%20de%20Ouro.jpg",
+      "site": "Folha de Ouro",
+      "filename": "GE_jun2020_Folha de Ouro.jpg",
+      "unique_id": "Folha de Ouro/GE_jun2020_Folha de Ouro.jpg",
+      "qc_reference": null,
+      "order": 121
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Folha%20de%20Ouro/GE_mar2021_Folha%20de%20Ouro.jpg",
+      "site": "Folha de Ouro",
+      "filename": "GE_mar2021_Folha de Ouro.jpg",
+      "unique_id": "Folha de Ouro/GE_mar2021_Folha de Ouro.jpg",
+      "qc_reference": null,
+      "order": 122
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Folha%20de%20Ouro/GE_may2019_Folha%20de%20Ouro.jpg",
+      "site": "Folha de Ouro",
+      "filename": "GE_may2019_Folha de Ouro.jpg",
+      "unique_id": "Folha de Ouro/GE_may2019_Folha de Ouro.jpg",
+      "qc_reference": null,
+      "order": 123
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Folha%20de%20Ouro/GE_may2022_Folha%20de%20Ouro.jpg",
+      "site": "Folha de Ouro",
+      "filename": "GE_may2022_Folha de Ouro.jpg",
+      "unique_id": "Folha de Ouro/GE_may2022_Folha de Ouro.jpg",
+      "qc_reference": null,
+      "order": 124
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Folha%20de%20Ouro/GE_may2022_Folha%20de%20Ouro.jpg",
+      "site": "Folha de Ouro",
+      "filename": "GE_may2022_Folha de Ouro.jpg",
+      "unique_id": "Folha de Ouro/GE_may2022_Folha de Ouro.jpg_qc",
+      "qc_reference": "Folha de Ouro/GE_may2022_Folha de Ouro.jpg",
+      "order": 125
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Folha%20de%20Ouro/Wayback_apr2022_Folha%20de%20Ouro.jpg",
+      "site": "Folha de Ouro",
+      "filename": "Wayback_apr2022_Folha de Ouro.jpg",
+      "unique_id": "Folha de Ouro/Wayback_apr2022_Folha de Ouro.jpg",
+      "qc_reference": null,
+      "order": 126
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Folha%20de%20Ouro/Wayback_apr2022_Folha%20de%20Ouro.jpg",
+      "site": "Folha de Ouro",
+      "filename": "Wayback_apr2022_Folha de Ouro.jpg",
+      "unique_id": "Folha de Ouro/Wayback_apr2022_Folha de Ouro.jpg_qc",
+      "qc_reference": "Folha de Ouro/Wayback_apr2022_Folha de Ouro.jpg",
+      "order": 127
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Folha%20de%20Ouro/Wayback_apr2024_Folha%20de%20Ouro.jpg",
+      "site": "Folha de Ouro",
+      "filename": "Wayback_apr2024_Folha de Ouro.jpg",
+      "unique_id": "Folha de Ouro/Wayback_apr2024_Folha de Ouro.jpg",
+      "qc_reference": null,
+      "order": 128
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Folha%20de%20Ouro/Wayback_apr2024_Folha%20de%20Ouro.jpg",
+      "site": "Folha de Ouro",
+      "filename": "Wayback_apr2024_Folha de Ouro.jpg",
+      "unique_id": "Folha de Ouro/Wayback_apr2024_Folha de Ouro.jpg_qc",
+      "qc_reference": "Folha de Ouro/Wayback_apr2024_Folha de Ouro.jpg",
+      "order": 129
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Folha%20de%20Ouro/Wayback_jul2020_Folha%20de%20Ouro.jpg",
+      "site": "Folha de Ouro",
+      "filename": "Wayback_jul2020_Folha de Ouro.jpg",
+      "unique_id": "Folha de Ouro/Wayback_jul2020_Folha de Ouro.jpg",
+      "qc_reference": null,
+      "order": 130
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Herdade%20da%20Corte/GE_jul2019_Herdade%20da%20Corte.jpg",
+      "site": "Herdade da Corte",
+      "filename": "GE_jul2019_Herdade da Corte.jpg",
+      "unique_id": "Herdade da Corte/GE_jul2019_Herdade da Corte.jpg",
+      "qc_reference": null,
+      "order": 131
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Herdade%20da%20Corte/GE_jul2019_Herdade%20da%20Corte.jpg",
+      "site": "Herdade da Corte",
+      "filename": "GE_jul2019_Herdade da Corte.jpg",
+      "unique_id": "Herdade da Corte/GE_jul2019_Herdade da Corte.jpg_qc",
+      "qc_reference": "Herdade da Corte/GE_jul2019_Herdade da Corte.jpg",
+      "order": 132
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Herdade%20da%20Corte/GE_jul2023_Herdade%20da%20Corte.jpg",
+      "site": "Herdade da Corte",
+      "filename": "GE_jul2023_Herdade da Corte.jpg",
+      "unique_id": "Herdade da Corte/GE_jul2023_Herdade da Corte.jpg",
+      "qc_reference": null,
+      "order": 133
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Herdade%20da%20Corte/GE_may2019_Herdade%20da%20Corte.jpg",
+      "site": "Herdade da Corte",
+      "filename": "GE_may2019_Herdade da Corte.jpg",
+      "unique_id": "Herdade da Corte/GE_may2019_Herdade da Corte.jpg",
+      "qc_reference": null,
+      "order": 134
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Herdade%20da%20Corte/GE_may2022_Herdade%20da%20Corte.jpg",
+      "site": "Herdade da Corte",
+      "filename": "GE_may2022_Herdade da Corte.jpg",
+      "unique_id": "Herdade da Corte/GE_may2022_Herdade da Corte.jpg",
+      "qc_reference": null,
+      "order": 135
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Herdade%20da%20Corte/Wayback_jun2022_Herdade%20da%20Corte.jpg",
+      "site": "Herdade da Corte",
+      "filename": "Wayback_jun2022_Herdade da Corte.jpg",
+      "unique_id": "Herdade da Corte/Wayback_jun2022_Herdade da Corte.jpg",
+      "qc_reference": null,
+      "order": 136
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Herdade%20da%20Laje/GE_jun2020_Herdade%20da%20Laje.jpg",
+      "site": "Herdade da Laje",
+      "filename": "GE_jun2020_Herdade da Laje.jpg",
+      "unique_id": "Herdade da Laje/GE_jun2020_Herdade da Laje.jpg",
+      "qc_reference": null,
+      "order": 137
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Herdade%20da%20Laje/GE_jun2020_Herdade%20da%20Laje.jpg",
+      "site": "Herdade da Laje",
+      "filename": "GE_jun2020_Herdade da Laje.jpg",
+      "unique_id": "Herdade da Laje/GE_jun2020_Herdade da Laje.jpg_qc",
+      "qc_reference": "Herdade da Laje/GE_jun2020_Herdade da Laje.jpg",
+      "order": 138
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Herdade%20da%20Laje/GE_mar2021_Herdade%20da%20Laje.jpg",
+      "site": "Herdade da Laje",
+      "filename": "GE_mar2021_Herdade da Laje.jpg",
+      "unique_id": "Herdade da Laje/GE_mar2021_Herdade da Laje.jpg",
+      "qc_reference": null,
+      "order": 139
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Herdade%20da%20Laje/GE_may2019_Herdade%20da%20Laje.jpg",
+      "site": "Herdade da Laje",
+      "filename": "GE_may2019_Herdade da Laje.jpg",
+      "unique_id": "Herdade da Laje/GE_may2019_Herdade da Laje.jpg",
+      "qc_reference": null,
+      "order": 140
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Herdade%20da%20Laje/Wayback_jul2020_Herdade%20da%20Laje.jpg",
+      "site": "Herdade da Laje",
+      "filename": "Wayback_jul2020_Herdade da Laje.jpg",
+      "unique_id": "Herdade da Laje/Wayback_jul2020_Herdade da Laje.jpg",
+      "qc_reference": null,
+      "order": 141
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Herdade%20da%20Laje/Wayback_jun2022_Herdade%20da%20Laje.jpg",
+      "site": "Herdade da Laje",
+      "filename": "Wayback_jun2022_Herdade da Laje.jpg",
+      "unique_id": "Herdade da Laje/Wayback_jun2022_Herdade da Laje.jpg",
+      "qc_reference": null,
+      "order": 142
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Albardao%203/DGT2018_set2018_Horta%20do%20Albardao%203.jpg",
+      "site": "Horta do Albardao 3",
+      "filename": "DGT2018_set2018_Horta do Albardao 3.jpg",
+      "unique_id": "Horta do Albardao 3/DGT2018_set2018_Horta do Albardao 3.jpg",
+      "qc_reference": null,
+      "order": 143
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Albardao%203/GE_jul2018_Horta%20do%20Albardao%203.jpg",
+      "site": "Horta do Albardao 3",
+      "filename": "GE_jul2018_Horta do Albardao 3.jpg",
+      "unique_id": "Horta do Albardao 3/GE_jul2018_Horta do Albardao 3.jpg",
+      "qc_reference": null,
+      "order": 144
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Albardao%203/GE_jul2018_Horta%20do%20Albardao%203.jpg",
+      "site": "Horta do Albardao 3",
+      "filename": "GE_jul2018_Horta do Albardao 3.jpg",
+      "unique_id": "Horta do Albardao 3/GE_jul2018_Horta do Albardao 3.jpg_qc",
+      "qc_reference": "Horta do Albardao 3/GE_jul2018_Horta do Albardao 3.jpg",
+      "order": 145
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Albardao%203/GE_oct2021_Horta%20do%20Albardao%203.jpg",
+      "site": "Horta do Albardao 3",
+      "filename": "GE_oct2021_Horta do Albardao 3.jpg",
+      "unique_id": "Horta do Albardao 3/GE_oct2021_Horta do Albardao 3.jpg",
+      "qc_reference": null,
+      "order": 146
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Albardao%203/GE_sep2018_Horta%20do%20Albardao%203.jpg",
+      "site": "Horta do Albardao 3",
+      "filename": "GE_sep2018_Horta do Albardao 3.jpg",
+      "unique_id": "Horta do Albardao 3/GE_sep2018_Horta do Albardao 3.jpg",
+      "qc_reference": null,
+      "order": 147
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Albardao%203/Wayback_nov2023_Horta%20do%20Albardao%203.jpg",
+      "site": "Horta do Albardao 3",
+      "filename": "Wayback_nov2023_Horta do Albardao 3.jpg",
+      "unique_id": "Horta do Albardao 3/Wayback_nov2023_Horta do Albardao 3.jpg",
+      "qc_reference": null,
+      "order": 148
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Pinheiro%205e6/GE_aug2021_Horta%20do%20Pinheiro%205e6.jpg",
+      "site": "Horta do Pinheiro 5e6",
+      "filename": "GE_aug2021_Horta do Pinheiro 5e6.jpg",
+      "unique_id": "Horta do Pinheiro 5e6/GE_aug2021_Horta do Pinheiro 5e6.jpg",
+      "qc_reference": null,
+      "order": 149
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Pinheiro%205e6/GE_feb2020_Horta%20do%20Pinheiro%205e6.jpg",
+      "site": "Horta do Pinheiro 5e6",
+      "filename": "GE_feb2020_Horta do Pinheiro 5e6.jpg",
+      "unique_id": "Horta do Pinheiro 5e6/GE_feb2020_Horta do Pinheiro 5e6.jpg",
+      "qc_reference": null,
+      "order": 150
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Pinheiro%205e6/GE_jul2018_Horta%20do%20Pinheiro%205e6.jpg",
+      "site": "Horta do Pinheiro 5e6",
+      "filename": "GE_jul2018_Horta do Pinheiro 5e6.jpg",
+      "unique_id": "Horta do Pinheiro 5e6/GE_jul2018_Horta do Pinheiro 5e6.jpg",
+      "qc_reference": null,
+      "order": 151
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Pinheiro%205e6/GE_jun2020_Horta%20do%20Pinheiro%205e6.jpg",
+      "site": "Horta do Pinheiro 5e6",
+      "filename": "GE_jun2020_Horta do Pinheiro 5e6.jpg",
+      "unique_id": "Horta do Pinheiro 5e6/GE_jun2020_Horta do Pinheiro 5e6.jpg",
+      "qc_reference": null,
+      "order": 152
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Pinheiro%205e6/GE_may2019_Horta%20do%20Pinheiro%205e6.jpg",
+      "site": "Horta do Pinheiro 5e6",
+      "filename": "GE_may2019_Horta do Pinheiro 5e6.jpg",
+      "unique_id": "Horta do Pinheiro 5e6/GE_may2019_Horta do Pinheiro 5e6.jpg",
+      "qc_reference": null,
+      "order": 153
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Pinheiro%205e6/GE_may2022_Horta%20do%20Pinheiro%205e6.jpg",
+      "site": "Horta do Pinheiro 5e6",
+      "filename": "GE_may2022_Horta do Pinheiro 5e6.jpg",
+      "unique_id": "Horta do Pinheiro 5e6/GE_may2022_Horta do Pinheiro 5e6.jpg",
+      "qc_reference": null,
+      "order": 154
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Pinheiro%205e6/Wayback_aug2020_Horta%20do%20Pinheiro%205e6.jpg",
+      "site": "Horta do Pinheiro 5e6",
+      "filename": "Wayback_aug2020_Horta do Pinheiro 5e6.jpg",
+      "unique_id": "Horta do Pinheiro 5e6/Wayback_aug2020_Horta do Pinheiro 5e6.jpg",
+      "qc_reference": null,
+      "order": 155
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20do%20Pinheiro%205e6/Wayback_mar2022_Horta%20do%20Pinheiro%205e6.jpg",
+      "site": "Horta do Pinheiro 5e6",
+      "filename": "Wayback_mar2022_Horta do Pinheiro 5e6.jpg",
+      "unique_id": "Horta do Pinheiro 5e6/Wayback_mar2022_Horta do Pinheiro 5e6.jpg",
+      "qc_reference": null,
+      "order": 156
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20Nova%204/GE_feb2020_Horta%20Nova%204.jpg",
+      "site": "Horta Nova 4",
+      "filename": "GE_feb2020_Horta Nova 4.jpg",
+      "unique_id": "Horta Nova 4/GE_feb2020_Horta Nova 4.jpg",
+      "qc_reference": null,
+      "order": 157
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20Nova%204/GE_feb2022_Horta%20Nova%204.jpg",
+      "site": "Horta Nova 4",
+      "filename": "GE_feb2022_Horta Nova 4.jpg",
+      "unique_id": "Horta Nova 4/GE_feb2022_Horta Nova 4.jpg",
+      "qc_reference": null,
+      "order": 158
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20Nova%204/GE_jul2018_Horta%20Nova%204.jpg",
+      "site": "Horta Nova 4",
+      "filename": "GE_jul2018_Horta Nova 4.jpg",
+      "unique_id": "Horta Nova 4/GE_jul2018_Horta Nova 4.jpg",
+      "qc_reference": null,
+      "order": 159
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20Nova%204/GE_mar2022_Horta%20Nova%204.jpg",
+      "site": "Horta Nova 4",
+      "filename": "GE_mar2022_Horta Nova 4.jpg",
+      "unique_id": "Horta Nova 4/GE_mar2022_Horta Nova 4.jpg",
+      "qc_reference": null,
+      "order": 160
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20Nova%204/GE_mar2022_Horta%20Nova%204.jpg",
+      "site": "Horta Nova 4",
+      "filename": "GE_mar2022_Horta Nova 4.jpg",
+      "unique_id": "Horta Nova 4/GE_mar2022_Horta Nova 4.jpg_qc",
+      "qc_reference": "Horta Nova 4/GE_mar2022_Horta Nova 4.jpg",
+      "order": 161
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20Nova%204/GE_may2020_Horta%20Nova%204.jpg",
+      "site": "Horta Nova 4",
+      "filename": "GE_may2020_Horta Nova 4.jpg",
+      "unique_id": "Horta Nova 4/GE_may2020_Horta Nova 4.jpg",
+      "qc_reference": null,
+      "order": 162
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20Nova%204/GE_may2022_Horta%20Nova%204.jpg",
+      "site": "Horta Nova 4",
+      "filename": "GE_may2022_Horta Nova 4.jpg",
+      "unique_id": "Horta Nova 4/GE_may2022_Horta Nova 4.jpg",
+      "qc_reference": null,
+      "order": 163
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20Nova%204/GE_may2022_Horta%20Nova%204.jpg",
+      "site": "Horta Nova 4",
+      "filename": "GE_may2022_Horta Nova 4.jpg",
+      "unique_id": "Horta Nova 4/GE_may2022_Horta Nova 4.jpg_qc",
+      "qc_reference": "Horta Nova 4/GE_may2022_Horta Nova 4.jpg",
+      "order": 164
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20Nova%204/Wayback_jul2023_Horta%20Nova%204.jpg",
+      "site": "Horta Nova 4",
+      "filename": "Wayback_jul2023_Horta Nova 4.jpg",
+      "unique_id": "Horta Nova 4/Wayback_jul2023_Horta Nova 4.jpg",
+      "qc_reference": null,
+      "order": 165
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Horta%20Nova%204/Wayback_mar2022_Horta%20Nova%204.jpg",
+      "site": "Horta Nova 4",
+      "filename": "Wayback_mar2022_Horta Nova 4.jpg",
+      "unique_id": "Horta Nova 4/Wayback_mar2022_Horta Nova 4.jpg",
+      "qc_reference": null,
+      "order": 166
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/La%20Barraquera/GE_mar2020_La%20Barraquera.jpg",
+      "site": "La Barraquera",
+      "filename": "GE_mar2020_La Barraquera.jpg",
+      "unique_id": "La Barraquera/GE_mar2020_La Barraquera.jpg",
+      "qc_reference": null,
+      "order": 167
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/La%20Barraquera/GE_oct2021_La%20Barraquera.jpg",
+      "site": "La Barraquera",
+      "filename": "GE_oct2021_La Barraquera.jpg",
+      "unique_id": "La Barraquera/GE_oct2021_La Barraquera.jpg",
+      "qc_reference": null,
+      "order": 168
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/La%20Cocosa%202/GE_feb2022_La%20Cocosa%202.jpg",
+      "site": "La Cocosa 2",
+      "filename": "GE_feb2022_La Cocosa 2.jpg",
+      "unique_id": "La Cocosa 2/GE_feb2022_La Cocosa 2.jpg",
+      "qc_reference": null,
+      "order": 169
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/La%20Cocosa%202/GE_jan2023_La%20Cocosa%202.jpg",
+      "site": "La Cocosa 2",
+      "filename": "GE_jan2023_La Cocosa 2.jpg",
+      "unique_id": "La Cocosa 2/GE_jan2023_La Cocosa 2.jpg",
+      "qc_reference": null,
+      "order": 170
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/La%20Cocosa%202/GE_mar2021_La%20Cocosa%202.jpg",
+      "site": "La Cocosa 2",
+      "filename": "GE_mar2021_La Cocosa 2.jpg",
+      "unique_id": "La Cocosa 2/GE_mar2021_La Cocosa 2.jpg",
+      "qc_reference": null,
+      "order": 171
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/La%20Cocosa%203/GE_feb2022_La%20Cocosa%203.jpg",
+      "site": "La Cocosa 3",
+      "filename": "GE_feb2022_La Cocosa 3.jpg",
+      "unique_id": "La Cocosa 3/GE_feb2022_La Cocosa 3.jpg",
+      "qc_reference": null,
+      "order": 172
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/La%20Cocosa%203/GE_jan2023_La%20Cocosa%203.jpg",
+      "site": "La Cocosa 3",
+      "filename": "GE_jan2023_La Cocosa 3.jpg",
+      "unique_id": "La Cocosa 3/GE_jan2023_La Cocosa 3.jpg",
+      "qc_reference": null,
+      "order": 173
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/La%20Cocosa%203/GE_mar2021_La%20Cocosa%203.jpg",
+      "site": "La Cocosa 3",
+      "filename": "GE_mar2021_La Cocosa 3.jpg",
+      "unique_id": "La Cocosa 3/GE_mar2021_La Cocosa 3.jpg",
+      "qc_reference": null,
+      "order": 174
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/La%20Cocosa%203/PNOA_jun2022_La%20Cocosa%203.jpg",
+      "site": "La Cocosa 3",
+      "filename": "PNOA_jun2022_La Cocosa 3.jpg",
+      "unique_id": "La Cocosa 3/PNOA_jun2022_La Cocosa 3.jpg",
+      "qc_reference": null,
+      "order": 175
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Lagar%20Velho%20Estacao%20de%20Brinches/DGT_set2018_Lagar%20Velho%20Estacao%20de%20Brinches.jpg",
+      "site": "Lagar Velho Estacao de Brinches",
+      "filename": "DGT_set2018_Lagar Velho Estacao de Brinches.jpg",
+      "unique_id": "Lagar Velho Estacao de Brinches/DGT_set2018_Lagar Velho Estacao de Brinches.jpg",
+      "qc_reference": null,
+      "order": 176
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Lagar%20Velho%20Estacao%20de%20Brinches/GE_aug2019_Lagar%20Velho%20Estacao%20de%20Brinches.jpg",
+      "site": "Lagar Velho Estacao de Brinches",
+      "filename": "GE_aug2019_Lagar Velho Estacao de Brinches.jpg",
+      "unique_id": "Lagar Velho Estacao de Brinches/GE_aug2019_Lagar Velho Estacao de Brinches.jpg",
+      "qc_reference": null,
+      "order": 177
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Lagar%20Velho%20Estacao%20de%20Brinches/GE_aug2023_Lagar%20Velho%20Estacao%20de%20Brinches.jpg",
+      "site": "Lagar Velho Estacao de Brinches",
+      "filename": "GE_aug2023_Lagar Velho Estacao de Brinches.jpg",
+      "unique_id": "Lagar Velho Estacao de Brinches/GE_aug2023_Lagar Velho Estacao de Brinches.jpg",
+      "qc_reference": null,
+      "order": 178
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Lagar%20Velho%20Estacao%20de%20Brinches/GE_jun2020_Lagar%20Velho%20Estacao%20de%20Brinches.jpg",
+      "site": "Lagar Velho Estacao de Brinches",
+      "filename": "GE_jun2020_Lagar Velho Estacao de Brinches.jpg",
+      "unique_id": "Lagar Velho Estacao de Brinches/GE_jun2020_Lagar Velho Estacao de Brinches.jpg",
+      "qc_reference": null,
+      "order": 179
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Lagar%20Velho%20Estacao%20de%20Brinches/GE_may2019_Lagar%20Velho%20Estacao%20de%20Brinches.jpg",
+      "site": "Lagar Velho Estacao de Brinches",
+      "filename": "GE_may2019_Lagar Velho Estacao de Brinches.jpg",
+      "unique_id": "Lagar Velho Estacao de Brinches/GE_may2019_Lagar Velho Estacao de Brinches.jpg",
+      "qc_reference": null,
+      "order": 180
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Lagar%20Velho%20Estacao%20de%20Brinches/Wayback_aug2021_Lagar%20Velho%20Estacao%20de%20Brinches.jpg",
+      "site": "Lagar Velho Estacao de Brinches",
+      "filename": "Wayback_aug2021_Lagar Velho Estacao de Brinches.jpg",
+      "unique_id": "Lagar Velho Estacao de Brinches/Wayback_aug2021_Lagar Velho Estacao de Brinches.jpg",
+      "qc_reference": null,
+      "order": 181
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Lagar%20Velho%20Estacao%20de%20Brinches/Wayback_jun2020_Lagar%20Velho%20Estacao%20de%20Brinches.jpg",
+      "site": "Lagar Velho Estacao de Brinches",
+      "filename": "Wayback_jun2020_Lagar Velho Estacao de Brinches.jpg",
+      "unique_id": "Lagar Velho Estacao de Brinches/Wayback_jun2020_Lagar Velho Estacao de Brinches.jpg",
+      "qc_reference": null,
+      "order": 182
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Lagar%20Velho%20Estacao%20de%20Brinches/Wayback_nov2023_Lagar%20Velho%20Estacao%20de%20Brinches.jpg",
+      "site": "Lagar Velho Estacao de Brinches",
+      "filename": "Wayback_nov2023_Lagar Velho Estacao de Brinches.jpg",
+      "unique_id": "Lagar Velho Estacao de Brinches/Wayback_nov2023_Lagar Velho Estacao de Brinches.jpg",
+      "qc_reference": null,
+      "order": 183
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Lavajos/DGT_jun2018_Lavajos.jpg",
+      "site": "Lavajos",
+      "filename": "DGT_jun2018_Lavajos.jpg",
+      "unique_id": "Lavajos/DGT_jun2018_Lavajos.jpg",
+      "qc_reference": null,
+      "order": 184
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Lavajos/GE_jul2023_Lavajos.jpg",
+      "site": "Lavajos",
+      "filename": "GE_jul2023_Lavajos.jpg",
+      "unique_id": "Lavajos/GE_jul2023_Lavajos.jpg",
+      "qc_reference": null,
+      "order": 185
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Lavajos/GE_mar2021_Lavajos.jpg",
+      "site": "Lavajos",
+      "filename": "GE_mar2021_Lavajos.jpg",
+      "unique_id": "Lavajos/GE_mar2021_Lavajos.jpg",
+      "qc_reference": null,
+      "order": 186
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Lavajos/Wayback_may2024_Lavajos.jpg",
+      "site": "Lavajos",
+      "filename": "Wayback_may2024_Lavajos.jpg",
+      "unique_id": "Lavajos/Wayback_may2024_Lavajos.jpg",
+      "qc_reference": null,
+      "order": 187
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Almerines/GE_jan2023_Los%20Almerines.jpg",
+      "site": "Los Almerines",
+      "filename": "GE_jan2023_Los Almerines.jpg",
+      "unique_id": "Los Almerines/GE_jan2023_Los Almerines.jpg",
+      "qc_reference": null,
+      "order": 188
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Almerines/GE_jun2020_Los%20Almerines.jpg",
+      "site": "Los Almerines",
+      "filename": "GE_jun2020_Los Almerines.jpg",
+      "unique_id": "Los Almerines/GE_jun2020_Los Almerines.jpg",
+      "qc_reference": null,
+      "order": 189
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Almerines/GE_mar2021_Los%20Almerines.jpg",
+      "site": "Los Almerines",
+      "filename": "GE_mar2021_Los Almerines.jpg",
+      "unique_id": "Los Almerines/GE_mar2021_Los Almerines.jpg",
+      "qc_reference": null,
+      "order": 190
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Almerines/PNOA_jun2022_Los%20Almerines.jpg",
+      "site": "Los Almerines",
+      "filename": "PNOA_jun2022_Los Almerines.jpg",
+      "unique_id": "Los Almerines/PNOA_jun2022_Los Almerines.jpg",
+      "qc_reference": null,
+      "order": 191
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Concejos/GE_feb2021_Los%20Concejos.jpg",
+      "site": "Los Concejos",
+      "filename": "GE_feb2021_Los Concejos.jpg",
+      "unique_id": "Los Concejos/GE_feb2021_Los Concejos.jpg",
+      "qc_reference": null,
+      "order": 192
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Concejos/GE_jan2023_Los%20Concejos.jpg",
+      "site": "Los Concejos",
+      "filename": "GE_jan2023_Los Concejos.jpg",
+      "unique_id": "Los Concejos/GE_jan2023_Los Concejos.jpg",
+      "qc_reference": null,
+      "order": 193
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Concejos/GE_may2024_Los%20Concejos.jpg",
+      "site": "Los Concejos",
+      "filename": "GE_may2024_Los Concejos.jpg",
+      "unique_id": "Los Concejos/GE_may2024_Los Concejos.jpg",
+      "qc_reference": null,
+      "order": 194
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Concejos/Wayback_apr2022_Los%20Concejos.jpg",
+      "site": "Los Concejos",
+      "filename": "Wayback_apr2022_Los Concejos.jpg",
+      "unique_id": "Los Concejos/Wayback_apr2022_Los Concejos.jpg",
+      "qc_reference": null,
+      "order": 195
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Frailes/GE_jan2023_Los%20Frailes.jpg",
+      "site": "Los Frailes",
+      "filename": "GE_jan2023_Los Frailes.jpg",
+      "unique_id": "Los Frailes/GE_jan2023_Los Frailes.jpg",
+      "qc_reference": null,
+      "order": 196
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Frailes/GE_jan2023_Los%20Frailes.jpg",
+      "site": "Los Frailes",
+      "filename": "GE_jan2023_Los Frailes.jpg",
+      "unique_id": "Los Frailes/GE_jan2023_Los Frailes.jpg_qc",
+      "qc_reference": "Los Frailes/GE_jan2023_Los Frailes.jpg",
+      "order": 197
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Frailes/GE_jun2019_Los%20Frailes.jpg",
+      "site": "Los Frailes",
+      "filename": "GE_jun2019_Los Frailes.jpg",
+      "unique_id": "Los Frailes/GE_jun2019_Los Frailes.jpg",
+      "qc_reference": null,
+      "order": 198
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Frailes/GE_mar2020_Los%20Frailes.jpg",
+      "site": "Los Frailes",
+      "filename": "GE_mar2020_Los Frailes.jpg",
+      "unique_id": "Los Frailes/GE_mar2020_Los Frailes.jpg",
+      "qc_reference": null,
+      "order": 199
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Los%20Frailes/GE_mar2021_Los%20Frailes.jpg",
+      "site": "Los Frailes",
+      "filename": "GE_mar2021_Los Frailes.jpg",
+      "unique_id": "Los Frailes/GE_mar2021_Los Frailes.jpg",
+      "qc_reference": null,
+      "order": 200
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Luz%2020/DGT_set2018_Luz%2020.jpg",
+      "site": "Luz 20",
+      "filename": "DGT_set2018_Luz 20.jpg",
+      "unique_id": "Luz 20/DGT_set2018_Luz 20.jpg",
+      "qc_reference": null,
+      "order": 201
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Luz%2020/GE_apr2023_Luz%2020.jpg",
+      "site": "Luz 20",
+      "filename": "GE_apr2023_Luz 20.jpg",
+      "unique_id": "Luz 20/GE_apr2023_Luz 20.jpg",
+      "qc_reference": null,
+      "order": 202
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Luz%2020/GE_aug2019_Luz%2020.jpg",
+      "site": "Luz 20",
+      "filename": "GE_aug2019_Luz 20.jpg",
+      "unique_id": "Luz 20/GE_aug2019_Luz 20.jpg",
+      "qc_reference": null,
+      "order": 203
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Luz%2020/GE_jul2019_Luz%2020.jpg",
+      "site": "Luz 20",
+      "filename": "GE_jul2019_Luz 20.jpg",
+      "unique_id": "Luz 20/GE_jul2019_Luz 20.jpg",
+      "qc_reference": null,
+      "order": 204
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Luz%2020/GE_mar2021_Luz%2020.jpg",
+      "site": "Luz 20",
+      "filename": "GE_mar2021_Luz 20.jpg",
+      "unique_id": "Luz 20/GE_mar2021_Luz 20.jpg",
+      "qc_reference": null,
+      "order": 205
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Luz%2020/GE_may2019_Luz%2020.jpg",
+      "site": "Luz 20",
+      "filename": "GE_may2019_Luz 20.jpg",
+      "unique_id": "Luz 20/GE_may2019_Luz 20.jpg",
+      "qc_reference": null,
+      "order": 206
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Luz%2020/GE_may2020_Luz%2020.jpg",
+      "site": "Luz 20",
+      "filename": "GE_may2020_Luz 20.jpg",
+      "unique_id": "Luz 20/GE_may2020_Luz 20.jpg",
+      "qc_reference": null,
+      "order": 207
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Luz%2020/GE_may2022_Luz%2020.jpg",
+      "site": "Luz 20",
+      "filename": "GE_may2022_Luz 20.jpg",
+      "unique_id": "Luz 20/GE_may2022_Luz 20.jpg",
+      "qc_reference": null,
+      "order": 208
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Luz%2020/Wayback_aug2024_Luz%2020.jpg",
+      "site": "Luz 20",
+      "filename": "Wayback_aug2024_Luz 20.jpg",
+      "unique_id": "Luz 20/Wayback_aug2024_Luz 20.jpg",
+      "qc_reference": null,
+      "order": 209
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Luz%2020/Wayback_feb2021_Luz%2020.jpg",
+      "site": "Luz 20",
+      "filename": "Wayback_feb2021_Luz 20.jpg",
+      "unique_id": "Luz 20/Wayback_feb2021_Luz 20.jpg",
+      "qc_reference": null,
+      "order": 210
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Luz%2020/Wayback_mar2018_Luz%2020.jpg",
+      "site": "Luz 20",
+      "filename": "Wayback_mar2018_Luz 20.jpg",
+      "unique_id": "Luz 20/Wayback_mar2018_Luz 20.jpg",
+      "qc_reference": null,
+      "order": 211
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Malhada%20das%20Mimosas/GE_feb2020_Malhada%20das%20Mimosas.jpg",
+      "site": "Malhada das Mimosas",
+      "filename": "GE_feb2020_Malhada das Mimosas.jpg",
+      "unique_id": "Malhada das Mimosas/GE_feb2020_Malhada das Mimosas.jpg",
+      "qc_reference": null,
+      "order": 212
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Malhada%20das%20Mimosas/GE_jul2018_Malhada%20das%20Mimosas.jpg",
+      "site": "Malhada das Mimosas",
+      "filename": "GE_jul2018_Malhada das Mimosas.jpg",
+      "unique_id": "Malhada das Mimosas/GE_jul2018_Malhada das Mimosas.jpg",
+      "qc_reference": null,
+      "order": 213
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Malhada%20das%20Mimosas/GE_jun2020_Malhada%20das%20Mimosas.jpg",
+      "site": "Malhada das Mimosas",
+      "filename": "GE_jun2020_Malhada das Mimosas.jpg",
+      "unique_id": "Malhada das Mimosas/GE_jun2020_Malhada das Mimosas.jpg",
+      "qc_reference": null,
+      "order": 214
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Malhada%20das%20Mimosas/GE_mar2020_Malhada%20das%20Mimosas.jpg",
+      "site": "Malhada das Mimosas",
+      "filename": "GE_mar2020_Malhada das Mimosas.jpg",
+      "unique_id": "Malhada das Mimosas/GE_mar2020_Malhada das Mimosas.jpg",
+      "qc_reference": null,
+      "order": 215
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Malhada%20das%20Mimosas/GE_nov2021_Malhada%20das%20Mimosas.jpg",
+      "site": "Malhada das Mimosas",
+      "filename": "GE_nov2021_Malhada das Mimosas.jpg",
+      "unique_id": "Malhada das Mimosas/GE_nov2021_Malhada das Mimosas.jpg",
+      "qc_reference": null,
+      "order": 216
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Malhada%20das%20Mimosas/GE_oct2021_Malhada%20das%20Mimosas.jpg",
+      "site": "Malhada das Mimosas",
+      "filename": "GE_oct2021_Malhada das Mimosas.jpg",
+      "unique_id": "Malhada das Mimosas/GE_oct2021_Malhada das Mimosas.jpg",
+      "qc_reference": null,
+      "order": 217
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Malhada%20das%20Mimosas/Wayback_jun2020_Malhada%20das%20Mimosas.jpg",
+      "site": "Malhada das Mimosas",
+      "filename": "Wayback_jun2020_Malhada das Mimosas.jpg",
+      "unique_id": "Malhada das Mimosas/Wayback_jun2020_Malhada das Mimosas.jpg",
+      "qc_reference": null,
+      "order": 218
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Malhada%20das%20Mimosas/Wayback_sep2021_Malhada%20das%20Mimosas.jpg",
+      "site": "Malhada das Mimosas",
+      "filename": "Wayback_sep2021_Malhada das Mimosas.jpg",
+      "unique_id": "Malhada das Mimosas/Wayback_sep2021_Malhada das Mimosas.jpg",
+      "qc_reference": null,
+      "order": 219
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Merinillas%20Altas/GE_feb2022_Merinillas%20Altas.jpg",
+      "site": "Merinillas Altas",
+      "filename": "GE_feb2022_Merinillas Altas.jpg",
+      "unique_id": "Merinillas Altas/GE_feb2022_Merinillas Altas.jpg",
+      "qc_reference": null,
+      "order": 220
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Merinillas%20Altas/GE_jan2023_Merinillas%20Altas.jpg",
+      "site": "Merinillas Altas",
+      "filename": "GE_jan2023_Merinillas Altas.jpg",
+      "unique_id": "Merinillas Altas/GE_jan2023_Merinillas Altas.jpg",
+      "qc_reference": null,
+      "order": 221
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Merinillas%20Altas/GE_mar2021_Merinillas%20Altas.jpg",
+      "site": "Merinillas Altas",
+      "filename": "GE_mar2021_Merinillas Altas.jpg",
+      "unique_id": "Merinillas Altas/GE_mar2021_Merinillas Altas.jpg",
+      "qc_reference": null,
+      "order": 222
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Merinillas%20Altas/Wayback_feb2022_Merinillas%20Altas.jpg",
+      "site": "Merinillas Altas",
+      "filename": "Wayback_feb2022_Merinillas Altas.jpg",
+      "unique_id": "Merinillas Altas/Wayback_feb2022_Merinillas Altas.jpg",
+      "qc_reference": null,
+      "order": 223
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Merinillas%20de%20Cervera/GE_feb2022_Merinillas%20de%20Cervera.jpg",
+      "site": "Merinillas de Cervera",
+      "filename": "GE_feb2022_Merinillas de Cervera.jpg",
+      "unique_id": "Merinillas de Cervera/GE_feb2022_Merinillas de Cervera.jpg",
+      "qc_reference": null,
+      "order": 224
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Merinillas%20de%20Cervera/GE_jan2023_Merinillas%20de%20Cervera.jpg",
+      "site": "Merinillas de Cervera",
+      "filename": "GE_jan2023_Merinillas de Cervera.jpg",
+      "unique_id": "Merinillas de Cervera/GE_jan2023_Merinillas de Cervera.jpg",
+      "qc_reference": null,
+      "order": 225
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Merinillas%20de%20Cervera/GE_mar2021_Merinillas%20de%20Cervera.jpg",
+      "site": "Merinillas de Cervera",
+      "filename": "GE_mar2021_Merinillas de Cervera.jpg",
+      "unique_id": "Merinillas de Cervera/GE_mar2021_Merinillas de Cervera.jpg",
+      "qc_reference": null,
+      "order": 226
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Merinillas%20de%20Cervera/Wayback_feb2022_Merinillas%20de%20Cervera.jpg",
+      "site": "Merinillas de Cervera",
+      "filename": "Wayback_feb2022_Merinillas de Cervera.jpg",
+      "unique_id": "Merinillas de Cervera/Wayback_feb2022_Merinillas de Cervera.jpg",
+      "qc_reference": null,
+      "order": 227
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Corte%20Ribas/GE_apr2024_Monte%20Corte%20Ribas.jpg",
+      "site": "Monte Corte Ribas",
+      "filename": "GE_apr2024_Monte Corte Ribas.jpg",
+      "unique_id": "Monte Corte Ribas/GE_apr2024_Monte Corte Ribas.jpg",
+      "qc_reference": null,
+      "order": 228
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Corte%20Ribas/GE_jul2019_Monte%20Corte%20Ribas.jpg",
+      "site": "Monte Corte Ribas",
+      "filename": "GE_jul2019_Monte Corte Ribas.jpg",
+      "unique_id": "Monte Corte Ribas/GE_jul2019_Monte Corte Ribas.jpg",
+      "qc_reference": null,
+      "order": 229
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Corte%20Ribas/GE_jun2019_Monte%20Corte%20Ribas.jpg",
+      "site": "Monte Corte Ribas",
+      "filename": "GE_jun2019_Monte Corte Ribas.jpg",
+      "unique_id": "Monte Corte Ribas/GE_jun2019_Monte Corte Ribas.jpg",
+      "qc_reference": null,
+      "order": 230
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Corte%20Ribas/GE_mar2021_Monte%20Corte%20Ribas.jpg",
+      "site": "Monte Corte Ribas",
+      "filename": "GE_mar2021_Monte Corte Ribas.jpg",
+      "unique_id": "Monte Corte Ribas/GE_mar2021_Monte Corte Ribas.jpg",
+      "qc_reference": null,
+      "order": 231
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Corte%20Ribas/GE_mar2022_Monte%20Corte%20Ribas.jpg",
+      "site": "Monte Corte Ribas",
+      "filename": "GE_mar2022_Monte Corte Ribas.jpg",
+      "unique_id": "Monte Corte Ribas/GE_mar2022_Monte Corte Ribas.jpg",
+      "qc_reference": null,
+      "order": 232
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Corte%20Ribas/GE_may2019_Monte%20Corte%20Ribas.jpg",
+      "site": "Monte Corte Ribas",
+      "filename": "GE_may2019_Monte Corte Ribas.jpg",
+      "unique_id": "Monte Corte Ribas/GE_may2019_Monte Corte Ribas.jpg",
+      "qc_reference": null,
+      "order": 233
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Corte%20Ribas/GE_may2022_Monte%20Corte%20Ribas.jpg",
+      "site": "Monte Corte Ribas",
+      "filename": "GE_may2022_Monte Corte Ribas.jpg",
+      "unique_id": "Monte Corte Ribas/GE_may2022_Monte Corte Ribas.jpg",
+      "qc_reference": null,
+      "order": 234
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Corte%20Ribas/Wayback_apr2024_Monte%20Corte%20Ribas.jpg",
+      "site": "Monte Corte Ribas",
+      "filename": "Wayback_apr2024_Monte Corte Ribas.jpg",
+      "unique_id": "Monte Corte Ribas/Wayback_apr2024_Monte Corte Ribas.jpg",
+      "qc_reference": null,
+      "order": 235
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Corte%20Ribas/Wayback_mar2022_Monte%20Corte%20Ribas.jpg",
+      "site": "Monte Corte Ribas",
+      "filename": "Wayback_mar2022_Monte Corte Ribas.jpg",
+      "unique_id": "Monte Corte Ribas/Wayback_mar2022_Monte Corte Ribas.jpg",
+      "qc_reference": null,
+      "order": 236
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Enxara/DGT_ago2018_Monte%20da%20Enxara.jpg",
+      "site": "Monte da Enxara",
+      "filename": "DGT_ago2018_Monte da Enxara.jpg",
+      "unique_id": "Monte da Enxara/DGT_ago2018_Monte da Enxara.jpg",
+      "qc_reference": null,
+      "order": 237
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Enxara/DGT_ago2018_Monte%20da%20Enxara.jpg",
+      "site": "Monte da Enxara",
+      "filename": "DGT_ago2018_Monte da Enxara.jpg",
+      "unique_id": "Monte da Enxara/DGT_ago2018_Monte da Enxara.jpg_qc",
+      "qc_reference": "Monte da Enxara/DGT_ago2018_Monte da Enxara.jpg",
+      "order": 238
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Enxara/GE_apr2020_Monte%20da%20Enxara.jpg",
+      "site": "Monte da Enxara",
+      "filename": "GE_apr2020_Monte da Enxara.jpg",
+      "unique_id": "Monte da Enxara/GE_apr2020_Monte da Enxara.jpg",
+      "qc_reference": null,
+      "order": 239
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Enxara/GE_jul2019_Monte%20da%20Enxara.jpg",
+      "site": "Monte da Enxara",
+      "filename": "GE_jul2019_Monte da Enxara.jpg",
+      "unique_id": "Monte da Enxara/GE_jul2019_Monte da Enxara.jpg",
+      "qc_reference": null,
+      "order": 240
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Enxara/GE_jul2019_Monte%20da%20Enxara.jpg",
+      "site": "Monte da Enxara",
+      "filename": "GE_jul2019_Monte da Enxara.jpg",
+      "unique_id": "Monte da Enxara/GE_jul2019_Monte da Enxara.jpg_qc",
+      "qc_reference": "Monte da Enxara/GE_jul2019_Monte da Enxara.jpg",
+      "order": 241
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Enxara/GE_jul2020_Monte%20da%20Enxara.jpg",
+      "site": "Monte da Enxara",
+      "filename": "GE_jul2020_Monte da Enxara.jpg",
+      "unique_id": "Monte da Enxara/GE_jul2020_Monte da Enxara.jpg",
+      "qc_reference": null,
+      "order": 242
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Enxara/GE_mar2021_Monte%20da%20Enxara.jpg",
+      "site": "Monte da Enxara",
+      "filename": "GE_mar2021_Monte da Enxara.jpg",
+      "unique_id": "Monte da Enxara/GE_mar2021_Monte da Enxara.jpg",
+      "qc_reference": null,
+      "order": 243
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Enxara/Wayback_mar2018_Monte%20da%20Enxara.jpg",
+      "site": "Monte da Enxara",
+      "filename": "Wayback_mar2018_Monte da Enxara.jpg",
+      "unique_id": "Monte da Enxara/Wayback_mar2018_Monte da Enxara.jpg",
+      "qc_reference": null,
+      "order": 244
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Enxara/Wayback_sep2021_Monte%20da%20Enxara.jpg",
+      "site": "Monte da Enxara",
+      "filename": "Wayback_sep2021_Monte da Enxara.jpg",
+      "unique_id": "Monte da Enxara/Wayback_sep2021_Monte da Enxara.jpg",
+      "qc_reference": null,
+      "order": 245
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Laje/GE_mar2021_Monte%20da%20Laje.jpg",
+      "site": "Monte da Laje",
+      "filename": "GE_mar2021_Monte da Laje.jpg",
+      "unique_id": "Monte da Laje/GE_mar2021_Monte da Laje.jpg",
+      "qc_reference": null,
+      "order": 246
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Laje/GE_may2019_Monte%20da%20Laje.jpg",
+      "site": "Monte da Laje",
+      "filename": "GE_may2019_Monte da Laje.jpg",
+      "unique_id": "Monte da Laje/GE_may2019_Monte da Laje.jpg",
+      "qc_reference": null,
+      "order": 247
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Laje/GE_may2022_Monte%20da%20Laje.jpg",
+      "site": "Monte da Laje",
+      "filename": "GE_may2022_Monte da Laje.jpg",
+      "unique_id": "Monte da Laje/GE_may2022_Monte da Laje.jpg",
+      "qc_reference": null,
+      "order": 248
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Laje/Wayback_jun2022_Monte%20da%20Laje.jpg",
+      "site": "Monte da Laje",
+      "filename": "Wayback_jun2022_Monte da Laje.jpg",
+      "unique_id": "Monte da Laje/Wayback_jun2022_Monte da Laje.jpg",
+      "qc_reference": null,
+      "order": 249
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Nora%20Uveda/DGT_ago2018_Monte%20da%20Nora%20Uveda.jpg",
+      "site": "Monte da Nora Uveda",
+      "filename": "DGT_ago2018_Monte da Nora Uveda.jpg",
+      "unique_id": "Monte da Nora Uveda/DGT_ago2018_Monte da Nora Uveda.jpg",
+      "qc_reference": null,
+      "order": 250
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Nora%20Uveda/GE_apr2020_Monte%20da%20Nora%20Uveda.jpg",
+      "site": "Monte da Nora Uveda",
+      "filename": "GE_apr2020_Monte da Nora Uveda.jpg",
+      "unique_id": "Monte da Nora Uveda/GE_apr2020_Monte da Nora Uveda.jpg",
+      "qc_reference": null,
+      "order": 251
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Nora%20Uveda/GE_dec2024_Monte%20da%20Nora%20Uveda.jpg",
+      "site": "Monte da Nora Uveda",
+      "filename": "GE_dec2024_Monte da Nora Uveda.jpg",
+      "unique_id": "Monte da Nora Uveda/GE_dec2024_Monte da Nora Uveda.jpg",
+      "qc_reference": null,
+      "order": 252
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Nora%20Uveda/GE_jun2020_Monte%20da%20Nora%20Uveda.jpg",
+      "site": "Monte da Nora Uveda",
+      "filename": "GE_jun2020_Monte da Nora Uveda.jpg",
+      "unique_id": "Monte da Nora Uveda/GE_jun2020_Monte da Nora Uveda.jpg",
+      "qc_reference": null,
+      "order": 253
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Nora%20Uveda/GE_jun2023_Monte%20da%20Nora%20Uveda.jpg",
+      "site": "Monte da Nora Uveda",
+      "filename": "GE_jun2023_Monte da Nora Uveda.jpg",
+      "unique_id": "Monte da Nora Uveda/GE_jun2023_Monte da Nora Uveda.jpg",
+      "qc_reference": null,
+      "order": 254
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Nora%20Uveda/GE_jun2023_Monte%20da%20Nora%20Uveda.jpg",
+      "site": "Monte da Nora Uveda",
+      "filename": "GE_jun2023_Monte da Nora Uveda.jpg",
+      "unique_id": "Monte da Nora Uveda/GE_jun2023_Monte da Nora Uveda.jpg_qc",
+      "qc_reference": "Monte da Nora Uveda/GE_jun2023_Monte da Nora Uveda.jpg",
+      "order": 255
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Nora%20Uveda/GE_mar2020_Monte%20da%20Nora%20Uveda.jpg",
+      "site": "Monte da Nora Uveda",
+      "filename": "GE_mar2020_Monte da Nora Uveda.jpg",
+      "unique_id": "Monte da Nora Uveda/GE_mar2020_Monte da Nora Uveda.jpg",
+      "qc_reference": null,
+      "order": 256
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Nora%20Uveda/Wayback_mar2018_Monte%20da%20Nora%20Uveda.jpg",
+      "site": "Monte da Nora Uveda",
+      "filename": "Wayback_mar2018_Monte da Nora Uveda.jpg",
+      "unique_id": "Monte da Nora Uveda/Wayback_mar2018_Monte da Nora Uveda.jpg",
+      "qc_reference": null,
+      "order": 257
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Ponte/DGT_jun2018_Monte%20da%20Ponte.jpg",
+      "site": "Monte da Ponte",
+      "filename": "DGT_jun2018_Monte da Ponte.jpg",
+      "unique_id": "Monte da Ponte/DGT_jun2018_Monte da Ponte.jpg",
+      "qc_reference": null,
+      "order": 258
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Ponte/GE_feb2022_Monte%20da%20Ponte.jpg",
+      "site": "Monte da Ponte",
+      "filename": "GE_feb2022_Monte da Ponte.jpg",
+      "unique_id": "Monte da Ponte/GE_feb2022_Monte da Ponte.jpg",
+      "qc_reference": null,
+      "order": 259
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Ponte/GE_mar2021_Monte%20da%20Ponte.jpg",
+      "site": "Monte da Ponte",
+      "filename": "GE_mar2021_Monte da Ponte.jpg",
+      "unique_id": "Monte da Ponte/GE_mar2021_Monte da Ponte.jpg",
+      "qc_reference": null,
+      "order": 260
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Ponte/GE_may2019_Monte%20da%20Ponte.jpg",
+      "site": "Monte da Ponte",
+      "filename": "GE_may2019_Monte da Ponte.jpg",
+      "unique_id": "Monte da Ponte/GE_may2019_Monte da Ponte.jpg",
+      "qc_reference": null,
+      "order": 261
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Ponte/GE_may2022_Monte%20da%20Ponte.jpg",
+      "site": "Monte da Ponte",
+      "filename": "GE_may2022_Monte da Ponte.jpg",
+      "unique_id": "Monte da Ponte/GE_may2022_Monte da Ponte.jpg",
+      "qc_reference": null,
+      "order": 262
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20da%20Ponte/Wayback_mar2022_Monte%20da%20Ponte.jpg",
+      "site": "Monte da Ponte",
+      "filename": "Wayback_mar2022_Monte da Ponte.jpg",
+      "unique_id": "Monte da Ponte/Wayback_mar2022_Monte da Ponte.jpg",
+      "qc_reference": null,
+      "order": 263
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20das%20Cabeceiras/GE_apr2018_Monte%20das%20Cabeceiras.jpg",
+      "site": "Monte das Cabeceiras",
+      "filename": "GE_apr2018_Monte das Cabeceiras.jpg",
+      "unique_id": "Monte das Cabeceiras/GE_apr2018_Monte das Cabeceiras.jpg",
+      "qc_reference": null,
+      "order": 264
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20das%20Cabeceiras/GE_feb2018_Monte%20das%20Cabeceiras.jpg",
+      "site": "Monte das Cabeceiras",
+      "filename": "GE_feb2018_Monte das Cabeceiras.jpg",
+      "unique_id": "Monte das Cabeceiras/GE_feb2018_Monte das Cabeceiras.jpg",
+      "qc_reference": null,
+      "order": 265
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20das%20Cabeceiras/GE_may2019_Monte%20das%20Cabeceiras.jpg",
+      "site": "Monte das Cabeceiras",
+      "filename": "GE_may2019_Monte das Cabeceiras.jpg",
+      "unique_id": "Monte das Cabeceiras/GE_may2019_Monte das Cabeceiras.jpg",
+      "qc_reference": null,
+      "order": 266
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Olival%201/GE_feb2020_Monte%20do%20Olival%201.jpg",
+      "site": "Monte do Olival 1",
+      "filename": "GE_feb2020_Monte do Olival 1.jpg",
+      "unique_id": "Monte do Olival 1/GE_feb2020_Monte do Olival 1.jpg",
+      "qc_reference": null,
+      "order": 267
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Olival%201/GE_may2019_Monte%20do%20Olival%201.jpg",
+      "site": "Monte do Olival 1",
+      "filename": "GE_may2019_Monte do Olival 1.jpg",
+      "unique_id": "Monte do Olival 1/GE_may2019_Monte do Olival 1.jpg",
+      "qc_reference": null,
+      "order": 268
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Olival%201/GE_may2022_Monte%20do%20Olival%201.jpg",
+      "site": "Monte do Olival 1",
+      "filename": "GE_may2022_Monte do Olival 1.jpg",
+      "unique_id": "Monte do Olival 1/GE_may2022_Monte do Olival 1.jpg",
+      "qc_reference": null,
+      "order": 269
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Olival%201/Wayback_aug2020_Monte%20do%20Olival%201.jpg",
+      "site": "Monte do Olival 1",
+      "filename": "Wayback_aug2020_Monte do Olival 1.jpg",
+      "unique_id": "Monte do Olival 1/Wayback_aug2020_Monte do Olival 1.jpg",
+      "qc_reference": null,
+      "order": 270
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Olival%201/Wayback_mar2022_Monte%20do%20Olival%201.jpg",
+      "site": "Monte do Olival 1",
+      "filename": "Wayback_mar2022_Monte do Olival 1.jpg",
+      "unique_id": "Monte do Olival 1/Wayback_mar2022_Monte do Olival 1.jpg",
+      "qc_reference": null,
+      "order": 271
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Xarras/DGT_set2018_Monte%20do%20Xarras.jpg",
+      "site": "Monte do Xarras",
+      "filename": "DGT_set2018_Monte do Xarras.jpg",
+      "unique_id": "Monte do Xarras/DGT_set2018_Monte do Xarras.jpg",
+      "qc_reference": null,
+      "order": 272
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Xarras/GE_apr2023_Monte%20do%20Xarras.jpg",
+      "site": "Monte do Xarras",
+      "filename": "GE_apr2023_Monte do Xarras.jpg",
+      "unique_id": "Monte do Xarras/GE_apr2023_Monte do Xarras.jpg",
+      "qc_reference": null,
+      "order": 273
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Xarras/GE_jul2019_Monte%20do%20Xarras.jpg",
+      "site": "Monte do Xarras",
+      "filename": "GE_jul2019_Monte do Xarras.jpg",
+      "unique_id": "Monte do Xarras/GE_jul2019_Monte do Xarras.jpg",
+      "qc_reference": null,
+      "order": 274
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Xarras/GE_jun2020_Monte%20do%20Xarras.jpg",
+      "site": "Monte do Xarras",
+      "filename": "GE_jun2020_Monte do Xarras.jpg",
+      "unique_id": "Monte do Xarras/GE_jun2020_Monte do Xarras.jpg",
+      "qc_reference": null,
+      "order": 275
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Xarras/GE_mar2021_Monte%20do%20Xarras.jpg",
+      "site": "Monte do Xarras",
+      "filename": "GE_mar2021_Monte do Xarras.jpg",
+      "unique_id": "Monte do Xarras/GE_mar2021_Monte do Xarras.jpg",
+      "qc_reference": null,
+      "order": 276
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Xarras/Wayback_aug2020_Monte%20do%20Xarras.jpg",
+      "site": "Monte do Xarras",
+      "filename": "Wayback_aug2020_Monte do Xarras.jpg",
+      "unique_id": "Monte do Xarras/Wayback_aug2020_Monte do Xarras.jpg",
+      "qc_reference": null,
+      "order": 277
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Xarras/Wayback_mar2021_Monte%20do%20Xarras.jpg",
+      "site": "Monte do Xarras",
+      "filename": "Wayback_mar2021_Monte do Xarras.jpg",
+      "unique_id": "Monte do Xarras/Wayback_mar2021_Monte do Xarras.jpg",
+      "qc_reference": null,
+      "order": 278
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20do%20Xarras/Wayback_may2024_Monte%20do%20Xarras.jpg",
+      "site": "Monte do Xarras",
+      "filename": "Wayback_may2024_Monte do Xarras.jpg",
+      "unique_id": "Monte do Xarras/Wayback_may2024_Monte do Xarras.jpg",
+      "qc_reference": null,
+      "order": 279
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/GE_feb2020_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "GE_feb2020_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/GE_feb2020_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 280
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/GE_feb2022_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "GE_feb2022_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/GE_feb2022_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 281
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/GE_jan2020_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "GE_jan2020_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/GE_jan2020_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 282
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/GE_jun2019_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "GE_jun2019_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/GE_jun2019_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 283
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/GE_jun2020_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "GE_jun2020_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/GE_jun2020_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 284
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/GE_jun2020_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "GE_jun2020_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/GE_jun2020_Monte Santo Adriao.jpg_qc",
+      "qc_reference": "Monte Santo Adriao/GE_jun2020_Monte Santo Adriao.jpg",
+      "order": 285
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/GE_mar2020_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "GE_mar2020_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/GE_mar2020_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 286
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/GE_mar2022_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "GE_mar2022_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/GE_mar2022_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 287
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/GE_may2019_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "GE_may2019_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/GE_may2019_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 288
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/GE_may2020_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "GE_may2020_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/GE_may2020_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 289
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/GE_may2021_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "GE_may2021_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/GE_may2021_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 290
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/GE_may2022_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "GE_may2022_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/GE_may2022_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 291
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/Wayback_mar2022_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "Wayback_mar2022_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/Wayback_mar2022_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 292
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Monte%20Santo%20Adriao/Wayback_may2021_Monte%20Santo%20Adriao.jpg",
+      "site": "Monte Santo Adriao",
+      "filename": "Wayback_may2021_Monte Santo Adriao.jpg",
+      "unique_id": "Monte Santo Adriao/Wayback_may2021_Monte Santo Adriao.jpg",
+      "qc_reference": null,
+      "order": 293
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Montoito/GE_feb2020_Montoito.jpg",
+      "site": "Montoito",
+      "filename": "GE_feb2020_Montoito.jpg",
+      "unique_id": "Montoito/GE_feb2020_Montoito.jpg",
+      "qc_reference": null,
+      "order": 294
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Montoito/Wayback_jun2022_Montoito.jpg",
+      "site": "Montoito",
+      "filename": "Wayback_jun2022_Montoito.jpg",
+      "unique_id": "Montoito/Wayback_jun2022_Montoito.jpg",
+      "qc_reference": null,
+      "order": 295
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Montoito/Wayback_nov2023_Montoito.jpg",
+      "site": "Montoito",
+      "filename": "Wayback_nov2023_Montoito.jpg",
+      "unique_id": "Montoito/Wayback_nov2023_Montoito.jpg",
+      "qc_reference": null,
+      "order": 296
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Murteira%206/GE_apr2023_Murteira%206.jpg",
+      "site": "Murteira 6",
+      "filename": "GE_apr2023_Murteira 6.jpg",
+      "unique_id": "Murteira 6/GE_apr2023_Murteira 6.jpg",
+      "qc_reference": null,
+      "order": 297
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Murteira%206/GE_feb2022_Murteira%206.jpg",
+      "site": "Murteira 6",
+      "filename": "GE_feb2022_Murteira 6.jpg",
+      "unique_id": "Murteira 6/GE_feb2022_Murteira 6.jpg",
+      "qc_reference": null,
+      "order": 298
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Murteira%206/GE_jun2019_Murteira%206.jpg",
+      "site": "Murteira 6",
+      "filename": "GE_jun2019_Murteira 6.jpg",
+      "unique_id": "Murteira 6/GE_jun2019_Murteira 6.jpg",
+      "qc_reference": null,
+      "order": 299
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Murteira%206/GE_mar2021_Murteira%206.jpg",
+      "site": "Murteira 6",
+      "filename": "GE_mar2021_Murteira 6.jpg",
+      "unique_id": "Murteira 6/GE_mar2021_Murteira 6.jpg",
+      "qc_reference": null,
+      "order": 300
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Murteira%206/GE_mar2022_Murteira%206.jpg",
+      "site": "Murteira 6",
+      "filename": "GE_mar2022_Murteira 6.jpg",
+      "unique_id": "Murteira 6/GE_mar2022_Murteira 6.jpg",
+      "qc_reference": null,
+      "order": 301
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Murteira%206/GE_may2019_Murteira%206.jpg",
+      "site": "Murteira 6",
+      "filename": "GE_may2019_Murteira 6.jpg",
+      "unique_id": "Murteira 6/GE_may2019_Murteira 6.jpg",
+      "qc_reference": null,
+      "order": 302
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Murteira%206/GE_may2020_Murteira%206.jpg",
+      "site": "Murteira 6",
+      "filename": "GE_may2020_Murteira 6.jpg",
+      "unique_id": "Murteira 6/GE_may2020_Murteira 6.jpg",
+      "qc_reference": null,
+      "order": 303
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Murteira%206/Wayback_mar2022_Murteira%206.jpg",
+      "site": "Murteira 6",
+      "filename": "Wayback_mar2022_Murteira 6.jpg",
+      "unique_id": "Murteira 6/Wayback_mar2022_Murteira 6.jpg",
+      "qc_reference": null,
+      "order": 304
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Murteira%206/Wayback_may2020_Murteira%206.jpg",
+      "site": "Murteira 6",
+      "filename": "Wayback_may2020_Murteira 6.jpg",
+      "unique_id": "Murteira 6/Wayback_may2020_Murteira 6.jpg",
+      "qc_reference": null,
+      "order": 305
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Nobre%202/GE_apr2018_Nobre%202.jpg",
+      "site": "Nobre 2",
+      "filename": "GE_apr2018_Nobre 2.jpg",
+      "unique_id": "Nobre 2/GE_apr2018_Nobre 2.jpg",
+      "qc_reference": null,
+      "order": 306
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Nobre%202/GE_apr2018_Nobre%202.jpg",
+      "site": "Nobre 2",
+      "filename": "GE_apr2018_Nobre 2.jpg",
+      "unique_id": "Nobre 2/GE_apr2018_Nobre 2.jpg_qc",
+      "qc_reference": "Nobre 2/GE_apr2018_Nobre 2.jpg",
+      "order": 307
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Nobre%202/GE_feb2018_Nobre%202.jpg",
+      "site": "Nobre 2",
+      "filename": "GE_feb2018_Nobre 2.jpg",
+      "unique_id": "Nobre 2/GE_feb2018_Nobre 2.jpg",
+      "qc_reference": null,
+      "order": 308
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Olhas/GE_jun2020_Olhas.jpg",
+      "site": "Olhas",
+      "filename": "GE_jun2020_Olhas.jpg",
+      "unique_id": "Olhas/GE_jun2020_Olhas.jpg",
+      "qc_reference": null,
+      "order": 309
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Olhas/GE_mar2021_Olhas.jpg",
+      "site": "Olhas",
+      "filename": "GE_mar2021_Olhas.jpg",
+      "unique_id": "Olhas/GE_mar2021_Olhas.jpg",
+      "qc_reference": null,
+      "order": 310
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Olhas/GE_may2019_Olhas.jpg",
+      "site": "Olhas",
+      "filename": "GE_may2019_Olhas.jpg",
+      "unique_id": "Olhas/GE_may2019_Olhas.jpg",
+      "qc_reference": null,
+      "order": 311
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Olhas/Wayback_aug2020_Olhas.jpg",
+      "site": "Olhas",
+      "filename": "Wayback_aug2020_Olhas.jpg",
+      "unique_id": "Olhas/Wayback_aug2020_Olhas.jpg",
+      "qc_reference": null,
+      "order": 312
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Olhas/Wayback_jul2024_Olhas.jpg",
+      "site": "Olhas",
+      "filename": "Wayback_jul2024_Olhas.jpg",
+      "unique_id": "Olhas/Wayback_jul2024_Olhas.jpg",
+      "qc_reference": null,
+      "order": 313
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Perdigoes/GE_feb2020_Perdigoes.jpg",
+      "site": "Perdigoes",
+      "filename": "GE_feb2020_Perdigoes.jpg",
+      "unique_id": "Perdigoes/GE_feb2020_Perdigoes.jpg",
+      "qc_reference": null,
+      "order": 314
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Perdigoes/GE_oct2021_Perdigoes.jpg",
+      "site": "Perdigoes",
+      "filename": "GE_oct2021_Perdigoes.jpg",
+      "unique_id": "Perdigoes/GE_oct2021_Perdigoes.jpg",
+      "qc_reference": null,
+      "order": 315
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Perdigoes/GE_oct2021_Perdigoes.jpg",
+      "site": "Perdigoes",
+      "filename": "GE_oct2021_Perdigoes.jpg",
+      "unique_id": "Perdigoes/GE_oct2021_Perdigoes.jpg_qc",
+      "qc_reference": "Perdigoes/GE_oct2021_Perdigoes.jpg",
+      "order": 316
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Perdigoes/Wayback_feb2021_Perdigoes.jpg",
+      "site": "Perdigoes",
+      "filename": "Wayback_feb2021_Perdigoes.jpg",
+      "unique_id": "Perdigoes/Wayback_feb2021_Perdigoes.jpg",
+      "qc_reference": null,
+      "order": 317
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Pijotilla/GE_apr2023_Pijotilla.jpg",
+      "site": "Pijotilla",
+      "filename": "GE_apr2023_Pijotilla.jpg",
+      "unique_id": "Pijotilla/GE_apr2023_Pijotilla.jpg",
+      "qc_reference": null,
+      "order": 318
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Pijotilla/GE_feb2020_Pijotilla.jpg",
+      "site": "Pijotilla",
+      "filename": "GE_feb2020_Pijotilla.jpg",
+      "unique_id": "Pijotilla/GE_feb2020_Pijotilla.jpg",
+      "qc_reference": null,
+      "order": 319
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Pijotilla/GE_jul2018_Pijotilla.jpg",
+      "site": "Pijotilla",
+      "filename": "GE_jul2018_Pijotilla.jpg",
+      "unique_id": "Pijotilla/GE_jul2018_Pijotilla.jpg",
+      "qc_reference": null,
+      "order": 320
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Porto%20Torrao/GE_feb2020_Porto%20Torrao.jpg",
+      "site": "Porto Torrao",
+      "filename": "GE_feb2020_Porto Torrao.jpg",
+      "unique_id": "Porto Torrao/GE_feb2020_Porto Torrao.jpg",
+      "qc_reference": null,
+      "order": 321
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Porto%20Torrao/GE_jul2018_Porto%20Torrao.jpg",
+      "site": "Porto Torrao",
+      "filename": "GE_jul2018_Porto Torrao.jpg",
+      "unique_id": "Porto Torrao/GE_jul2018_Porto Torrao.jpg",
+      "qc_reference": null,
+      "order": 322
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Porto%20Torrao/GE_jun2020_Porto%20Torrao.jpg",
+      "site": "Porto Torrao",
+      "filename": "GE_jun2020_Porto Torrao.jpg",
+      "unique_id": "Porto Torrao/GE_jun2020_Porto Torrao.jpg",
+      "qc_reference": null,
+      "order": 323
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Porto%20Torrao/GE_may2019_Porto%20Torrao.jpg",
+      "site": "Porto Torrao",
+      "filename": "GE_may2019_Porto Torrao.jpg",
+      "unique_id": "Porto Torrao/GE_may2019_Porto Torrao.jpg",
+      "qc_reference": null,
+      "order": 324
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Porto%20Torrao/GE_may2022_Porto%20Torrao.jpg",
+      "site": "Porto Torrao",
+      "filename": "GE_may2022_Porto Torrao.jpg",
+      "unique_id": "Porto Torrao/GE_may2022_Porto Torrao.jpg",
+      "qc_reference": null,
+      "order": 325
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Porto%20Torrao/Wayback_apr2023_Porto%20Torrao.jpg",
+      "site": "Porto Torrao",
+      "filename": "Wayback_apr2023_Porto Torrao.jpg",
+      "unique_id": "Porto Torrao/Wayback_apr2023_Porto Torrao.jpg",
+      "qc_reference": null,
+      "order": 326
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Porto%20Torrao/Wayback_mar2022_Porto%20Torrao.jpg",
+      "site": "Porto Torrao",
+      "filename": "Wayback_mar2022_Porto Torrao.jpg",
+      "unique_id": "Porto Torrao/Wayback_mar2022_Porto Torrao.jpg",
+      "qc_reference": null,
+      "order": 327
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Quinta%20de%20Lino/GE_apr2023_Quinta%20de%20Lino.jpg",
+      "site": "Quinta de Lino",
+      "filename": "GE_apr2023_Quinta de Lino.jpg",
+      "unique_id": "Quinta de Lino/GE_apr2023_Quinta de Lino.jpg",
+      "qc_reference": null,
+      "order": 328
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Quinta%20de%20Lino/GE_jul2019_Quinta%20de%20Lino.jpg",
+      "site": "Quinta de Lino",
+      "filename": "GE_jul2019_Quinta de Lino.jpg",
+      "unique_id": "Quinta de Lino/GE_jul2019_Quinta de Lino.jpg",
+      "qc_reference": null,
+      "order": 329
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Quinta%20de%20Lino/GE_mar2020_Quinta%20de%20Lino.jpg",
+      "site": "Quinta de Lino",
+      "filename": "GE_mar2020_Quinta de Lino.jpg",
+      "unique_id": "Quinta de Lino/GE_mar2020_Quinta de Lino.jpg",
+      "qc_reference": null,
+      "order": 330
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Quinta%20de%20Lino/GE_mar2020_Quinta%20de%20Lino.jpg",
+      "site": "Quinta de Lino",
+      "filename": "GE_mar2020_Quinta de Lino.jpg",
+      "unique_id": "Quinta de Lino/GE_mar2020_Quinta de Lino.jpg_qc",
+      "qc_reference": "Quinta de Lino/GE_mar2020_Quinta de Lino.jpg",
+      "order": 331
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Quinta%20do%20Estacio%202/GE_apr2018_Quinta%20do%20Estacio%202.jpg",
+      "site": "Quinta do Estacio 2",
+      "filename": "GE_apr2018_Quinta do Estacio 2.jpg",
+      "unique_id": "Quinta do Estacio 2/GE_apr2018_Quinta do Estacio 2.jpg",
+      "qc_reference": null,
+      "order": 332
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Quinta%20do%20Estacio%202/GE_apr2018_Quinta%20do%20Estacio%202.jpg",
+      "site": "Quinta do Estacio 2",
+      "filename": "GE_apr2018_Quinta do Estacio 2.jpg",
+      "unique_id": "Quinta do Estacio 2/GE_apr2018_Quinta do Estacio 2.jpg_qc",
+      "qc_reference": "Quinta do Estacio 2/GE_apr2018_Quinta do Estacio 2.jpg",
+      "order": 333
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Quinta%20do%20Estacio%202/GE_apr2019_Quinta%20do%20Estacio%202.jpg",
+      "site": "Quinta do Estacio 2",
+      "filename": "GE_apr2019_Quinta do Estacio 2.jpg",
+      "unique_id": "Quinta do Estacio 2/GE_apr2019_Quinta do Estacio 2.jpg",
+      "qc_reference": null,
+      "order": 334
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Quinta%20do%20Estacio%202/GE_feb2019_Quinta%20do%20Estacio%202.jpg",
+      "site": "Quinta do Estacio 2",
+      "filename": "GE_feb2019_Quinta do Estacio 2.jpg",
+      "unique_id": "Quinta do Estacio 2/GE_feb2019_Quinta do Estacio 2.jpg",
+      "qc_reference": null,
+      "order": 335
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Quinta%20do%20Estacio%202/GE_jun2019_Quinta%20do%20Estacio%202.jpg",
+      "site": "Quinta do Estacio 2",
+      "filename": "GE_jun2019_Quinta do Estacio 2.jpg",
+      "unique_id": "Quinta do Estacio 2/GE_jun2019_Quinta do Estacio 2.jpg",
+      "qc_reference": null,
+      "order": 336
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Quinta%20do%20Estacio%202/GE_may2019_Quinta%20do%20Estacio%202.jpg",
+      "site": "Quinta do Estacio 2",
+      "filename": "GE_may2019_Quinta do Estacio 2.jpg",
+      "unique_id": "Quinta do Estacio 2/GE_may2019_Quinta do Estacio 2.jpg",
+      "qc_reference": null,
+      "order": 337
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Ramada/DGT_set2018_Ramada.jpg",
+      "site": "Ramada",
+      "filename": "DGT_set2018_Ramada.jpg",
+      "unique_id": "Ramada/DGT_set2018_Ramada.jpg",
+      "qc_reference": null,
+      "order": 338
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Ramada/GE_jul2019_Ramada.jpg",
+      "site": "Ramada",
+      "filename": "GE_jul2019_Ramada.jpg",
+      "unique_id": "Ramada/GE_jul2019_Ramada.jpg",
+      "qc_reference": null,
+      "order": 339
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Ramada/GE_jul2019_Ramada.jpg",
+      "site": "Ramada",
+      "filename": "GE_jul2019_Ramada.jpg",
+      "unique_id": "Ramada/GE_jul2019_Ramada.jpg_qc",
+      "qc_reference": "Ramada/GE_jul2019_Ramada.jpg",
+      "order": 340
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Regos%20de%20Oro/GE_apr2023_Regos%20de%20Oro.jpg",
+      "site": "Regos de Oro",
+      "filename": "GE_apr2023_Regos de Oro.jpg",
+      "unique_id": "Regos de Oro/GE_apr2023_Regos de Oro.jpg",
+      "qc_reference": null,
+      "order": 341
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Regos%20de%20Oro/GE_jul2021_Regos%20de%20Oro.jpg",
+      "site": "Regos de Oro",
+      "filename": "GE_jul2021_Regos de Oro.jpg",
+      "unique_id": "Regos de Oro/GE_jul2021_Regos de Oro.jpg",
+      "qc_reference": null,
+      "order": 342
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Regos%20de%20Oro/GE_mar2020_Regos%20de%20Oro.jpg",
+      "site": "Regos de Oro",
+      "filename": "GE_mar2020_Regos de Oro.jpg",
+      "unique_id": "Regos de Oro/GE_mar2020_Regos de Oro.jpg",
+      "qc_reference": null,
+      "order": 343
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Regos%20de%20Oro/Wayback_sep2021_Regos%20de%20Oro.jpg",
+      "site": "Regos de Oro",
+      "filename": "Wayback_sep2021_Regos de Oro.jpg",
+      "unique_id": "Regos de Oro/Wayback_sep2021_Regos de Oro.jpg",
+      "qc_reference": null,
+      "order": 344
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Rouca%207/DGT_ago2018_Rouca%207.jpg",
+      "site": "Rouca 7",
+      "filename": "DGT_ago2018_Rouca 7.jpg",
+      "unique_id": "Rouca 7/DGT_ago2018_Rouca 7.jpg",
+      "qc_reference": null,
+      "order": 345
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Rouca%207/GE_apr2022_Rouca%207.jpg",
+      "site": "Rouca 7",
+      "filename": "GE_apr2022_Rouca 7.jpg",
+      "unique_id": "Rouca 7/GE_apr2022_Rouca 7.jpg",
+      "qc_reference": null,
+      "order": 346
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Rouca%207/GE_feb2020_Rouca%207.jpg",
+      "site": "Rouca 7",
+      "filename": "GE_feb2020_Rouca 7.jpg",
+      "unique_id": "Rouca 7/GE_feb2020_Rouca 7.jpg",
+      "qc_reference": null,
+      "order": 347
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Rouca%207/GE_jun2021_Rouca%207.jpg",
+      "site": "Rouca 7",
+      "filename": "GE_jun2021_Rouca 7.jpg",
+      "unique_id": "Rouca 7/GE_jun2021_Rouca 7.jpg",
+      "qc_reference": null,
+      "order": 348
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Rouca%207/GE_may2019_Rouca%207.jpg",
+      "site": "Rouca 7",
+      "filename": "GE_may2019_Rouca 7.jpg",
+      "unique_id": "Rouca 7/GE_may2019_Rouca 7.jpg",
+      "qc_reference": null,
+      "order": 349
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Rouca%207/GE_sep2018_Rouca%207.jpg",
+      "site": "Rouca 7",
+      "filename": "GE_sep2018_Rouca 7.jpg",
+      "unique_id": "Rouca 7/GE_sep2018_Rouca 7.jpg",
+      "qc_reference": null,
+      "order": 350
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Rouca%207/Wayback_aug2021_Rouca%207.jpg",
+      "site": "Rouca 7",
+      "filename": "Wayback_aug2021_Rouca 7.jpg",
+      "unique_id": "Rouca 7/Wayback_aug2021_Rouca 7.jpg",
+      "qc_reference": null,
+      "order": 351
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Rouca%207/Wayback_jun2022_Rouca%207.jpg",
+      "site": "Rouca 7",
+      "filename": "Wayback_jun2022_Rouca 7.jpg",
+      "unique_id": "Rouca 7/Wayback_jun2022_Rouca 7.jpg",
+      "qc_reference": null,
+      "order": 352
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Rouca%207/Wayback_may2024_Rouca%207.jpg",
+      "site": "Rouca 7",
+      "filename": "Wayback_may2024_Rouca 7.jpg",
+      "unique_id": "Rouca 7/Wayback_may2024_Rouca 7.jpg",
+      "qc_reference": null,
+      "order": 353
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_apr2019_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_apr2019_Salvada.jpg",
+      "unique_id": "Salvada/GE_apr2019_Salvada.jpg",
+      "qc_reference": null,
+      "order": 354
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_aug2023_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_aug2023_Salvada.jpg",
+      "unique_id": "Salvada/GE_aug2023_Salvada.jpg",
+      "qc_reference": null,
+      "order": 355
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_jan2021_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_jan2021_Salvada.jpg",
+      "unique_id": "Salvada/GE_jan2021_Salvada.jpg",
+      "qc_reference": null,
+      "order": 356
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_jul2020_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_jul2020_Salvada.jpg",
+      "unique_id": "Salvada/GE_jul2020_Salvada.jpg",
+      "qc_reference": null,
+      "order": 357
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_jun2020_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_jun2020_Salvada.jpg",
+      "unique_id": "Salvada/GE_jun2020_Salvada.jpg",
+      "qc_reference": null,
+      "order": 358
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_mar2021_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_mar2021_Salvada.jpg",
+      "unique_id": "Salvada/GE_mar2021_Salvada.jpg",
+      "qc_reference": null,
+      "order": 359
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_mar2021_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_mar2021_Salvada.jpg",
+      "unique_id": "Salvada/GE_mar2021_Salvada.jpg_qc",
+      "qc_reference": "Salvada/GE_mar2021_Salvada.jpg",
+      "order": 360
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_mar2022_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_mar2022_Salvada.jpg",
+      "unique_id": "Salvada/GE_mar2022_Salvada.jpg",
+      "qc_reference": null,
+      "order": 361
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_may2019_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_may2019_Salvada.jpg",
+      "unique_id": "Salvada/GE_may2019_Salvada.jpg",
+      "qc_reference": null,
+      "order": 362
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_may2021_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_may2021_Salvada.jpg",
+      "unique_id": "Salvada/GE_may2021_Salvada.jpg",
+      "qc_reference": null,
+      "order": 363
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_may2022_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_may2022_Salvada.jpg",
+      "unique_id": "Salvada/GE_may2022_Salvada.jpg",
+      "qc_reference": null,
+      "order": 364
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_oct2021_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_oct2021_Salvada.jpg",
+      "unique_id": "Salvada/GE_oct2021_Salvada.jpg",
+      "qc_reference": null,
+      "order": 365
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/GE_oct2021_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "GE_oct2021_Salvada.jpg",
+      "unique_id": "Salvada/GE_oct2021_Salvada.jpg_qc",
+      "qc_reference": "Salvada/GE_oct2021_Salvada.jpg",
+      "order": 366
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/Wayback_jan2023_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "Wayback_jan2023_Salvada.jpg",
+      "unique_id": "Salvada/Wayback_jan2023_Salvada.jpg",
+      "qc_reference": null,
+      "order": 367
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/Wayback_jul2020_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "Wayback_jul2020_Salvada.jpg",
+      "unique_id": "Salvada/Wayback_jul2020_Salvada.jpg",
+      "qc_reference": null,
+      "order": 368
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/Wayback_may2021_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "Wayback_may2021_Salvada.jpg",
+      "unique_id": "Salvada/Wayback_may2021_Salvada.jpg",
+      "qc_reference": null,
+      "order": 369
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Salvada/Wayback_may2022_Salvada.jpg",
+      "site": "Salvada",
+      "filename": "Wayback_may2022_Salvada.jpg",
+      "unique_id": "Salvada/Wayback_may2022_Salvada.jpg",
+      "qc_reference": null,
+      "order": 370
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Sao%20Bras%203/GE_jul2023_Sao%20Bras%203.jpg",
+      "site": "Sao Bras 3",
+      "filename": "GE_jul2023_Sao Bras 3.jpg",
+      "unique_id": "Sao Bras 3/GE_jul2023_Sao Bras 3.jpg",
+      "qc_reference": null,
+      "order": 371
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Sao%20Bras%203/GE_jun2020_Sao%20Bras%203.jpg",
+      "site": "Sao Bras 3",
+      "filename": "GE_jun2020_Sao Bras 3.jpg",
+      "unique_id": "Sao Bras 3/GE_jun2020_Sao Bras 3.jpg",
+      "qc_reference": null,
+      "order": 372
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Sao%20Bras%203/GE_mar2021_Sao%20Bras%203.jpg",
+      "site": "Sao Bras 3",
+      "filename": "GE_mar2021_Sao Bras 3.jpg",
+      "unique_id": "Sao Bras 3/GE_mar2021_Sao Bras 3.jpg",
+      "qc_reference": null,
+      "order": 373
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Sao%20Bras%203/GE_may2019_Sao%20Bras%203.jpg",
+      "site": "Sao Bras 3",
+      "filename": "GE_may2019_Sao Bras 3.jpg",
+      "unique_id": "Sao Bras 3/GE_may2019_Sao Bras 3.jpg",
+      "qc_reference": null,
+      "order": 374
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Sao%20Bras%203/GE_may2022_Sao%20Bras%203.jpg",
+      "site": "Sao Bras 3",
+      "filename": "GE_may2022_Sao Bras 3.jpg",
+      "unique_id": "Sao Bras 3/GE_may2022_Sao Bras 3.jpg",
+      "qc_reference": null,
+      "order": 375
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Sao%20Bras%203/Wayback_apr2024_Sao%20Bras%203.jpg",
+      "site": "Sao Bras 3",
+      "filename": "Wayback_apr2024_Sao Bras 3.jpg",
+      "unique_id": "Sao Bras 3/Wayback_apr2024_Sao Bras 3.jpg",
+      "qc_reference": null,
+      "order": 376
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Sao%20Bras%203/Wayback_jul2020_Sao%20Bras%203.jpg",
+      "site": "Sao Bras 3",
+      "filename": "Wayback_jul2020_Sao Bras 3.jpg",
+      "unique_id": "Sao Bras 3/Wayback_jul2020_Sao Bras 3.jpg",
+      "qc_reference": null,
+      "order": 377
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Sao%20Mancos%201/GE_feb2020_Sao%20Mancos%201.jpg",
+      "site": "Sao Mancos 1",
+      "filename": "GE_feb2020_Sao Mancos 1.jpg",
+      "unique_id": "Sao Mancos 1/GE_feb2020_Sao Mancos 1.jpg",
+      "qc_reference": null,
+      "order": 378
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Sao%20Mancos%201/GE_feb2022_Sao%20Mancos%201.jpg",
+      "site": "Sao Mancos 1",
+      "filename": "GE_feb2022_Sao Mancos 1.jpg",
+      "unique_id": "Sao Mancos 1/GE_feb2022_Sao Mancos 1.jpg",
+      "qc_reference": null,
+      "order": 379
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Torrao/GE_apr2022_Torrao.jpg",
+      "site": "Torrao",
+      "filename": "GE_apr2022_Torrao.jpg",
+      "unique_id": "Torrao/GE_apr2022_Torrao.jpg",
+      "qc_reference": null,
+      "order": 380
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Torrao/GE_apr2022_Torrao.jpg",
+      "site": "Torrao",
+      "filename": "GE_apr2022_Torrao.jpg",
+      "unique_id": "Torrao/GE_apr2022_Torrao.jpg_qc",
+      "qc_reference": "Torrao/GE_apr2022_Torrao.jpg",
+      "order": 381
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Torrao/GE_feb2020_Torrao.jpg",
+      "site": "Torrao",
+      "filename": "GE_feb2020_Torrao.jpg",
+      "unique_id": "Torrao/GE_feb2020_Torrao.jpg",
+      "qc_reference": null,
+      "order": 382
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Torrao/GE_mar2021_Torrao.jpg",
+      "site": "Torrao",
+      "filename": "GE_mar2021_Torrao.jpg",
+      "unique_id": "Torrao/GE_mar2021_Torrao.jpg",
+      "qc_reference": null,
+      "order": 383
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Torrao/GE_may2019_Torrao.jpg",
+      "site": "Torrao",
+      "filename": "GE_may2019_Torrao.jpg",
+      "unique_id": "Torrao/GE_may2019_Torrao.jpg",
+      "qc_reference": null,
+      "order": 384
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Torrao/GE_nov2021_Torrao.jpg",
+      "site": "Torrao",
+      "filename": "GE_nov2021_Torrao.jpg",
+      "unique_id": "Torrao/GE_nov2021_Torrao.jpg",
+      "qc_reference": null,
+      "order": 385
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Torrao/Wayback_oct2020_Torrao.jpg",
+      "site": "Torrao",
+      "filename": "Wayback_oct2020_Torrao.jpg",
+      "unique_id": "Torrao/Wayback_oct2020_Torrao.jpg",
+      "qc_reference": null,
+      "order": 386
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Torre%20de%20San%20Francisco/Wayback_apr2019_Torre%20de%20San%20Francisco.jpg",
+      "site": "Torre de San Francisco",
+      "filename": "Wayback_apr2019_Torre de San Francisco.jpg",
+      "unique_id": "Torre de San Francisco/Wayback_apr2019_Torre de San Francisco.jpg",
+      "qc_reference": null,
+      "order": 387
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Vinha%20Mel/GE_aug2021_Vinha%20Mel.jpg",
+      "site": "Vinha Mel",
+      "filename": "GE_aug2021_Vinha Mel.jpg",
+      "unique_id": "Vinha Mel/GE_aug2021_Vinha Mel.jpg",
+      "qc_reference": null,
+      "order": 388
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra/GE_feb2022_Xancra.jpg",
+      "site": "Xancra",
+      "filename": "GE_feb2022_Xancra.jpg",
+      "unique_id": "Xancra/GE_feb2022_Xancra.jpg",
+      "qc_reference": null,
+      "order": 389
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra/GE_jun2020_Xancra.jpg",
+      "site": "Xancra",
+      "filename": "GE_jun2020_Xancra.jpg",
+      "unique_id": "Xancra/GE_jun2020_Xancra.jpg",
+      "qc_reference": null,
+      "order": 390
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra/GE_jun2020_Xancra.jpg",
+      "site": "Xancra",
+      "filename": "GE_jun2020_Xancra.jpg",
+      "unique_id": "Xancra/GE_jun2020_Xancra.jpg_qc",
+      "qc_reference": "Xancra/GE_jun2020_Xancra.jpg",
+      "order": 391
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra/GE_mar2020_Xancra.jpg",
+      "site": "Xancra",
+      "filename": "GE_mar2020_Xancra.jpg",
+      "unique_id": "Xancra/GE_mar2020_Xancra.jpg",
+      "qc_reference": null,
+      "order": 392
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra/GE_mar2022_Xancra.jpg",
+      "site": "Xancra",
+      "filename": "GE_mar2022_Xancra.jpg",
+      "unique_id": "Xancra/GE_mar2022_Xancra.jpg",
+      "qc_reference": null,
+      "order": 393
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra/GE_may2019_Xancra.jpg",
+      "site": "Xancra",
+      "filename": "GE_may2019_Xancra.jpg",
+      "unique_id": "Xancra/GE_may2019_Xancra.jpg",
+      "qc_reference": null,
+      "order": 394
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra/GE_may2020_Xancra.jpg",
+      "site": "Xancra",
+      "filename": "GE_may2020_Xancra.jpg",
+      "unique_id": "Xancra/GE_may2020_Xancra.jpg",
+      "qc_reference": null,
+      "order": 395
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra/GE_may2022_Xancra.jpg",
+      "site": "Xancra",
+      "filename": "GE_may2022_Xancra.jpg",
+      "unique_id": "Xancra/GE_may2022_Xancra.jpg",
+      "qc_reference": null,
+      "order": 396
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra/Wayback_jul2024_Xancra.jpg",
+      "site": "Xancra",
+      "filename": "Wayback_jul2024_Xancra.jpg",
+      "unique_id": "Xancra/Wayback_jul2024_Xancra.jpg",
+      "qc_reference": null,
+      "order": 397
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra/Wayback_jun2020_Xancra.jpg",
+      "site": "Xancra",
+      "filename": "Wayback_jun2020_Xancra.jpg",
+      "unique_id": "Xancra/Wayback_jun2020_Xancra.jpg",
+      "qc_reference": null,
+      "order": 398
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra/Wayback_mar2022_Xancra.jpg",
+      "site": "Xancra",
+      "filename": "Wayback_mar2022_Xancra.jpg",
+      "unique_id": "Xancra/Wayback_mar2022_Xancra.jpg",
+      "qc_reference": null,
+      "order": 399
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/GE_feb2022_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "GE_feb2022_Xancra B.jpg",
+      "unique_id": "Xancra B/GE_feb2022_Xancra B.jpg",
+      "qc_reference": null,
+      "order": 400
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/GE_jun2019_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "GE_jun2019_Xancra B.jpg",
+      "unique_id": "Xancra B/GE_jun2019_Xancra B.jpg",
+      "qc_reference": null,
+      "order": 401
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/GE_jun2020_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "GE_jun2020_Xancra B.jpg",
+      "unique_id": "Xancra B/GE_jun2020_Xancra B.jpg",
+      "qc_reference": null,
+      "order": 402
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/GE_mar2020_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "GE_mar2020_Xancra B.jpg",
+      "unique_id": "Xancra B/GE_mar2020_Xancra B.jpg",
+      "qc_reference": null,
+      "order": 403
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/GE_mar2020_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "GE_mar2020_Xancra B.jpg",
+      "unique_id": "Xancra B/GE_mar2020_Xancra B.jpg_qc",
+      "qc_reference": "Xancra B/GE_mar2020_Xancra B.jpg",
+      "order": 404
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/GE_mar2022_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "GE_mar2022_Xancra B.jpg",
+      "unique_id": "Xancra B/GE_mar2022_Xancra B.jpg",
+      "qc_reference": null,
+      "order": 405
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/GE_may2019_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "GE_may2019_Xancra B.jpg",
+      "unique_id": "Xancra B/GE_may2019_Xancra B.jpg",
+      "qc_reference": null,
+      "order": 406
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/GE_may2019_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "GE_may2019_Xancra B.jpg",
+      "unique_id": "Xancra B/GE_may2019_Xancra B.jpg_qc",
+      "qc_reference": "Xancra B/GE_may2019_Xancra B.jpg",
+      "order": 407
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/GE_may2020_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "GE_may2020_Xancra B.jpg",
+      "unique_id": "Xancra B/GE_may2020_Xancra B.jpg",
+      "qc_reference": null,
+      "order": 408
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/GE_may2022_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "GE_may2022_Xancra B.jpg",
+      "unique_id": "Xancra B/GE_may2022_Xancra B.jpg",
+      "qc_reference": null,
+      "order": 409
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/Wayback_jul2024_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "Wayback_jul2024_Xancra B.jpg",
+      "unique_id": "Xancra B/Wayback_jul2024_Xancra B.jpg",
+      "qc_reference": null,
+      "order": 410
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/Wayback_jun2020_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "Wayback_jun2020_Xancra B.jpg",
+      "unique_id": "Xancra B/Wayback_jun2020_Xancra B.jpg",
+      "qc_reference": null,
+      "order": 411
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Xancra%20B/Wayback_mar2022_Xancra%20B.jpg",
+      "site": "Xancra B",
+      "filename": "Wayback_mar2022_Xancra B.jpg",
+      "unique_id": "Xancra B/Wayback_mar2022_Xancra B.jpg",
+      "qc_reference": null,
+      "order": 412
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Zambujal/DGT_ago2018_Zambujal.jpg",
+      "site": "Zambujal",
+      "filename": "DGT_ago2018_Zambujal.jpg",
+      "unique_id": "Zambujal/DGT_ago2018_Zambujal.jpg",
+      "qc_reference": null,
+      "order": 413
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Zambujal/GE_jul2019_Zambujal.jpg",
+      "site": "Zambujal",
+      "filename": "GE_jul2019_Zambujal.jpg",
+      "unique_id": "Zambujal/GE_jul2019_Zambujal.jpg",
+      "qc_reference": null,
+      "order": 414
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Zambujal/GE_mar2021_Zambujal.jpg",
+      "site": "Zambujal",
+      "filename": "GE_mar2021_Zambujal.jpg",
+      "unique_id": "Zambujal/GE_mar2021_Zambujal.jpg",
+      "qc_reference": null,
+      "order": 415
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Zambujal/GE_mar2021_Zambujal.jpg",
+      "site": "Zambujal",
+      "filename": "GE_mar2021_Zambujal.jpg",
+      "unique_id": "Zambujal/GE_mar2021_Zambujal.jpg_qc",
+      "qc_reference": "Zambujal/GE_mar2021_Zambujal.jpg",
+      "order": 416
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Zambujal/GE_may2019_Zambujal.jpg",
+      "site": "Zambujal",
+      "filename": "GE_may2019_Zambujal.jpg",
+      "unique_id": "Zambujal/GE_may2019_Zambujal.jpg",
+      "qc_reference": null,
+      "order": 417
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Zambujal/GE_may2022_Zambujal.jpg",
+      "site": "Zambujal",
+      "filename": "GE_may2022_Zambujal.jpg",
+      "unique_id": "Zambujal/GE_may2022_Zambujal.jpg",
+      "qc_reference": null,
+      "order": 418
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Zambujal/GE_may2022_Zambujal.jpg",
+      "site": "Zambujal",
+      "filename": "GE_may2022_Zambujal.jpg",
+      "unique_id": "Zambujal/GE_may2022_Zambujal.jpg_qc",
+      "qc_reference": "Zambujal/GE_may2022_Zambujal.jpg",
+      "order": 419
+    }
+  },
+  {
+    "data": {
+      "image": "/data/local-files/?d=image_dataset/Zambujal/Wayback_mar2022_Zambujal.jpg",
+      "site": "Zambujal",
+      "filename": "Wayback_mar2022_Zambujal.jpg",
+      "unique_id": "Zambujal/Wayback_mar2022_Zambujal.jpg",
+      "qc_reference": null,
+      "order": 420
+    }
+  }
+]

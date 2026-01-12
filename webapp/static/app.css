@@ -1,0 +1,290 @@
+:root {
+  --bg: #0b1220;
+  --panel: #111a2e;
+  --text: #e6eefc;
+  --muted: #9fb2d6;
+  --accent: #4ea1ff;
+  --danger: #ff4e6a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 920px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.container.wide {
+  max-width: 1400px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #0e1730;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.panel.tools {
+  width: 360px;
+}
+
+
+.instructionsFull {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.instructionsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.2fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.instructionsCol h2 {
+  margin-top: 0;
+}
+
+.instructionsCol h3 {
+  margin: 14px 0 8px;
+  font-size: 15px;
+}
+
+.instructionsCol ul,
+.instructionsCol ol {
+  margin: 8px 0 12px;
+  padding-left: 18px;
+  color: var(--text);
+}
+
+.instructionsCol li {
+  margin: 6px 0;
+  color: var(--text);
+}
+
+.instructionsCol .tableWrap {
+  overflow-x: auto;
+}
+
+.instructionsCol table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.instructionsCol th,
+.instructionsCol td {
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 8px;
+  vertical-align: top;
+}
+
+.instructionsCol th {
+  text-align: left;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .instructionsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.viewer {
+  min-width: 320px;
+}
+
+.muted { color: var(--muted); }
+
+.badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  color: var(--muted);
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(0,0,0,0.25);
+  color: var(--text);
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+button {
+  background: var(--accent);
+  color: #051024;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button.big {
+  padding: 14px 18px;
+  font-size: 16px;
+}
+
+button.secondary {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.18);
+  color: var(--text);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 700;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.18);
+  color: var(--text);
+}
+
+.counter {
+  margin-top: 10px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  background: rgba(255, 78, 106, 0.12);
+  border: 1px solid rgba(255, 78, 106, 0.4);
+  color: var(--text);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.hint {
+  color: var(--muted);
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.choices label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.18);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.choices label:hover {
+  border-color: rgba(255,255,255,0.18);
+}
+
+.choices input[type="radio"] {
+  transform: scale(1.35);
+  transform-origin: left center;
+}
+
+.container.wide {
+  display: grid;
+  grid-template-columns: 360px minmax(320px, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.canvasViewport {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  max-height: 820px;
+  min-height: 320px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+
+.canvasStage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+}
+
+.canvasStage img {
+  display: block;
+  max-width: none;
+  height: auto;
+  user-select: none;
+}
+
+.canvasStage canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  pointer-events: auto;
+}

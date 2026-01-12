@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: cropmarker-web
+    env: python
+    rootDir: webapp
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn webapp.app:app --host 0.0.0.0 --port $PORT
+    disk:
+      name: cropmarker-data
+      mountPath: /var/data
+      sizeGB: 10
+    envVars:
+      - key: CROPMARKER_SECRET_KEY
+        generateValue: true
+      - key: CROPMARKER_DB_PATH
+        value: /var/data/webapp.sqlite3
+      - key: CROPMARKER_DATASET_ROOT
+        value: /var/data/image_dataset

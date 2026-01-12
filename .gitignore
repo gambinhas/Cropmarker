@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.pkl
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+.venv-*/
+venv/
+ENV/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Webapp runtime data (DO NOT COMMIT)
+webapp/webapp_data/
+
+# Datasets are large/private (DO NOT COMMIT)
+image_dataset/
+
+# Local exports/outputs
+annotations/
+export.csv
+export_xlsx/
+
+# Build artifacts
+build/
+dist/
+*.spec
+*.exe
+
+# Misc
+*.log

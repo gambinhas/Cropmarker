@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cropmarker Web</title>
+  <link rel="stylesheet" href="/static/app.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="muted">Annotator: <strong>{{ request.session.get("user", {}).get("username", "") }}</strong></div>
+    <form method="post" action="/logout">
+      <button type="submit" class="secondary">Sign out</button>
+    </form>
+  </div>
+
+  <div class="container wide">
+    <div class="panel tools">
+      <div class="row">
+        <a class="btn secondary" href="/annotate/{{ prev_user_task.id }}">Previous (A)</a>
+        <a class="btn secondary" href="/annotate/{{ next_user_task.id }}">Next (D)</a>
+      </div>
+      <div class="counter">Images remaining: {{ remaining }} / {{ total }}</div>
+
+      <h2>Classification</h2>
+      <div class="choices">
+        <label><input type="radio" name="cropmark" value="0"> No Mark</label>
+        <label><input type="radio" name="cropmark" value="1"> Faint Mark</label>
+        <label><input type="radio" name="cropmark" value="2"> Clear Mark</label>
+      </div>
+
+      <h2>Adjustments</h2>
+      <label>Brightness <input id="brightness" type="range" min="50" max="150" value="100"></label>
+      <label>Contrast <input id="contrast" type="range" min="50" max="150" value="100"></label>
+
+      <h2>Drawing</h2>
+      <p class="hint">Draw with the <strong>left mouse button</strong> (only when "Faint Mark" or "Clear Mark" is selected). Use <strong>Undo last</strong> or <strong>Clear all</strong> if you make a mistake.</p>
+      <div class="row">
+        <button id="undo" class="secondary" type="button">Undo last</button>
+        <button id="clear" class="secondary" type="button">Clear all</button>
+      </div>
+
+      <div class="row">
+        <button id="save" class="big" type="button" disabled>Save & Next</button>
+        <span id="saveStatus" class="muted"></span>
+      </div>
+    </div>
+
+    <div class="viewer">
+      <div class="canvasViewport" id="canvasViewport">
+        <div class="canvasStage" id="canvasStage">
+          <img id="img" src="{{ image_url }}" alt="image" draggable="false" />
+          <canvas id="overlay"></canvas>
+        </div>
+      </div>
+      <div class="hint">Zoom: mouse wheel | Pan: right mouse button</div>
+    </div>
+
+    <div class="instructionsFull">
+      <div class="instructionsGrid">
+        <div class="instructionsCol">
+          <h2>Cropmarker App - Instructions</h2>
+
+          <h3>Your Task</h3>
+          <p>For each image presented, your task is to:</p>
+          <ul>
+            <li>Carefully examine the image for any cropmarks. These features are often located near the center but can vary in size and shape.</li>
+            <li>Classify what you see using one of the three options provided.</li>
+            <li>If you identify a mark, you must draw its outline on the image.</li>
+          </ul>
+
+          <h3>Important Notes</h3>
+          <ul>
+            <li><strong>Random Order:</strong> Images are assigned to each annotator in a randomized order.</li>
+            <li><strong>Progress is Saved:</strong> Your progress is saved when you click “Save &amp; Next”. You can sign out and resume later.</li>
+          </ul>
+        </div>
+
+        <div class="instructionsCol">
+          <h3>Step-by-Step Workflow</h3>
+
+          <p><strong>Examine the Image:</strong> Use zoom and pan controls to get a closer look at the vegetation.</p>
+
+          <p><strong>Choose an Option:</strong></p>
+          <ul>
+            <li><strong>No Mark:</strong> Select this if you are confident there are no visible cropmarks.</li>
+            <li><strong>Faint Mark:</strong> Select this if you are unsure but suspect a feature might be a cropmark.</li>
+            <li><strong>Clear Mark:</strong> Select this if you are certain you have identified a cropmark.</li>
+          </ul>
+
+          <p><strong>Draw the Mark (If Applicable):</strong></p>
+          <ul>
+            <li>If you choose “Faint Mark” or “Clear Mark”, the drawing function will be activated.</li>
+            <li>Use the left mouse button to draw the outline of the feature(s) you have identified.</li>
+            <li>If you make a mistake, click “Undo last” or “Clear all” to remove lines on the current image.</li>
+          </ul>
+
+          <p><strong>Save Your Work:</strong></p>
+          <ul>
+            <li>Once you have made a selection (and drawn, if required), the “Save &amp; Next” button will become active.</li>
+            <li>You must save your classification for each image by clicking that button.</li>
+            <li>After saving, the application will automatically advance to the next image.</li>
+          </ul>
+        </div>
+
+        <div class="instructionsCol">
+          <h3>Controls Summary</h3>
+          <div class="tableWrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Action</th>
+                  <th>Control</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Navigate</td>
+                  <td>A key / Previous button</td>
+                  <td>Go to the previous image.</td>
+                </tr>
+                <tr>
+                  <td>Navigate</td>
+                  <td>D key / Next button</td>
+                  <td>Go to the next image.</td>
+                </tr>
+                <tr>
+                  <td>Zoom</td>
+                  <td>Mouse Scroll</td>
+                  <td>Zoom in and out. The view centers on your mouse pointer.</td>
+                </tr>
+                <tr>
+                  <td>Pan</td>
+                  <td>Right-Click + Drag</td>
+                  <td>Move the image around when you are zoomed in.</td>
+                </tr>
+                <tr>
+                  <td>Draw</td>
+                  <td>Left-Click + Drag</td>
+                  <td>Draw on the image. Only enabled after selecting “Faint Mark” or “Clear Mark”.</td>
+                </tr>
+                <tr>
+                  <td>Save</td>
+                  <td>Save &amp; Next button</td>
+                  <td><strong>Crucial!</strong> Saves the classification and drawing for the current image and moves to the next.</td>
+                </tr>
+                <tr>
+                  <td>Exit</td>
+                  <td>Sign Out button</td>
+                  <td>Exits the application to the login screen.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+(() => {
+  const existing = {{ existing_payload_json | safe }};
+
+  const img = document.getElementById('img');
+  const canvas = document.getElementById('overlay');
+  const viewport = document.getElementById('canvasViewport');
+  const stage = document.getElementById('canvasStage');
+
+  const brightness = document.getElementById('brightness');
+  const contrast = document.getElementById('contrast');
+
+  const saveBtn = document.getElementById('save');
+  const statusEl = document.getElementById('saveStatus');
+  const undoBtn = document.getElementById('undo');
+  const clearBtn = document.getElementById('clear');
+
+  let cropmark = null;
+  let strokes = [];
+  let currentStroke = null;
+
+  // If an annotation already exists, we keep a baseline of the last saved state.
+  // "Save & Next" stays disabled until the user makes a change.
+  let savedBaseline = null;
+
+  function normalizeDrawing(d) {
+    return Array.isArray(d) ? d : [];
+  }
+
+  function dirtySnapshot() {
+    return {
+      cropmark,
+      drawing: normalizeDrawing(strokes),
+    };
+  }
+
+  function setBaselineFromCurrent() {
+    savedBaseline = dirtySnapshot();
+  }
+
+  function isDirty() {
+    if (!savedBaseline) return true;
+    const now = dirtySnapshot();
+    if (now.cropmark !== savedBaseline.cropmark) return true;
+    return JSON.stringify(now.drawing) !== JSON.stringify(savedBaseline.drawing);
+  }
+
+  // View transform
+  let zoom = 1.0;
+  let panX = 0;
+  let panY = 0;
+  let isPanning = false;
+  let panStart = null;
+  let didInitialFit = false;
+
+  function setImgFilter() {
+    img.style.filter = `brightness(${brightness.value}%) contrast(${contrast.value}%)`;
+  }
+  brightness.addEventListener('input', setImgFilter);
+  contrast.addEventListener('input', setImgFilter);
+  brightness.addEventListener('input', updateSaveEnabled);
+  contrast.addEventListener('input', updateSaveEnabled);
+  setImgFilter();
+
+  function resizeCanvas() {
+    const w = img.naturalWidth;
+    const h = img.naturalHeight;
+    canvas.width = w;
+    canvas.height = h;
+    canvas.style.width = img.clientWidth + 'px';
+    canvas.style.height = img.clientHeight + 'px';
+    redraw();
+  }
+
+  function clampPan() {
+    const vw = viewport.clientWidth;
+    const vh = viewport.clientHeight;
+    const scaledW = canvas.width * zoom;
+    const scaledH = canvas.height * zoom;
+
+    if (scaledW <= vw) {
+      panX = (vw - scaledW) / 2;
+    } else {
+      panX = clamp(panX, vw - scaledW, 0);
+    }
+
+    if (scaledH <= vh) {
+      panY = (vh - scaledH) / 2;
+    } else {
+      panY = clamp(panY, vh - scaledH, 0);
+    }
+  }
+
+  function fitToViewport() {
+    const vw = viewport.clientWidth;
+    const vh = viewport.clientHeight;
+    if (!vw || !vh || !canvas.width || !canvas.height) return;
+    zoom = clamp(Math.min(vw / canvas.width, vh / canvas.height), 0.2, 8.0);
+    clampPan();
+    applyTransform();
+  }
+
+  function applyTransform() {
+    stage.style.transform = `translate(${panX}px, ${panY}px) scale(${zoom})`;
+  }
+
+  function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
+
+  viewport.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const rect = viewport.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+
+    const wx = (mx - panX) / zoom;
+    const wy = (my - panY) / zoom;
+
+    const delta = e.deltaY < 0 ? 1.1 : 0.9;
+    zoom = clamp(zoom * delta, 0.2, 8.0);
+
+    panX = mx - (wx * zoom);
+    panY = my - (wy * zoom);
+    clampPan();
+    applyTransform();
+  }, { passive: false });
+
+  function isDrawingEnabled() {
+    return cropmark === 1 || cropmark === 2;
+  }
+
+  function updateToolUi() {
+    const enabled = isDrawingEnabled();
+    undoBtn.disabled = !enabled;
+    clearBtn.disabled = !enabled;
+  }
+
+  viewport.addEventListener('mousedown', (e) => {
+    if (e.button === 2) {
+      e.preventDefault();
+      isPanning = true;
+      panStart = { x: e.clientX, y: e.clientY, panX, panY };
+    }
+  });
+  window.addEventListener('mouseup', () => { isPanning = false; panStart = null; });
+  window.addEventListener('mousemove', (e) => {
+    if (!isPanning || !panStart) return;
+    panX = panStart.panX + (e.clientX - panStart.x);
+    panY = panStart.panY + (e.clientY - panStart.y);
+    clampPan();
+    applyTransform();
+  });
+
+  // Prevent context menu so right click can be used for panning
+  // (some browsers fire contextmenu on the wrapper or document)
+  const preventCtx = (e) => {
+    if (e.target === canvas || viewport.contains(e.target)) {
+      e.preventDefault();
+    }
+  };
+  canvas.addEventListener('contextmenu', preventCtx);
+  viewport.addEventListener('contextmenu', preventCtx);
+  document.addEventListener('contextmenu', preventCtx);
+
+  function getImageCoords(evt) {
+    const rect = canvas.getBoundingClientRect();
+    // Canvas is scaled with CSS to match img client size.
+    const x = (evt.clientX - rect.left) * (canvas.width / rect.width);
+    const y = (evt.clientY - rect.top) * (canvas.height / rect.height);
+    return { x, y };
+  }
+
+  canvas.addEventListener('mousedown', (e) => {
+    if (e.button !== 0) return; // left button only
+    if (!isDrawingEnabled()) return;
+    e.preventDefault();
+    const p = getImageCoords(e);
+    currentStroke = [ [p.x, p.y] ];
+  });
+
+  canvas.addEventListener('mousemove', (e) => {
+    if (!currentStroke) return;
+    e.preventDefault();
+    const p = getImageCoords(e);
+    const last = currentStroke[currentStroke.length - 1];
+    const dx = p.x - last[0];
+    const dy = p.y - last[1];
+    if (dx*dx + dy*dy < 4) return; // reduce noise
+    currentStroke.push([p.x, p.y]);
+    redraw();
+  });
+
+  window.addEventListener('mouseup', (e) => {
+    if (!currentStroke) return;
+    if (currentStroke.length >= 2) strokes.push(currentStroke);
+    currentStroke = null;
+    redraw();
+    updateSaveEnabled();
+  });
+
+  function redraw() {
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = 'rgba(255, 0, 0, 0.9)';
+    ctx.lineJoin = 'round';
+    ctx.lineCap = 'round';
+
+    const all = strokes.slice();
+    if (currentStroke) all.push(currentStroke);
+
+    for (const stroke of all) {
+      if (!stroke || stroke.length < 2) continue;
+      ctx.beginPath();
+      ctx.moveTo(stroke[0][0], stroke[0][1]);
+      for (let i = 1; i < stroke.length; i++) ctx.lineTo(stroke[i][0], stroke[i][1]);
+      ctx.stroke();
+    }
+  }
+
+  undoBtn.addEventListener('click', () => {
+    if (!isDrawingEnabled()) return;
+    strokes.pop();
+    redraw();
+    updateSaveEnabled();
+  });
+  clearBtn.addEventListener('click', () => {
+    if (!isDrawingEnabled()) return;
+    strokes = [];
+    currentStroke = null;
+    redraw();
+    updateSaveEnabled();
+  });
+
+  window.addEventListener('keydown', (e) => {
+    const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+    if (tag === 'input' || tag === 'textarea') return;
+    if (e.key === 'a' || e.key === 'A') {
+      window.location.href = '/annotate/{{ prev_user_task.id }}';
+    }
+    if (e.key === 'd' || e.key === 'D') {
+      window.location.href = '/annotate/{{ next_user_task.id }}';
+    }
+  });
+
+  document.querySelectorAll('input[name="cropmark"]').forEach((el) => {
+    el.addEventListener('change', () => {
+      cropmark = parseInt(el.value, 10);
+      if (!isDrawingEnabled()) {
+        currentStroke = null;
+        strokes = [];
+        redraw();
+      }
+      updateToolUi();
+      updateSaveEnabled();
+    });
+  });
+
+  function updateSaveEnabled() {
+    if (cropmark === null) {
+      saveBtn.disabled = true;
+      return;
+    }
+    if ((cropmark === 1 || cropmark === 2) && strokes.length === 0) {
+      saveBtn.disabled = true;
+      return;
+    }
+    if (!isDirty()) {
+      saveBtn.disabled = true;
+      return;
+    }
+    saveBtn.disabled = false;
+  }
+
+  // Hydrate UI from an existing annotation (when revisiting)
+  if (existing && typeof existing === 'object') {
+    if (typeof existing.brightness === 'number') brightness.value = String(existing.brightness);
+    if (typeof existing.contrast === 'number') contrast.value = String(existing.contrast);
+    setImgFilter();
+
+    if (typeof existing.cropmark === 'number') {
+      cropmark = existing.cropmark;
+      const radio = document.querySelector(`input[name="cropmark"][value="${cropmark}"]`);
+      if (radio) radio.checked = true;
+    }
+
+    if (Array.isArray(existing.drawing)) {
+      strokes = existing.drawing;
+      currentStroke = null;
+    }
+
+    if (!isDrawingEnabled()) {
+      strokes = [];
+      currentStroke = null;
+    }
+
+    // After hydration + rule enforcement, we treat this as the saved baseline.
+    setBaselineFromCurrent();
+  }
+
+  updateToolUi();
+  updateSaveEnabled();
+
+  async function save() {
+    statusEl.textContent = 'Saving…';
+    saveBtn.disabled = true;
+    const res = await fetch(`/api/annotations/{{ user_task.id }}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        cropmark,
+        drawing: strokes,
+        brightness: parseFloat(brightness.value),
+        contrast: parseFloat(contrast.value)
+      })
+    });
+    if (!res.ok) {
+      const txt = await res.text();
+      statusEl.textContent = 'Save failed';
+      saveBtn.disabled = false;
+      alert(txt);
+      return;
+    }
+    window.location.href = '/annotate/{{ next_user_task.id }}';
+  }
+
+  saveBtn.addEventListener('click', save);
+
+  function handleImgLoad() {
+    resizeCanvas();
+    if (!didInitialFit) {
+      fitToViewport();
+      didInitialFit = true;
+    } else {
+      clampPan();
+      applyTransform();
+    }
+    redraw();
+    // One more fit on the next frame in case layout changed.
+    requestAnimationFrame(() => {
+      fitToViewport();
+      redraw();
+    });
+  }
+
+  img.addEventListener('load', handleImgLoad);
+  if (img.complete) {
+    handleImgLoad();
+  }
+
+  window.addEventListener('resize', () => {
+    resizeCanvas();
+    clampPan();
+    applyTransform();
+  });
+})();
+</script>
+</body>
+</html>

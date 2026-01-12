@@ -1,0 +1,16 @@
+<View>
+  <Header name="header" value="Cropmark annotation" />
+  <Text name="instructions" value="1) Choose: 0/1/2. 2) If 1 or 2, draw the cropmark outline." />
+
+  <Image name="image" value="$image" zoom="true" rotateControl="false" />
+
+  <Choices name="cropmark" toName="image" choice="single" showInLine="true" required="true">
+    <Choice value="0" />
+    <Choice value="1" />
+    <Choice value="2" />
+  </Choices>
+
+  <PolygonLabels name="drawing" toName="image" strokeWidth="2" opacity="0.4">
+    <Label value="Cropmark" />
+  </PolygonLabels>
+</View>

@@ -1,0 +1,19 @@
+services:
+  label-studio:
+    image: heartexlabs/label-studio:latest
+    container_name: label-studio-cropmarker
+    ports:
+      - "8080:8080"
+    environment:
+      - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
+      - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/label-studio/files
+    volumes:
+      # Persistent Label Studio app data (DB, users, projects)
+      - ./labelstudio_data:/label-studio/data
+
+      # Mount your dataset so Label Studio can serve it as "local files"
+      # This maps your existing folder:
+      #   Cropmarker/image_dataset
+      # into the container path:
+      #   /label-studio/files/images
+      - ./image_dataset:/label-studio/files/images:ro
