@@ -8,11 +8,26 @@
 </head>
 <body>
   <div class="container">
-    <h1>All done</h1>
-    <p>There are no more tasks for you.</p>
-    <form method="post" action="/logout">
-      <button type="submit">Sign out</button>
-    </form>
+    <div class="card doneCard">
+      <h1>Thank you for your contribution!</h1>
+      <p>Your annotations have been saved successfully.</p>
+
+      <p class="doneContact">
+        If you have any questions or need to report a problem, please contact:
+        <a href="mailto:bmleal@ualg.pt">bmleal@ualg.pt</a>.
+      </p>
+
+      <div class="doneBannerWrap">
+        <img class="doneBanner" src="/resources/banner.png?v=1" alt="Institutions" />
+      </div>
+
+      <div class="row doneActions">
+        <form method="post" action="/logout">
+          <button type="submit">Sign out</button>
+        </form>
+        <div class="muted">You can now close this window.</div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

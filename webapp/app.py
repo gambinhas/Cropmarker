@@ -215,7 +215,13 @@ def next_task(request: Request, db=Depends(get_db)):
 
     next_user_task = db.execute(q.limit(1)).scalars().first()
     if not next_user_task:
-        return templates.TemplateResponse("done.html", {"request": request})
+        return templates.TemplateResponse(
+            "done.html",
+            {
+                "request": request,
+                "username": user.username,
+            },
+        )
     return RedirectResponse(url=f"/annotate/{next_user_task.id}", status_code=302)
 
 

@@ -480,7 +480,9 @@
       alert(txt);
       return;
     }
-    window.location.href = '/annotate/{{ next_user_task.id }}';
+    // Go through /tasks/next so we can detect completion (after all 420 saves)
+    // and so that "Save & Next" always goes to the next *remaining* image.
+    window.location.href = '/tasks/next';
   }
 
   saveBtn.addEventListener('click', save);

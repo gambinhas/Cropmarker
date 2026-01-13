@@ -244,6 +244,46 @@ button:disabled {
   justify-content: flex-end;
 }
 
+.doneCard h1 {
+  margin-top: 0;
+}
+
+.doneContact a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.doneContact a:hover {
+  text-decoration: underline;
+}
+
+.doneBannerWrap {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.doneBanner {
+  max-width: 100%;
+  max-height: 160px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.18);
+  padding: 10px;
+}
+
+.doneActions {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
 .hint {
   color: var(--muted);
   margin-top: 10px;
