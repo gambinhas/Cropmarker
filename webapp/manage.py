@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-from sqlalchemy import and_, select
+from sqlalchemy import and_, delete, func, select
 
 from .db import Base, create_session_factory, create_sqlite_engine, ensure_sqlite_migrations
 from .models import Annotation, Task, User, UserTask
@@ -78,6 +78,37 @@ def main() -> None:
         "--username",
         default=None,
         help="Export only this user (default: export all users)",
+    )
+
+    p_list_users = sub.add_parser("list-users", help="List users and their progress")
+    p_list_users.add_argument(
+        "--annotators-only",
+        action="store_true",
+        help="Show only non-admin users",
+    )
+
+    p_delete_user = sub.add_parser(
+        "delete-user",
+        help="Delete a user and all associated data (annotations and per-user task list)",
+    )
+    p_delete_user.add_argument("--username", default=None)
+    p_delete_user.add_argument("--id", type=int, default=None)
+    p_delete_user.add_argument(
+        "--yes",
+        action="store_true",
+        help="Do not prompt for confirmation",
+    )
+
+    p_reset_user = sub.add_parser(
+        "reset-user",
+        help="Delete all annotations for a user, keeping the user and their task order",
+    )
+    p_reset_user.add_argument("--username", default=None)
+    p_reset_user.add_argument("--id", type=int, default=None)
+    p_reset_user.add_argument(
+        "--yes",
+        action="store_true",
+        help="Do not prompt for confirmation",
     )
 
     args = parser.parse_args()
@@ -296,6 +327,110 @@ def main() -> None:
                 wb.save(out_path)
                 print(f"Wrote: {out_path}")
 
+        return
+
+    if args.cmd == "list-users":
+        with Session() as s:
+            users_q = select(User).order_by(User.username.asc())
+            if args.annotators_only:
+                users_q = users_q.where(User.is_admin == False)  # noqa: E712
+            users = s.execute(users_q).scalars().all()
+
+            ut_counts = {
+                int(user_id): int(count)
+                for user_id, count in s.execute(
+                    select(UserTask.user_id, func.count()).group_by(UserTask.user_id)
+                ).all()
+            }
+            ann_counts = {
+                int(user_id): int(count)
+                for user_id, count in s.execute(
+                    select(Annotation.user_id, func.count()).group_by(Annotation.user_id)
+                ).all()
+            }
+            last_saved = {
+                int(user_id): last
+                for user_id, last in s.execute(
+                    select(Annotation.user_id, func.max(Annotation.created_at)).group_by(Annotation.user_id)
+                ).all()
+            }
+
+        if not users:
+            print("No users found.")
+            return
+
+        header = (
+            f"{'ID':>4}  {'Username':<24}  {'Admin':<5}  {'Exp':>3}  "
+            f"{'Done':>4}  {'Total':>5}  {'Remain':>6}  {'Last saved (UTC)':<20}"
+        )
+        print(header)
+        print("-" * len(header))
+        for u in users:
+            total = int(ut_counts.get(int(u.id), 0))
+            done = int(ann_counts.get(int(u.id), 0))
+            remain = max(0, total - done)
+            last = last_saved.get(int(u.id))
+            last_str = last.strftime("%Y-%m-%d %H:%M") if last else ""
+            print(
+                f"{int(u.id):>4}  {u.username:<24.24}  {('yes' if u.is_admin else 'no'):<5}  {int(getattr(u, 'expertise_score', 0)):>3}  "
+                f"{done:>4}  {total:>5}  {remain:>6}  {last_str:<20}"
+            )
+        return
+
+    def _resolve_user(session, user_id: int | None, username: str | None) -> User | None:
+        if user_id is not None:
+            return session.execute(select(User).where(User.id == int(user_id))).scalar_one_or_none()
+        if username is not None:
+            return session.execute(select(User).where(User.username == str(username))).scalar_one_or_none()
+        return None
+
+    def _confirm_or_exit(prompt: str, assume_yes: bool) -> None:
+        if assume_yes:
+            return
+        ans = input(f"{prompt} Type 'delete' to confirm: ").strip().lower()
+        if ans != "delete":
+            raise SystemExit("Aborted.")
+
+    if args.cmd in ("delete-user", "reset-user"):
+        if args.id is None and not args.username:
+            raise SystemExit("Provide --id or --username")
+
+        with Session() as s:
+            user = _resolve_user(s, args.id, args.username)
+            if not user:
+                raise SystemExit("User not found")
+
+            total = int(
+                s.execute(select(func.count()).select_from(UserTask).where(UserTask.user_id == user.id)).scalar_one()
+            )
+            done = int(
+                s.execute(select(func.count()).select_from(Annotation).where(Annotation.user_id == user.id)).scalar_one()
+            )
+
+            print(
+                f"User: id={int(user.id)} username={user.username} admin={bool(user.is_admin)} expertise_score={int(getattr(user, 'expertise_score', 0))}"
+            )
+            print(f"Progress: {done}/{total} saved")
+
+            if args.cmd == "reset-user":
+                _confirm_or_exit(
+                    "This will permanently delete ALL annotations for this user.",
+                    bool(args.yes),
+                )
+                s.execute(delete(Annotation).where(Annotation.user_id == user.id))
+                s.commit()
+                print("Reset complete (annotations removed, user kept).")
+                return
+
+            _confirm_or_exit(
+                "This will permanently delete the user, their task list, and all their annotations.",
+                bool(args.yes),
+            )
+            s.execute(delete(Annotation).where(Annotation.user_id == user.id))
+            s.execute(delete(UserTask).where(UserTask.user_id == user.id))
+            s.execute(delete(User).where(User.id == user.id))
+            s.commit()
+            print("Delete complete.")
         return
 
 
