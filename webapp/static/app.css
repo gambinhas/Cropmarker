@@ -224,10 +224,14 @@ button:disabled {
 
 .introImageWrap {
   margin: 14px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .introImage {
-  width: 100%;
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
   height: auto;
   display: block;
   border-radius: 12px;
