@@ -75,7 +75,9 @@ Importante
 - Regras:
   - Saved = “S” se existir anotação para o item; caso contrário vazio
   - Drawing = drawing_json (tipicamente só com Cropmark 1/2)
-  - QC_Reference = preenchido apenas para duplicados QC
+  - UniqueID = filename (compatível com a app de supervisão)
+  - QC_Reference = filename original (apenas para duplicados QC)
+  - Duplicados QC usam UniqueID = "<filename>_qc"
   - Order = display_order (ordem aleatória do utilizador)
   - Date = extraído do filename (ex: “aug2021” -> “08/2021”); se não for detetável fica vazio
 

@@ -292,6 +292,13 @@ def main() -> None:
                     if ann is not None and int(ann.cropmark) in (1, 2):
                         drawing = ann.drawing_json or ""
 
+                    # Compatibility with the existing supervisor tool / legacy offline exports:
+                    # - UniqueID is the image filename (not the dataset rel_path)
+                    # - QC duplicates use "<filename>_qc" and QC_Reference points to the original filename
+                    is_qc = bool(user_task.qc_reference)
+                    legacy_unique_id = f"{task.filename}_qc" if is_qc else task.filename
+                    legacy_qc_ref = task.filename if is_qc else ""
+
                     ws.append(
                         [
                             task.site,
@@ -300,8 +307,8 @@ def main() -> None:
                             task.filename,
                             saved,
                             drawing,
-                            user_task.qc_reference or "",
-                            task.unique_id,
+                            legacy_qc_ref,
+                            legacy_unique_id,
                             int(user_task.display_order),
                         ]
                     )
