@@ -127,10 +127,12 @@ def aggregate_user_data():
 
     for i, file_path in enumerate(user_files):
         filename = os.path.basename(file_path)
-        match = re.match(r'cropmarks_([^_]+)_?(\d*)\.xlsx', filename)
+        # Accept usernames with underscores/spaces and Windows duplicate suffixes like " (1).xlsx".
+        match = re.match(r'^cropmarks_(.+?)(?:_(\d+))?(?:\s*\(\d+\))?\.xlsx$', filename)
         if not match:
+            print(f"Skipping unrecognized file name format: {filename}")
             continue
-        
+
         username, score_str = match.groups()
         score = int(score_str) if score_str else 1
 
@@ -146,17 +148,28 @@ def aggregate_user_data():
                 users_with_unclassified.add(username)
 
             for row in ws.iter_rows(min_row=2, values_only=True):
-                if len(row) > 7 and row[4] == 'S' and row[7]:
-                    unique_id = row[7]
-                    if unique_id not in aggregated_data:
-                        aggregated_data[unique_id] = []
-                    
-                    aggregated_data[unique_id].append({
+                # Expected columns (export-xlsx):
+                # 0 Site, 1 Date, 2 Cropmark, 3 Image, 4 Saved, 5 Drawing, 6 QC_Reference, 7 UniqueID, 8 Order
+                if len(row) > 4 and row[4] == 'S':
+                    image_filename = row[3] if len(row) > 3 else None
+                    instance_id = row[7] if len(row) > 7 else None
+                    if not image_filename:
+                        # Fall back to instance_id if needed.
+                        image_filename = instance_id
+                    if not image_filename:
+                        continue
+
+                    if image_filename not in aggregated_data:
+                        aggregated_data[image_filename] = []
+
+                    aggregated_data[image_filename].append({
                         'user': username,
                         'score': int(row[2]) if row[2] is not None else -1,
                         'image': row[3],
                         'drawing': row[5],
-                        'qc_ref': row[6]
+                        'qc_ref': row[6],
+                        # Keep the exported UniqueID available for QC/traceability.
+                        'instance_id': instance_id,
                     })
         except Exception as e:
             print(f"Could not process file {file_path}: {e}")
@@ -330,20 +343,30 @@ def calculate_weighted_median(annotations, user_effective_weights):
 
 def calculate_user_consistency(aggregated_data):
     """Calculates user consistency based on consistency across QC duplicate images."""
-    qc_pairs = {ann[0].get('qc_ref'): image_id for image_id, ann in aggregated_data.items() if ann and ann[0].get('qc_ref')}
+    # We do NOT rely on the dict keys being QC IDs, because newer exports may
+    # key by image filename. Instead, we use the per-row fields:
+    # - instance_id (UniqueID column)
+    # - qc_ref (QC_Reference column)
+    qc_pairs = set()
+    user_scores_by_instance = defaultdict(dict)
+
+    for _, annotations in aggregated_data.items():
+        for ann in annotations:
+            inst = ann.get('instance_id') or ann.get('image')
+            if inst:
+                user_scores_by_instance[ann['user']][inst] = ann.get('score', -1)
+            qc_ref = ann.get('qc_ref')
+            if qc_ref and inst and qc_ref != inst:
+                qc_pairs.add((qc_ref, inst))
+
     if not qc_pairs:
         print("No QC image pairs found to calculate consistency.")
         return {}
 
-    user_scores_by_image = defaultdict(dict)
-    for image_id, annotations in aggregated_data.items():
-        for ann in annotations:
-            user_scores_by_image[ann['user']][image_id] = ann['score']
-
     user_consistency_scores = {}
-    for user, scores in user_scores_by_image.items():
+    for user, scores in user_scores_by_instance.items():
         matches, total_annotated_pairs = 0, 0
-        for original_id, duplicate_id in qc_pairs.items():
+        for original_id, duplicate_id in qc_pairs:
             if original_id in scores and duplicate_id in scores:
                 total_annotated_pairs += 1
                 score1, score2 = scores[original_id], scores[duplicate_id]
