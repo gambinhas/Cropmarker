@@ -32,6 +32,9 @@ annotations/
 export.csv
 export_xlsx/
 
+# Large local archives (DO NOT COMMIT)
+image_dataset.zip
+
 # Build artifacts
 build/
 dist/

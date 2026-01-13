@@ -19,6 +19,7 @@ from .models import Annotation, Task, User, UserTask
 BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_DB = BASE_DIR / "webapp_data" / "webapp.sqlite3"
 DEFAULT_DATASET_ROOT = (BASE_DIR / ".." / "image_dataset").resolve()
+RESOURCES_DIR = (BASE_DIR / ".." / "resources").resolve()
 SECRET_KEY = os.environ.get("CROPMARKER_SECRET_KEY", "dev-secret-change-me")
 
 DB_PATH = Path(os.environ.get("CROPMARKER_DB_PATH", str(DEFAULT_DB)))
@@ -41,6 +42,8 @@ templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
 # Serve images as /images/<site>/<file>.jpg
 app.mount("/images", StaticFiles(directory=str(DATASET_ROOT)), name="images")
 app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="static")
+if RESOURCES_DIR.exists():
+    app.mount("/resources", StaticFiles(directory=str(RESOURCES_DIR)), name="resources")
 
 
 QC_DUPLICATES_PER_USER = 39
@@ -150,7 +153,19 @@ def new_user_post(
 
     ensure_user_task_list(db, user.id)
     login_session(request, user)
-    return RedirectResponse(url="/tasks/next", status_code=302)
+    return RedirectResponse(url="/intro", status_code=302)
+
+
+@app.get("/intro", response_class=HTMLResponse)
+def intro_get(request: Request):
+    user = require_user(request)
+    return templates.TemplateResponse(
+        "intro.html",
+        {
+            "request": request,
+            "username": user.username,
+        },
+    )
 
 
 @app.post("/login")

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cropmarker Web - Before you start</title>
+  <link rel="stylesheet" href="/static/app.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cropmarker Web</h1>
+    <p class="muted">Annotator: <strong>{{ username }}</strong></p>
+
+    <div class="card introCard">
+      <h2>Before you start</h2>
+      <p class="muted">Please read the summary below. When you are ready, click “Start annotating”.</p>
+
+      <div class="introImageWrap">
+        <img class="introImage" src="/resources/cropmark.png" alt="Before you start summary" />
+      </div>
+
+      <form method="get" action="/tasks/next" class="introActions">
+        <button type="submit" class="big">Start annotating</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
