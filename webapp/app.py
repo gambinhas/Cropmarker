@@ -3,10 +3,14 @@ from __future__ import annotations
 import json
 import os
 import random
+import re
+import secrets
+import zipfile
+from io import BytesIO
 from pathlib import Path
 
 from fastapi import Depends, FastAPI, Form, HTTPException, Request
-from fastapi.responses import HTMLResponse, RedirectResponse
+from fastapi.responses import HTMLResponse, RedirectResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from sqlalchemy import and_, func, select
@@ -21,6 +25,7 @@ DEFAULT_DB = BASE_DIR / "webapp_data" / "webapp.sqlite3"
 DEFAULT_DATASET_ROOT = (BASE_DIR / ".." / "image_dataset").resolve()
 RESOURCES_DIR = (BASE_DIR / ".." / "resources").resolve()
 SECRET_KEY = os.environ.get("CROPMARKER_SECRET_KEY", "dev-secret-change-me")
+ADMIN_EXPORT_TOKEN = os.environ.get("CROPMARKER_ADMIN_EXPORT_TOKEN", "")
 
 DB_PATH = Path(os.environ.get("CROPMARKER_DB_PATH", str(DEFAULT_DB)))
 DATASET_ROOT = Path(os.environ.get("CROPMARKER_DATASET_ROOT", str(DEFAULT_DATASET_ROOT)))
@@ -48,6 +53,54 @@ if RESOURCES_DIR.exists():
 
 QC_DUPLICATES_PER_USER = 39
 EXPECTED_ORIGINALS = 381
+
+_MONTHS = {
+    "jan": "01",
+    "feb": "02",
+    "mar": "03",
+    "apr": "04",
+    "may": "05",
+    "jun": "06",
+    "jul": "07",
+    "aug": "08",
+    "sep": "09",
+    "oct": "10",
+    "nov": "11",
+    "dec": "12",
+}
+
+
+def _parse_mm_yyyy_from_filename(filename: str) -> str:
+    m = re.search(r"(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)(\d{4})", (filename or "").lower())
+    if not m:
+        return ""
+    mm = _MONTHS.get(m.group(1), "")
+    yyyy = m.group(2)
+    return f"{mm}/{yyyy}" if mm else ""
+
+
+def _safe_filename_part(s: str) -> str:
+    s = (s or "").strip()
+    s = re.sub(r"[\\/:*?\"<>|]+", "_", s)
+    s = s.strip()
+    return s or "user"
+
+
+def _require_admin_export_token(request: Request, token_param: str | None) -> None:
+    # If the token is not configured, do not expose this endpoint at all.
+    if not ADMIN_EXPORT_TOKEN:
+        raise HTTPException(status_code=404)
+
+    token = (token_param or "").strip()
+    if not token:
+        token = (request.headers.get("X-Admin-Token") or "").strip()
+    if not token:
+        auth = (request.headers.get("Authorization") or "").strip()
+        if auth.lower().startswith("bearer "):
+            token = auth[7:].strip()
+
+    if not token or not secrets.compare_digest(token, ADMIN_EXPORT_TOKEN):
+        raise HTTPException(status_code=403, detail="Forbidden")
 
 
 def get_db():
@@ -197,6 +250,117 @@ def login_post(
 def logout_post(request: Request):
     logout_session(request)
     return RedirectResponse(url="/login", status_code=302)
+
+
+@app.get("/admin/exports.zip")
+def admin_exports_zip(
+    request: Request,
+    token: str | None = None,
+    username: str | None = None,
+    include_admin: bool = False,
+    db=Depends(get_db),
+):
+    """Token-protected download of a ZIP containing one XLSX per user.
+
+    This is intended for admin-only use on Render where downloading files from disk is inconvenient.
+    """
+
+    _require_admin_export_token(request, token)
+
+    try:
+        from openpyxl import Workbook
+    except Exception as e:
+        raise HTTPException(status_code=500, detail="Missing dependency 'openpyxl'") from e
+
+    users_q = select(User).order_by(User.username.asc())
+    if not include_admin:
+        users_q = users_q.where(User.is_admin == False)  # noqa: E712
+    if username:
+        users_q = users_q.where(User.username == username)
+    users = db.execute(users_q).scalars().all()
+    if not users:
+        raise HTTPException(status_code=404, detail="No users found")
+
+    zip_buf = BytesIO()
+    with zipfile.ZipFile(zip_buf, "w", compression=zipfile.ZIP_DEFLATED) as zf:
+        for user in users:
+            rows = db.execute(
+                select(UserTask, Task, Annotation)
+                .join(Task, UserTask.task_id == Task.id)
+                .outerjoin(
+                    Annotation,
+                    and_(Annotation.user_task_id == UserTask.id, Annotation.user_id == user.id),
+                )
+                .where(UserTask.user_id == user.id)
+                .order_by(UserTask.display_order.asc())
+            ).all()
+
+            wb = Workbook()
+            ws = wb.active
+            ws.title = "cropmarks"
+            ws.append(
+                [
+                    "Site",
+                    "Date",
+                    "Cropmark",
+                    "Image",
+                    "Saved",
+                    "Drawing",
+                    "QC_Reference",
+                    "UniqueID",
+                    "Order",
+                ]
+            )
+
+            for user_task, task, ann in rows:
+                saved = "S" if ann is not None else ""
+                cropmark = ann.cropmark if ann is not None else ""
+
+                drawing = ""
+                if ann is not None and int(ann.cropmark) in (1, 2):
+                    drawing = ann.drawing_json or ""
+
+                ws.append(
+                    [
+                        task.site,
+                        _parse_mm_yyyy_from_filename(task.filename),
+                        cropmark,
+                        task.filename,
+                        saved,
+                        drawing,
+                        user_task.qc_reference or "",
+                        task.unique_id,
+                        int(user_task.display_order),
+                    ]
+                )
+
+            ws.freeze_panes = "A2"
+            ws.auto_filter.ref = f"A1:I{ws.max_row}"
+            for col, width in {
+                "A": 26,
+                "B": 10,
+                "C": 10,
+                "D": 36,
+                "E": 8,
+                "F": 60,
+                "G": 26,
+                "H": 36,
+                "I": 8,
+            }.items():
+                ws.column_dimensions[col].width = width
+
+            expertise_score = int(getattr(user, "expertise_score", 0) or 0)
+            xlsx_name = f"cropmarks_{_safe_filename_part(user.username)}_{expertise_score}.xlsx"
+            xlsx_buf = BytesIO()
+            wb.save(xlsx_buf)
+            zf.writestr(xlsx_name, xlsx_buf.getvalue())
+
+    zip_buf.seek(0)
+    headers = {
+        "Content-Disposition": "attachment; filename=cropmarker_exports.zip",
+        "Cache-Control": "no-store",
+    }
+    return StreamingResponse(zip_buf, media_type="application/zip", headers=headers)
 
 
 @app.get("/tasks/next")

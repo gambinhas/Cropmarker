@@ -56,16 +56,16 @@ Importante
 - Alternativa prática: usa o script run_webapp.cmd para preparar o ambiente da webapp.
 
 2.3 Exportar XLSX (um ficheiro por utilizador)
-- A partir da pasta Cropmarker/webapp, executar:
-  python manage.py export-xlsx --out-dir export_xlsx
+- A partir da pasta do repositório (Cropmarker), executar:
+  python -m webapp.manage export-xlsx --out-dir export_xlsx
 
 2.4 Exportar XLSX apenas para 1 utilizador
 - Exemplo:
-  python manage.py export-xlsx --username NOMEEXATO --out-dir export_xlsx
+  python -m webapp.manage export-xlsx --username NOMEEXATO --out-dir export_xlsx
 
 2.5 Exportar apontando explicitamente para a DB
 - Exemplo:
-  python manage.py --db webapp_data/webapp.sqlite3 export-xlsx --out-dir export_xlsx
+  python -m webapp.manage --db webapp_data/webapp.sqlite3 export-xlsx --out-dir export_xlsx
 
 2.6 Formato final do XLSX
 - Nome do ficheiro:
@@ -83,6 +83,26 @@ Importante
 - O comando export-xlsx pode falhar se o openpyxl não estiver instalado no ambiente.
 - Instalar com:
   pip install -r webapp/requirements.txt
+
+2.8 Render (produção): descarregar XLSX via ZIP (admin, protegido por token)
+
+Contexto
+- No Render, os ficheiros gerados no disco (/var/data/...) não têm um botão de download direto.
+- Para facilitar, existe um endpoint que devolve um ZIP com 1 XLSX por utilizador.
+- Este endpoint NÃO aparece na UI e exige um token.
+
+Configuração (Render)
+- Definir env var: CROPMARKER_ADMIN_EXPORT_TOKEN
+- Escolher um valor longo e aleatório.
+
+Uso
+- Abrir no browser (substituir <TOKEN>):
+  https://<SEU_SERVICO_RENDER>/admin/exports.zip?token=<TOKEN>
+- Resultado: download de "cropmarker_exports.zip" contendo "cropmarks_<username>_<expertise_score>.xlsx".
+
+Notas
+- Por defeito, exporta apenas utilizadores não-admin.
+- Para exportar apenas 1 utilizador: adicionar "&username=NOMEEXATO".
 
 
 Notas rápidas
