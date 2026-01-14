@@ -17,6 +17,8 @@ class User(Base):
     is_admin: Mapped[bool] = mapped_column(Boolean, default=False)
     expertise_score: Mapped[int] = mapped_column(Integer, default=0)
     access_token_hash: Mapped[str] = mapped_column(String(64), default="", index=True)
+    # Admin-visible encrypted token (so it can be shown in the admin panel). Login still uses access_token_hash.
+    access_token_encrypted: Mapped[str] = mapped_column(Text, default="")
     last_login_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
 
     annotations: Mapped[list[Annotation]] = relationship(back_populates="user")  # type: ignore[name-defined]

@@ -12,7 +12,7 @@
     <div class="muted">You can close this tab when done.</div>
   </div>
 
-  <div class="container">
+  <div class="container adminWide">
     <h1>Annotators</h1>
 
     {% if message %}
@@ -20,7 +20,7 @@
         <strong>{{ message }}</strong>
         {% if token_to_copy %}
           <div class="adminTokenBox">
-            <div class="muted">Copy this token now and send by email (it cannot be recovered later):</div>
+            <div class="muted">Copy this token and send by email:</div>
             <div class="adminToken">{{ token_to_copy }}</div>
           </div>
         {% endif %}
@@ -43,8 +43,12 @@
               <option value="5">5</option>
             </select>
           </label>
-          <label>Access Token (optional)
-            <input type="text" name="access_token" placeholder="Leave empty to generate" />
+          <label>Access Token
+            <div class="adminTokenRow">
+              <input id="createToken" type="text" name="access_token" readonly placeholder="Click Generate" />
+              <button type="button" class="secondary" onclick="generateCreateToken()">Generate</button>
+            </div>
+            <div class="muted" style="margin-top:6px;">8 characters (A–Z, a–z, 0–9)</div>
           </label>
         </div>
         <button type="submit">Create</button>
@@ -58,12 +62,12 @@
             <tr>
               <th>Username</th>
               <th>Expertise</th>
+              <th>Token</th>
               <th>Done</th>
               <th>Total</th>
               <th>Remaining</th>
               <th>Last login (UTC)</th>
               <th>Last save (UTC)</th>
-              <th>Token set</th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -72,12 +76,12 @@
               <tr>
                 <td><strong>{{ u.username }}</strong></td>
                 <td>{{ u.expertise_score }}</td>
+                <td><span class="adminTokenCell">{{ u.token or '' }}</span></td>
                 <td>{{ u.done }}</td>
                 <td>{{ u.total }}</td>
                 <td>{{ u.remaining }}</td>
                 <td>{{ u.last_login_at or '' }}</td>
                 <td>{{ u.last_saved_at or '' }}</td>
-                <td>{{ 'yes' if u.has_token else 'no' }}</td>
                 <td class="adminActions">
                   <form method="post" action="/admin/users/update" class="adminInline">
                     <input type="hidden" name="token" value="{{ admin_token }}" />
@@ -120,5 +124,31 @@
       <p>Admin access is controlled by your admin token. Keep it secret.</p>
     </div>
   </div>
+
+  <script>
+    function _randomAlnum(len) {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      if (window.crypto && window.crypto.getRandomValues) {
+        const buf = new Uint32Array(len);
+        window.crypto.getRandomValues(buf);
+        let out = '';
+        for (let i = 0; i < len; i++) {
+          out += chars.charAt(buf[i] % chars.length);
+        }
+        return out;
+      }
+      let out = '';
+      for (let i = 0; i < len; i++) {
+        out += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return out;
+    }
+
+    function generateCreateToken() {
+      const el = document.getElementById('createToken');
+      if (!el) return;
+      el.value = _randomAlnum(8);
+    }
+  </script>
 </body>
 </html>

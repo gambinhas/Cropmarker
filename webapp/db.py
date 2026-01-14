@@ -54,3 +54,8 @@ def ensure_sqlite_migrations(engine) -> None:  # noqa: ANN001
         cols = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(users)").fetchall()}
         if cols and "last_login_at" not in cols:
             conn.exec_driver_sql("ALTER TABLE users ADD COLUMN last_login_at DATETIME")
+
+        # users.access_token_encrypted
+        cols = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(users)").fetchall()}
+        if cols and "access_token_encrypted" not in cols:
+            conn.exec_driver_sql("ALTER TABLE users ADD COLUMN access_token_encrypted TEXT NOT NULL DEFAULT ''")

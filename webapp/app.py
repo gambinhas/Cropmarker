@@ -7,6 +7,7 @@ import re
 import secrets
 import hashlib
 import zipfile
+import base64
 from io import BytesIO
 from pathlib import Path
 from datetime import datetime
@@ -121,6 +122,46 @@ def _hash_access_token(token: str) -> str:
     return hashlib.sha256((token or "").encode("utf-8")).hexdigest()
 
 
+_TOKEN_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
+
+def _generate_short_token(length: int = 8) -> str:
+    return "".join(secrets.choice(_TOKEN_ALPHABET) for _ in range(length))
+
+
+def _get_fernet():
+    try:
+        from cryptography.fernet import Fernet  # type: ignore
+    except Exception:
+        return None
+
+    key = base64.urlsafe_b64encode(hashlib.sha256(SECRET_KEY.encode("utf-8")).digest())
+    return Fernet(key)
+
+
+def _encrypt_access_token(token: str) -> str:
+    token = (token or "").strip()
+    if not token:
+        return ""
+    f = _get_fernet()
+    if not f:
+        return ""
+    return f.encrypt(token.encode("utf-8")).decode("ascii")
+
+
+def _decrypt_access_token(token_enc: str) -> str:
+    token_enc = (token_enc or "").strip()
+    if not token_enc:
+        return ""
+    f = _get_fernet()
+    if not f:
+        return ""
+    try:
+        return f.decrypt(token_enc.encode("ascii")).decode("utf-8")
+    except Exception:
+        return ""
+
+
 def get_db():
     db = SessionLocal()
     try:
@@ -225,6 +266,7 @@ def _admin_user_rows(db):
                 "last_login_at": _fmt_dt(getattr(u, "last_login_at", None)),
                 "last_saved_at": _fmt_dt(last_saved.get(int(u.id))),
                 "has_token": bool(getattr(u, "access_token_hash", "")),
+                "token": _decrypt_access_token(getattr(u, "access_token_encrypted", "")),
             }
         )
     return rows
@@ -277,18 +319,23 @@ def admin_create_user(
             status_code=400,
         )
 
-    token_plain = (access_token or "").strip() or secrets.token_urlsafe(24)
+    token_plain = (access_token or "").strip() or _generate_short_token(8)
     user = User(
         username=username,
         password_hash="",
         is_admin=False,
         expertise_score=int(expertise_score),
         access_token_hash=_hash_access_token(token_plain),
+        access_token_encrypted=_encrypt_access_token(token_plain),
     )
     db.add(user)
     db.commit()
     db.refresh(user)
-    ensure_user_task_list(db, user.id)
+    try:
+        ensure_user_task_list(db, user.id)
+    except Exception:
+        # If tasks are not imported yet, do not fail user creation.
+        pass
 
     users = _admin_user_rows(db)
     return templates.TemplateResponse(
@@ -345,8 +392,9 @@ def admin_rotate_token(
     if not user:
         raise HTTPException(status_code=404)
 
-    token_plain = secrets.token_urlsafe(24)
+    token_plain = _generate_short_token(8)
     user.access_token_hash = _hash_access_token(token_plain)
+    user.access_token_encrypted = _encrypt_access_token(token_plain)
     db.commit()
 
     users = _admin_user_rows(db)

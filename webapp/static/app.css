@@ -193,6 +193,27 @@ button.danger {
   overflow-x: auto;
 }
 
+.container.adminWide {
+  max-width: none;
+  width: 100%;
+}
+
+.adminTokenRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.adminTokenRow input[type="text"] {
+  flex: 1;
+}
+
+.adminTokenCell {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+}
+
 .adminTable {
   width: 100%;
   border-collapse: collapse;

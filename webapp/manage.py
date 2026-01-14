@@ -4,8 +4,10 @@ import argparse
 import csv
 import hashlib
 import json
+import os
 import re
 import secrets
+import base64
 from pathlib import Path
 
 from sqlalchemy import and_, delete, func, select
@@ -49,6 +51,34 @@ def _safe_filename_part(s: str) -> str:
 
 def _hash_access_token(token: str) -> str:
     return hashlib.sha256((token or "").encode("utf-8")).hexdigest()
+
+
+_TOKEN_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
+
+def _generate_short_token(length: int = 8) -> str:
+    return "".join(secrets.choice(_TOKEN_ALPHABET) for _ in range(length))
+
+
+def _get_fernet():
+    try:
+        from cryptography.fernet import Fernet  # type: ignore
+    except Exception:
+        return None
+
+    secret_key = os.environ.get("CROPMARKER_SECRET_KEY", "dev-secret-change-me")
+    key = base64.urlsafe_b64encode(hashlib.sha256(secret_key.encode("utf-8")).digest())
+    return Fernet(key)
+
+
+def _encrypt_access_token(token: str) -> str:
+    token = (token or "").strip()
+    if not token:
+        return ""
+    f = _get_fernet()
+    if not f:
+        return ""
+    return f.encrypt(token.encode("utf-8")).decode("ascii")
 
 
 def main() -> None:
@@ -177,10 +207,12 @@ def main() -> None:
                 if args.access_token:
                     new_token = str(args.access_token).strip()
                 elif bool(args.rotate_token):
-                    new_token = secrets.token_urlsafe(24)
+                    new_token = _generate_short_token(8)
 
                 if new_token is not None:
                     existing.access_token_hash = _hash_access_token(new_token)
+                    if hasattr(existing, "access_token_encrypted"):
+                        existing.access_token_encrypted = _encrypt_access_token(new_token)
 
                 s.commit()
 
@@ -193,7 +225,7 @@ def main() -> None:
                     print(f"Access token (send by email): {new_token}")
                 return
 
-            token_plain = str(args.access_token).strip() if args.access_token else secrets.token_urlsafe(24)
+            token_plain = str(args.access_token).strip() if args.access_token else _generate_short_token(8)
 
             # No passwords by design (mirrors the original Tkinter workflow).
             user = User(
@@ -202,6 +234,7 @@ def main() -> None:
                 is_admin=bool(args.admin),
                 expertise_score=int(args.expertise_score),
                 access_token_hash=_hash_access_token(token_plain),
+                access_token_encrypted=_encrypt_access_token(token_plain),
             )
             s.add(user)
             s.commit()
