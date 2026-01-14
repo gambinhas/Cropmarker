@@ -107,6 +107,33 @@ Notas
 - Para exportar apenas 1 utilizador: adicionar "&username=NOMEEXATO".
 
 
+2.9 Render (produção): painel web de administração (admin, protegido por token)
+
+Objetivo
+- Evitar usar a shell do Render para gestão de anotadores.
+
+Configuração
+- Reutiliza a mesma env var: CROPMARKER_ADMIN_EXPORT_TOKEN
+
+Uso
+- Abrir no browser (substituir <TOKEN>):
+  https://<SEU_SERVICO_RENDER>/admin?token=<TOKEN>
+
+O que mostra
+- Lista de anotadores (não-admin) com:
+  - Done/Total/Remaining
+  - Last login (UTC)
+  - Last save (UTC)
+  - Token set (yes/no)
+
+Ações disponíveis
+- Create annotator: cria utilizador + (opcionalmente) define token; se vazio, gera automaticamente.
+- Update: altera apenas a expertise.
+- Rotate token: gera um novo token (copia e envia por email; não pode ser recuperado depois).
+- Reset: apaga todas as annotations do utilizador (mantém a lista 420).
+- Delete: apaga utilizador + todas as suas annotations + user_tasks.
+
+
 Notas rápidas
 - Export CSV “bruto” (já existe):
   python manage.py export-csv --out export.csv

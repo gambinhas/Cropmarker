@@ -9,12 +9,13 @@ import hashlib
 import zipfile
 from io import BytesIO
 from pathlib import Path
+from datetime import datetime
 
 from fastapi import Depends, FastAPI, Form, HTTPException, Request
 from fastapi.responses import HTMLResponse, RedirectResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from sqlalchemy import and_, func, select
+from sqlalchemy import and_, delete, func, select
 from starlette.middleware.sessions import SessionMiddleware
 
 from .auth import login_session, logout_session, require_user
@@ -87,7 +88,7 @@ def _safe_filename_part(s: str) -> str:
     return s or "user"
 
 
-def _require_admin_export_token(request: Request, token_param: str | None) -> None:
+def _require_admin_export_token(request: Request, token_param: str | None) -> str:
     # If the token is not configured, do not expose this endpoint at all.
     if not ADMIN_EXPORT_TOKEN:
         raise HTTPException(status_code=404)
@@ -102,6 +103,22 @@ def _require_admin_export_token(request: Request, token_param: str | None) -> No
 
     if not token or not secrets.compare_digest(token, ADMIN_EXPORT_TOKEN):
         raise HTTPException(status_code=403, detail="Forbidden")
+
+    return token
+
+
+def _fmt_dt(dt) -> str:
+    if not dt:
+        return ""
+    try:
+        return dt.strftime("%Y-%m-%d %H:%M")
+    except Exception:
+        return str(dt)
+
+
+def _hash_access_token(token: str) -> str:
+    # Store only a non-reversible hash in the DB.
+    return hashlib.sha256((token or "").encode("utf-8")).hexdigest()
 
 
 def get_db():
@@ -176,9 +193,231 @@ def new_user_post(
     raise HTTPException(status_code=404)
 
 
-def _hash_access_token(token: str) -> str:
-    # Store only a non-reversible hash in the DB.
-    return hashlib.sha256((token or "").encode("utf-8")).hexdigest()
+def _admin_user_rows(db):
+    ut_counts = {
+        int(user_id): int(count)
+        for user_id, count in db.execute(select(UserTask.user_id, func.count()).group_by(UserTask.user_id)).all()
+    }
+    ann_counts = {
+        int(user_id): int(count)
+        for user_id, count in db.execute(select(Annotation.user_id, func.count()).group_by(Annotation.user_id)).all()
+    }
+    last_saved = {
+        int(user_id): last
+        for user_id, last in db.execute(
+            select(Annotation.user_id, func.max(Annotation.created_at)).group_by(Annotation.user_id)
+        ).all()
+    }
+
+    users = db.execute(select(User).where(User.is_admin == False).order_by(User.username.asc())).scalars().all()  # noqa: E712
+    rows = []
+    for u in users:
+        total = int(ut_counts.get(int(u.id), 0))
+        done = int(ann_counts.get(int(u.id), 0))
+        remaining = max(0, total - done)
+        rows.append(
+            {
+                "username": u.username,
+                "expertise_score": int(getattr(u, "expertise_score", 0) or 0),
+                "total": total,
+                "done": done,
+                "remaining": remaining,
+                "last_login_at": _fmt_dt(getattr(u, "last_login_at", None)),
+                "last_saved_at": _fmt_dt(last_saved.get(int(u.id))),
+                "has_token": bool(getattr(u, "access_token_hash", "")),
+            }
+        )
+    return rows
+
+
+@app.get("/admin", response_class=HTMLResponse)
+def admin_get(request: Request, token: str | None = None, db=Depends(get_db)):
+    admin_token = _require_admin_export_token(request, token)
+    users = _admin_user_rows(db)
+    return templates.TemplateResponse(
+        "admin.html",
+        {
+            "request": request,
+            "admin_token": admin_token,
+            "users": users,
+            "message": None,
+            "token_to_copy": None,
+        },
+    )
+
+
+@app.post("/admin/users/create", response_class=HTMLResponse)
+def admin_create_user(
+    request: Request,
+    token: str = Form(...),
+    username: str = Form(...),
+    expertise_score: int = Form(...),
+    access_token: str = Form(""),
+    db=Depends(get_db),
+):
+    token = _require_admin_export_token(request, token)
+    username = (username or "").strip()
+    if not username:
+        raise HTTPException(status_code=400)
+    if expertise_score not in (0, 1, 3, 5):
+        raise HTTPException(status_code=400)
+
+    existing = db.execute(select(User).where(User.username == username)).scalar_one_or_none()
+    if existing:
+        users = _admin_user_rows(db)
+        return templates.TemplateResponse(
+            "admin.html",
+            {
+                "request": request,
+                "admin_token": token,
+                "users": users,
+                "message": f"User already exists: {username}",
+                "token_to_copy": None,
+            },
+            status_code=400,
+        )
+
+    token_plain = (access_token or "").strip() or secrets.token_urlsafe(24)
+    user = User(
+        username=username,
+        password_hash="",
+        is_admin=False,
+        expertise_score=int(expertise_score),
+        access_token_hash=_hash_access_token(token_plain),
+    )
+    db.add(user)
+    db.commit()
+    db.refresh(user)
+    ensure_user_task_list(db, user.id)
+
+    users = _admin_user_rows(db)
+    return templates.TemplateResponse(
+        "admin.html",
+        {
+            "request": request,
+            "admin_token": token,
+            "users": users,
+            "message": f"Created user: {username}",
+            "token_to_copy": token_plain,
+        },
+    )
+
+
+@app.post("/admin/users/update", response_class=HTMLResponse)
+def admin_update_user(
+    request: Request,
+    token: str = Form(...),
+    username: str = Form(...),
+    expertise_score: int = Form(...),
+    db=Depends(get_db),
+):
+    token = _require_admin_export_token(request, token)
+    if expertise_score not in (0, 1, 3, 5):
+        raise HTTPException(status_code=400)
+    user = db.execute(select(User).where(User.username == username)).scalar_one_or_none()
+    if not user:
+        raise HTTPException(status_code=404)
+    user.expertise_score = int(expertise_score)
+    db.commit()
+
+    users = _admin_user_rows(db)
+    return templates.TemplateResponse(
+        "admin.html",
+        {
+            "request": request,
+            "admin_token": token,
+            "users": users,
+            "message": f"Updated expertise for: {username}",
+            "token_to_copy": None,
+        },
+    )
+
+
+@app.post("/admin/users/rotate-token", response_class=HTMLResponse)
+def admin_rotate_token(
+    request: Request,
+    token: str = Form(...),
+    username: str = Form(...),
+    db=Depends(get_db),
+):
+    token = _require_admin_export_token(request, token)
+    user = db.execute(select(User).where(User.username == username)).scalar_one_or_none()
+    if not user:
+        raise HTTPException(status_code=404)
+
+    token_plain = secrets.token_urlsafe(24)
+    user.access_token_hash = _hash_access_token(token_plain)
+    db.commit()
+
+    users = _admin_user_rows(db)
+    return templates.TemplateResponse(
+        "admin.html",
+        {
+            "request": request,
+            "admin_token": token,
+            "users": users,
+            "message": f"Rotated token for: {username}",
+            "token_to_copy": token_plain,
+        },
+    )
+
+
+@app.post("/admin/users/reset", response_class=HTMLResponse)
+def admin_reset_user(
+    request: Request,
+    token: str = Form(...),
+    username: str = Form(...),
+    db=Depends(get_db),
+):
+    token = _require_admin_export_token(request, token)
+    user = db.execute(select(User).where(User.username == username)).scalar_one_or_none()
+    if not user:
+        raise HTTPException(status_code=404)
+
+    db.execute(delete(Annotation).where(Annotation.user_id == user.id))
+    db.commit()
+
+    users = _admin_user_rows(db)
+    return templates.TemplateResponse(
+        "admin.html",
+        {
+            "request": request,
+            "admin_token": token,
+            "users": users,
+            "message": f"Reset annotations for: {username}",
+            "token_to_copy": None,
+        },
+    )
+
+
+@app.post("/admin/users/delete", response_class=HTMLResponse)
+def admin_delete_user(
+    request: Request,
+    token: str = Form(...),
+    username: str = Form(...),
+    db=Depends(get_db),
+):
+    token = _require_admin_export_token(request, token)
+    user = db.execute(select(User).where(User.username == username)).scalar_one_or_none()
+    if not user:
+        raise HTTPException(status_code=404)
+
+    db.execute(delete(Annotation).where(Annotation.user_id == user.id))
+    db.execute(delete(UserTask).where(UserTask.user_id == user.id))
+    db.execute(delete(User).where(User.id == user.id))
+    db.commit()
+
+    users = _admin_user_rows(db)
+    return templates.TemplateResponse(
+        "admin.html",
+        {
+            "request": request,
+            "admin_token": token,
+            "users": users,
+            "message": f"Deleted user: {username}",
+            "token_to_copy": None,
+        },
+    )
 
 
 @app.get("/intro", response_class=HTMLResponse)
@@ -215,6 +454,9 @@ def login_post(
             {"request": request, "error": "Invalid access token"},
             status_code=403,
         )
+
+    user.last_login_at = datetime.utcnow()
+    db.commit()
 
     ensure_user_task_list(db, user.id)
 

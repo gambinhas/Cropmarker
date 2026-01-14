@@ -184,6 +184,82 @@ button.secondary {
   color: var(--text);
 }
 
+button.danger {
+  background: var(--danger);
+  color: #20040a;
+}
+
+.adminTableWrap {
+  overflow-x: auto;
+}
+
+.adminTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.adminTable th,
+.adminTable td {
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 10px;
+  vertical-align: top;
+}
+
+.adminTable th {
+  text-align: left;
+  color: var(--muted);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.adminActions {
+  white-space: nowrap;
+}
+
+.adminInline {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin-right: 8px;
+  margin-bottom: 6px;
+}
+
+.adminForm input[type="text"],
+.adminForm select {
+  width: 100%;
+}
+
+.adminGrid {
+  display: grid;
+  grid-template-columns: 1fr 140px 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .adminGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.adminMessage {
+  border: 1px solid rgba(78, 161, 255, 0.35);
+}
+
+.adminTokenBox {
+  margin-top: 10px;
+}
+
+.adminToken {
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px dashed rgba(255,255,255,0.25);
+  background: rgba(0,0,0,0.25);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  word-break: break-all;
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
