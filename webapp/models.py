@@ -16,6 +16,7 @@ class User(Base):
     password_hash: Mapped[str] = mapped_column(String(255))
     is_admin: Mapped[bool] = mapped_column(Boolean, default=False)
     expertise_score: Mapped[int] = mapped_column(Integer, default=0)
+    access_token_hash: Mapped[str] = mapped_column(String(64), default="", index=True)
 
     annotations: Mapped[list[Annotation]] = relationship(back_populates="user")  # type: ignore[name-defined]
     user_tasks: Mapped[list[UserTask]] = relationship(back_populates="user")  # type: ignore[name-defined]

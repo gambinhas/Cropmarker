@@ -5,6 +5,7 @@ import os
 import random
 import re
 import secrets
+import hashlib
 import zipfile
 from io import BytesIO
 from pathlib import Path
@@ -162,17 +163,7 @@ def login_get(request: Request):
 
 @app.get("/new-user", response_class=HTMLResponse)
 def new_user_get(request: Request, username: str):
-    username = (username or "").strip()
-    if not username:
-        return RedirectResponse(url="/login", status_code=302)
-    return templates.TemplateResponse(
-        "new_user.html",
-        {
-            "request": request,
-            "username": username,
-            "error": None,
-        },
-    )
+    raise HTTPException(status_code=404)
 
 
 @app.post("/new-user")
@@ -182,31 +173,12 @@ def new_user_post(
     expertise_score: int = Form(...),
     db=Depends(get_db),
 ):
-    username = (username or "").strip()
-    if not username:
-        return RedirectResponse(url="/login", status_code=302)
+    raise HTTPException(status_code=404)
 
-    if expertise_score not in (0, 1, 3, 5):
-        return templates.TemplateResponse(
-            "new_user.html",
-            {"request": request, "username": username, "error": "Please select an experience level"},
-            status_code=400,
-        )
 
-    existing = db.execute(select(User).where(User.username == username)).scalar_one_or_none()
-    if existing:
-        # Race / user already created in another session.
-        login_session(request, existing)
-        return RedirectResponse(url="/tasks/next", status_code=302)
-
-    user = User(username=username, password_hash="", is_admin=False, expertise_score=expertise_score)
-    db.add(user)
-    db.commit()
-    db.refresh(user)
-
-    ensure_user_task_list(db, user.id)
-    login_session(request, user)
-    return RedirectResponse(url="/intro", status_code=302)
+def _hash_access_token(token: str) -> str:
+    # Store only a non-reversible hash in the DB.
+    return hashlib.sha256((token or "").encode("utf-8")).hexdigest()
 
 
 @app.get("/intro", response_class=HTMLResponse)
@@ -224,21 +196,25 @@ def intro_get(request: Request):
 @app.post("/login")
 def login_post(
     request: Request,
-    username: str = Form(...),
+    access_token: str = Form(...),
     db=Depends(get_db),
 ):
-    username = (username or "").strip()
-    if not username:
+    access_token = (access_token or "").strip()
+    if not access_token:
         return templates.TemplateResponse(
             "login.html",
-            {"request": request, "error": "Please enter a username"},
+            {"request": request, "error": "Please enter an access token"},
             status_code=400,
         )
 
-    user = db.execute(select(User).where(User.username == username)).scalar_one_or_none()
+    token_hash = _hash_access_token(access_token)
+    user = db.execute(select(User).where(User.access_token_hash == token_hash)).scalar_one_or_none()
     if not user:
-        # Mirror the original workflow: ask expertise for new users.
-        return RedirectResponse(url=f"/new-user?username={username}", status_code=302)
+        return templates.TemplateResponse(
+            "login.html",
+            {"request": request, "error": "Invalid access token"},
+            status_code=403,
+        )
 
     ensure_user_task_list(db, user.id)
 

@@ -4,7 +4,7 @@ Data: 2026-01-12
 1) Como a webapp grava (passo a passo)
 
 1.1 Login (username apenas)
-- O anotador entra com um nome de utilizador (username).
+- O anotador entra com um Access Token (único por utilizador), disponibilizado por email.
 - A sessão fica guardada no browser via cookie de sessão.
 - Não existem passwords.
 
@@ -110,3 +110,27 @@ Notas
 Notas rápidas
 - Export CSV “bruto” (já existe):
   python manage.py export-csv --out export.csv
+
+
+3) Como criar utilizadores + Access Tokens (admin)
+
+3.1 Criar um utilizador (gera token automaticamente)
+- Executar na pasta do repositório:
+  python -m webapp.manage create-user --username "NOME" --expertise-score 3
+- O comando imprime:
+  "Access token (send by email): ..."
+- Copiar esse token e enviar por email ao anotador.
+
+3.2 Criar um utilizador definindo o token manualmente
+- Exemplo:
+  python -m webapp.manage create-user --username "NOME" --expertise-score 5 --access-token "TOKEN_AQUI"
+
+3.3 Rodar/alterar token de um utilizador existente
+- Gerar automaticamente um novo token:
+  python -m webapp.manage create-user --username "NOME" --rotate-token
+- Ou definir explicitamente:
+  python -m webapp.manage create-user --username "NOME" --access-token "NOVO_TOKEN"
+
+Notas
+- O token é guardado na DB apenas como hash (não é possível recuperá-lo depois).
+- Se perderes o token, tens de rodar/gerar um novo e reenviar por email.

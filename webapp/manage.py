@@ -2,8 +2,10 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
+import secrets
 from pathlib import Path
 
 from sqlalchemy import and_, delete, func, select
@@ -45,6 +47,10 @@ def _safe_filename_part(s: str) -> str:
     return s or "user"
 
 
+def _hash_access_token(token: str) -> str:
+    return hashlib.sha256((token or "").encode("utf-8")).hexdigest()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Cropmarker WebApp admin CLI")
     parser.add_argument("--db", default="webapp_data/webapp.sqlite3", help="SQLite DB path")
@@ -61,6 +67,16 @@ def main() -> None:
     p_user.add_argument("--username", required=True)
     p_user.add_argument("--admin", action="store_true")
     p_user.add_argument("--expertise-score", type=int, default=0, choices=[0, 1, 3, 5])
+    p_user.add_argument(
+        "--access-token",
+        default=None,
+        help="Explicit access token to set for this user (recommended: leave empty to generate)",
+    )
+    p_user.add_argument(
+        "--rotate-token",
+        action="store_true",
+        help="Generate and set a new access token for an existing user",
+    )
 
     p_export = sub.add_parser("export-csv", help="Export annotations as CSV")
     p_export.add_argument("--out", default="export.csv")
@@ -151,16 +167,33 @@ def main() -> None:
         with Session() as s:
             existing = s.execute(select(User).where(User.username == args.username)).scalar_one_or_none()
             if existing:
-                # For convenience, allow updating the admin flag.
+                # For convenience, allow updating admin / expertise / token.
                 if bool(args.admin) and not existing.is_admin:
                     existing.is_admin = True
                 if int(args.expertise_score) != int(getattr(existing, "expertise_score", 0)):
                     existing.expertise_score = int(args.expertise_score)
-                    s.commit()
-                print(
-                    f"User already exists: {args.username} admin={bool(existing.is_admin)} expertise_score={int(getattr(existing, 'expertise_score', 0))}"
+
+                new_token: str | None = None
+                if args.access_token:
+                    new_token = str(args.access_token).strip()
+                elif bool(args.rotate_token):
+                    new_token = secrets.token_urlsafe(24)
+
+                if new_token is not None:
+                    existing.access_token_hash = _hash_access_token(new_token)
+
+                s.commit()
+
+                msg = (
+                    f"User updated: {args.username} admin={bool(existing.is_admin)} "
+                    f"expertise_score={int(getattr(existing, 'expertise_score', 0))}"
                 )
+                print(msg)
+                if new_token is not None:
+                    print(f"Access token (send by email): {new_token}")
                 return
+
+            token_plain = str(args.access_token).strip() if args.access_token else secrets.token_urlsafe(24)
 
             # No passwords by design (mirrors the original Tkinter workflow).
             user = User(
@@ -168,10 +201,12 @@ def main() -> None:
                 password_hash="",
                 is_admin=bool(args.admin),
                 expertise_score=int(args.expertise_score),
+                access_token_hash=_hash_access_token(token_plain),
             )
             s.add(user)
             s.commit()
         print(f"Created user: {args.username} admin={bool(args.admin)} expertise_score={int(args.expertise_score)}")
+        print(f"Access token (send by email): {token_plain}")
         return
 
     if args.cmd == "export-csv":
