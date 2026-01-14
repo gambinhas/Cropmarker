@@ -21,6 +21,14 @@ class User(Base):
     access_token_encrypted: Mapped[str] = mapped_column(Text, default="")
     last_login_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
 
+    # Runtime tracking (seconds spent with the app open/active).
+    runtime_seconds: Mapped[int] = mapped_column(Integer, default=0)
+    runtime_last_ping_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+
+    # Frozen completion timing (when user completes all tasks).
+    completed_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+    completed_runtime_seconds: Mapped[int | None] = mapped_column(Integer, nullable=True)
+
     annotations: Mapped[list[Annotation]] = relationship(back_populates="user")  # type: ignore[name-defined]
     user_tasks: Mapped[list[UserTask]] = relationship(back_populates="user")  # type: ignore[name-defined]
 

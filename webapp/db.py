@@ -59,3 +59,23 @@ def ensure_sqlite_migrations(engine) -> None:  # noqa: ANN001
         cols = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(users)").fetchall()}
         if cols and "access_token_encrypted" not in cols:
             conn.exec_driver_sql("ALTER TABLE users ADD COLUMN access_token_encrypted TEXT NOT NULL DEFAULT ''")
+
+        # users.runtime_seconds
+        cols = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(users)").fetchall()}
+        if cols and "runtime_seconds" not in cols:
+            conn.exec_driver_sql("ALTER TABLE users ADD COLUMN runtime_seconds INTEGER NOT NULL DEFAULT 0")
+
+        # users.runtime_last_ping_at
+        cols = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(users)").fetchall()}
+        if cols and "runtime_last_ping_at" not in cols:
+            conn.exec_driver_sql("ALTER TABLE users ADD COLUMN runtime_last_ping_at DATETIME")
+
+        # users.completed_at
+        cols = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(users)").fetchall()}
+        if cols and "completed_at" not in cols:
+            conn.exec_driver_sql("ALTER TABLE users ADD COLUMN completed_at DATETIME")
+
+        # users.completed_runtime_seconds
+        cols = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(users)").fetchall()}
+        if cols and "completed_runtime_seconds" not in cols:
+            conn.exec_driver_sql("ALTER TABLE users ADD COLUMN completed_runtime_seconds INTEGER")

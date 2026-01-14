@@ -57,6 +57,9 @@ if RESOURCES_DIR.exists():
 QC_DUPLICATES_PER_USER = 39
 EXPECTED_ORIGINALS = 381
 
+RUNTIME_PING_INTERVAL_SECONDS = 15
+MAX_RUNTIME_GAP_SECONDS = 60
+
 _MONTHS = {
     "jan": "01",
     "feb": "02",
@@ -162,6 +165,43 @@ def _decrypt_access_token(token_enc: str) -> str:
         return ""
 
 
+def _fmt_runtime(seconds: int | None) -> str:
+    if seconds is None:
+        return ""
+    try:
+        seconds = int(seconds)
+    except Exception:
+        return ""
+    if seconds < 0:
+        seconds = 0
+    h = seconds // 3600
+    m = (seconds % 3600) // 60
+    s = seconds % 60
+    return f"{h:02d}:{m:02d}:{s:02d}"
+
+
+def _runtime_ping_user(db, user_id: int) -> None:
+    now = datetime.utcnow()
+    u = db.execute(select(User).where(User.id == user_id)).scalar_one_or_none()
+    if not u:
+        return
+
+    # Do not keep counting after completion.
+    if getattr(u, "completed_at", None):
+        return
+
+    last = getattr(u, "runtime_last_ping_at", None)
+    if last is not None:
+        try:
+            delta = (now - last).total_seconds()
+        except Exception:
+            delta = 0
+        if 0 < delta <= MAX_RUNTIME_GAP_SECONDS:
+            u.runtime_seconds = int(getattr(u, "runtime_seconds", 0) or 0) + int(delta)
+
+    u.runtime_last_ping_at = now
+
+
 def get_db():
     db = SessionLocal()
     try:
@@ -253,6 +293,9 @@ def _admin_user_rows(db):
     users = db.execute(select(User).where(User.is_admin == False).order_by(User.username.asc())).scalars().all()  # noqa: E712
     rows = []
     for u in users:
+        runtime_seconds = int(getattr(u, "runtime_seconds", 0) or 0)
+        completed_runtime = getattr(u, "completed_runtime_seconds", None)
+        runtime_display = _fmt_runtime(completed_runtime if completed_runtime is not None else runtime_seconds)
         total = int(ut_counts.get(int(u.id), 0))
         done = int(ann_counts.get(int(u.id), 0))
         remaining = max(0, total - done)
@@ -260,6 +303,7 @@ def _admin_user_rows(db):
             {
                 "username": u.username,
                 "expertise_score": int(getattr(u, "expertise_score", 0) or 0),
+                "runtime": runtime_display,
                 "total": total,
                 "done": done,
                 "remaining": remaining,
@@ -270,6 +314,14 @@ def _admin_user_rows(db):
             }
         )
     return rows
+
+
+@app.post("/api/runtime/ping")
+def runtime_ping(request: Request, db=Depends(get_db)):
+    user = require_user(request)
+    _runtime_ping_user(db, user.id)
+    db.commit()
+    return {"ok": True}
 
 
 @app.get("/admin", response_class=HTMLResponse)
@@ -652,6 +704,13 @@ def next_task(request: Request, db=Depends(get_db)):
 
     next_user_task = db.execute(q.limit(1)).scalars().first()
     if not next_user_task:
+        # Finalize runtime at completion.
+        _runtime_ping_user(db, user.id)
+        u = db.execute(select(User).where(User.id == user.id)).scalar_one_or_none()
+        if u and not getattr(u, "completed_at", None):
+            u.completed_at = datetime.utcnow()
+            u.completed_runtime_seconds = int(getattr(u, "runtime_seconds", 0) or 0)
+            db.commit()
         return templates.TemplateResponse(
             "done.html",
             {

@@ -24,5 +24,49 @@
       </form>
     </div>
   </div>
+  <script>
+(() => {
+  // Hidden runtime tracker: counts only while this page is open/visible.
+  const PING_INTERVAL_MS = 15000;
+  let pingTimer = null;
+
+  async function pingRuntime(keepalive=false) {
+    try {
+      await fetch('/api/runtime/ping', {
+        method: 'POST',
+        credentials: 'same-origin',
+        keepalive: !!keepalive,
+        headers: { 'Content-Type': 'application/json' },
+        body: '{}'
+      });
+    } catch (e) {
+      // ignore
+    }
+  }
+
+  function startPings() {
+    if (pingTimer) return;
+    pingRuntime(false);
+    pingTimer = setInterval(() => pingRuntime(false), PING_INTERVAL_MS);
+  }
+
+  function stopPings() {
+    if (!pingTimer) return;
+    clearInterval(pingTimer);
+    pingTimer = null;
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopPings();
+    else startPings();
+  });
+
+  window.addEventListener('beforeunload', () => {
+    pingRuntime(true);
+  });
+
+  if (!document.hidden) startPings();
+})();
+  </script>
 </body>
 </html>
